@@ -1,0 +1,8 @@
+project:
+  type: website
+
+website:
+  title: "Essentials of Health Informatics"
+  site-url: "https://essential-health-informatics.com/" 
+
+  favicon: media/eohi-logo.png
