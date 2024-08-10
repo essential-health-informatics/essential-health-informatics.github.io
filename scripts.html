@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Essentials of Health Informatics</title>
+<title>scripts – Essentials of Health Informatics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,27 +113,34 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Essentials of Health Informatics</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>We will be building the guidebook here</p>
-<p>Watch this space</p>
+    var containers = document.querySelectorAll(".timeline .container");
+    containers.forEach((container, index) => {
+        if (index % 2 === 0) {
+        container.classList.add("left");
+        } else {
+        container.classList.add("right");
+        }
+  });
+});
+</script>
 
 
 
