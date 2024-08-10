@@ -1,0 +1,27 @@
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+
+    var containers = document.querySelectorAll(".timeline .container");
+    containers.forEach((container, index) => {
+        if (index % 2 === 0) {
+        container.classList.add("left");
+        } else {
+        container.classList.add("right");
+        }
+  });
+});
+</script>
+```

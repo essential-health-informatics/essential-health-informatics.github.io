@@ -1,0 +1,38 @@
+---
+title: "Clinical Informatics Timeline"
+---
+
+```{=html}
+
+<div class="timeline">
+  <div class="container">
+    <div class="bubble">
+      <h2>1943</h2>
+      <img src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
+      <button class="collapsible">Colossus computer</button>
+      <div class="collapsible-content">
+        <p>The first electronic computer. Used as a codebreaker in World War II.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="bubble">
+      <h2>1974</h2>
+      <button class="collapsible">First personal computer</button>
+      <div class="collapsible-content">
+        <p>The first computer for personal use.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bubble">
+      <h2>2015</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+</div>
+```
+
+{{< include ../../scripts.qmd >}}

@@ -3,6 +3,18 @@ project:
 
 website:
   title: "Essentials of Health Informatics"
-  site-url: "https://essential-health-informatics.com/" 
-
+  site-url: "https://essential-health-informatics.com/"
+  navbar:
+    left:
+      - href: /chapters/timeline/index.html
+        text: Timeline
   favicon: media/eohi-logo.png
+
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
