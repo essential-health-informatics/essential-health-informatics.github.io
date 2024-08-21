@@ -1,0 +1,98 @@
+## 1. Foundational Concepts & Historical Context
+* Introduction To Health Informatics
+* Health and Disease
+* Population health
+* History Of Digital Health In The NHS UK
+* History Of Digital Health In Other Countries
+
+
+## 2. Health Informatics Infrastructure
+* Healthcare IT Infrastructure
+* Types of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE
+* Health Information Exchange (HIE)
+* Usability And User Experience (UX) In Health IT
+* Data Standards And Interoperability
+* Health IT Project Management
+* Emerging Technologies In Healthcare
+
+
+## 3. Clinical Informatics & Decision Support
+* Clinical Decision Support Systems (CDSS)
+* Clinical Workflow And Process Improvement
+* Cognitive Informatics And Human Factors
+* Artificial Intelligence And Machine Learning In Healthcare
+
+
+## 4. Health Data, Statistics & Analytics
+* Health Data Analytics
+* Research And Development In Clinical Informatics
+* Clinical Trials And Research Informatics
+* Population Health Management
+* Personalised Medicine And Genomics
+
+ 
+## Clinical terminologies
+
+* SNOMED-CT
+* 
+
+## 5. Leadership, Governance, and Policy
+* Clinical Informatics Leadership And Governance
+* Regulatory And Policy Issues In Digital Health
+* Standards And Regulatory Compliance
+* Health Economics And Informatics
+* Clinical safety
+* Medicolegal Aspects
+
+
+## 6. Patient-Focused Informatics
+* Patient Safety And Quality Improvement
+* Patient Engagement And Empowerment
+* Social Determinants Of Health (SDOH) And Informatics
+* Behavioural Health Informatics
+* Digital Therapeutics And Remote Monitoring
+* Telemedicine And Telehealth
+* Mobile Health (mHealth)
+
+
+## 7. Privacy, Security, and Ethics
+* Privacy And Security
+* Ethics In Digital Health
+* Diversity
+
+
+## 8. Innovation and Emerging Trends
+* Digital Health Innovation And Entrepreneurship
+* Digital Twins And Simulation In Healthcare
+* Global Health Informatics
+
+
+## 9. Building digital systems
+* Programming In Clinical Informatics
+
+
+## 10. Business Processes in Health Informatics
+* Process mapping
+* Change management
+* Business Process
+* Evaluation and impact assessment
+* Interprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams
+Collaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies
+
+
+## 11. Interdisciplinary Collaboration
+* Interdisciplinary Collaboration And Communication
+* Digital Therapeutics And Remote Monitoring
+
+## 12. Emerging Trends and Future Directions
+
+* Artificial intelligence and machine learning in clinical informatics
+* Blockchain technology in healthcare
+* Genomic informatics and precision medicine
+
+
+## Further reading
+
+
+## 13. Glossary
+

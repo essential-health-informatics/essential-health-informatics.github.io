@@ -5,6 +5,7 @@ title: "Clinical Informatics Timeline"
 ```{=html}
 
 <div class="timeline">
+
   <div class="container">
     <div class="bubble">
       <h2>1943</h2>
@@ -15,7 +16,17 @@ title: "Clinical Informatics Timeline"
       </div>
     </div>
   </div>
-  
+
+  <div class="container">
+    <div class="bubble">
+      <h2>1952</h2>
+      <button class="collapsible">First use of HIT</button>
+      <div class="collapsible-content">
+        <p>Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="bubble">
       <h2>1974</h2>
@@ -26,12 +37,6 @@ title: "Clinical Informatics Timeline"
     </div>
   </div>
 
-  <div class="container">
-    <div class="bubble">
-      <h2>2015</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
 </div>
 ```
 
