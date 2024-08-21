@@ -7,10 +7,122 @@
     "text": "We will be building the guidebook here\nWatch this space"
   },
   {
+    "objectID": "chapters/topics.html",
+    "href": "chapters/topics.html",
+    "title": "Essentials of Health Informatics",
+    "section": "",
+    "text": "Introduction To Health Informatics\nHealth and Disease\nPopulation health\nHistory Of Digital Health In The NHS UK\nHistory Of Digital Health In Other Countries"
+  },
+  {
+    "objectID": "chapters/topics.html#foundational-concepts-historical-context",
+    "href": "chapters/topics.html#foundational-concepts-historical-context",
+    "title": "Essentials of Health Informatics",
+    "section": "",
+    "text": "Introduction To Health Informatics\nHealth and Disease\nPopulation health\nHistory Of Digital Health In The NHS UK\nHistory Of Digital Health In Other Countries"
+  },
+  {
+    "objectID": "chapters/topics.html#health-informatics-infrastructure",
+    "href": "chapters/topics.html#health-informatics-infrastructure",
+    "title": "Essentials of Health Informatics",
+    "section": "2. Health Informatics Infrastructure",
+    "text": "2. Health Informatics Infrastructure\n\nHealthcare IT Infrastructure\nTypes of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE\nHealth Information Exchange (HIE)\nUsability And User Experience (UX) In Health IT\nData Standards And Interoperability\nHealth IT Project Management\nEmerging Technologies In Healthcare"
+  },
+  {
+    "objectID": "chapters/topics.html#clinical-informatics-decision-support",
+    "href": "chapters/topics.html#clinical-informatics-decision-support",
+    "title": "Essentials of Health Informatics",
+    "section": "3. Clinical Informatics & Decision Support",
+    "text": "3. Clinical Informatics & Decision Support\n\nClinical Decision Support Systems (CDSS)\nClinical Workflow And Process Improvement\nCognitive Informatics And Human Factors\nArtificial Intelligence And Machine Learning In Healthcare"
+  },
+  {
+    "objectID": "chapters/topics.html#health-data-statistics-analytics",
+    "href": "chapters/topics.html#health-data-statistics-analytics",
+    "title": "Essentials of Health Informatics",
+    "section": "4. Health Data, Statistics & Analytics",
+    "text": "4. Health Data, Statistics & Analytics\n\nHealth Data Analytics\nResearch And Development In Clinical Informatics\nClinical Trials And Research Informatics\nPopulation Health Management\nPersonalised Medicine And Genomics"
+  },
+  {
+    "objectID": "chapters/topics.html#clinical-terminologies",
+    "href": "chapters/topics.html#clinical-terminologies",
+    "title": "Essentials of Health Informatics",
+    "section": "Clinical terminologies",
+    "text": "Clinical terminologies\n\nSNOMED-CT"
+  },
+  {
+    "objectID": "chapters/topics.html#leadership-governance-and-policy",
+    "href": "chapters/topics.html#leadership-governance-and-policy",
+    "title": "Essentials of Health Informatics",
+    "section": "5. Leadership, Governance, and Policy",
+    "text": "5. Leadership, Governance, and Policy\n\nClinical Informatics Leadership And Governance\nRegulatory And Policy Issues In Digital Health\nStandards And Regulatory Compliance\nHealth Economics And Informatics\nClinical safety\nMedicolegal Aspects"
+  },
+  {
+    "objectID": "chapters/topics.html#patient-focused-informatics",
+    "href": "chapters/topics.html#patient-focused-informatics",
+    "title": "Essentials of Health Informatics",
+    "section": "6. Patient-Focused Informatics",
+    "text": "6. Patient-Focused Informatics\n\nPatient Safety And Quality Improvement\nPatient Engagement And Empowerment\nSocial Determinants Of Health (SDOH) And Informatics\nBehavioural Health Informatics\nDigital Therapeutics And Remote Monitoring\nTelemedicine And Telehealth\nMobile Health (mHealth)"
+  },
+  {
+    "objectID": "chapters/topics.html#privacy-security-and-ethics",
+    "href": "chapters/topics.html#privacy-security-and-ethics",
+    "title": "Essentials of Health Informatics",
+    "section": "7. Privacy, Security, and Ethics",
+    "text": "7. Privacy, Security, and Ethics\n\nPrivacy And Security\nEthics In Digital Health\nDiversity"
+  },
+  {
+    "objectID": "chapters/topics.html#innovation-and-emerging-trends",
+    "href": "chapters/topics.html#innovation-and-emerging-trends",
+    "title": "Essentials of Health Informatics",
+    "section": "8. Innovation and Emerging Trends",
+    "text": "8. Innovation and Emerging Trends\n\nDigital Health Innovation And Entrepreneurship\nDigital Twins And Simulation In Healthcare\nGlobal Health Informatics"
+  },
+  {
+    "objectID": "chapters/topics.html#building-digital-systems",
+    "href": "chapters/topics.html#building-digital-systems",
+    "title": "Essentials of Health Informatics",
+    "section": "9. Building digital systems",
+    "text": "9. Building digital systems\n\nProgramming In Clinical Informatics"
+  },
+  {
+    "objectID": "chapters/topics.html#business-processes-in-health-informatics",
+    "href": "chapters/topics.html#business-processes-in-health-informatics",
+    "title": "Essentials of Health Informatics",
+    "section": "10. Business Processes in Health Informatics",
+    "text": "10. Business Processes in Health Informatics\n\nProcess mapping\nChange management\nBusiness Process\nEvaluation and impact assessment\nInterprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams Collaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies"
+  },
+  {
+    "objectID": "chapters/topics.html#interdisciplinary-collaboration",
+    "href": "chapters/topics.html#interdisciplinary-collaboration",
+    "title": "Essentials of Health Informatics",
+    "section": "11. Interdisciplinary Collaboration",
+    "text": "11. Interdisciplinary Collaboration\n\nInterdisciplinary Collaboration And Communication\nDigital Therapeutics And Remote Monitoring"
+  },
+  {
+    "objectID": "chapters/topics.html#emerging-trends-and-future-directions",
+    "href": "chapters/topics.html#emerging-trends-and-future-directions",
+    "title": "Essentials of Health Informatics",
+    "section": "12. Emerging Trends and Future Directions",
+    "text": "12. Emerging Trends and Future Directions\n\nArtificial intelligence and machine learning in clinical informatics\nBlockchain technology in healthcare\nGenomic informatics and precision medicine"
+  },
+  {
+    "objectID": "chapters/topics.html#further-reading",
+    "href": "chapters/topics.html#further-reading",
+    "title": "Essentials of Health Informatics",
+    "section": "Further reading",
+    "text": "Further reading"
+  },
+  {
+    "objectID": "chapters/topics.html#glossary",
+    "href": "chapters/topics.html#glossary",
+    "title": "Essentials of Health Informatics",
+    "section": "13. Glossary",
+    "text": "13. Glossary"
+  },
+  {
     "objectID": "chapters/timeline/index.html",
     "href": "chapters/timeline/index.html",
     "title": "Clinical Informatics Timeline",
     "section": "",
-    "text": "1943\n      \n      Colossus computer\n      \n        The first electronic computer. Used as a codebreaker in World War II.\n      \n    \n  \n  \n  \n    \n      1974\n      First personal computer\n      \n        The first computer for personal use.\n      \n    \n  \n\n  \n    \n      2015\n      Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam."
+    "text": "1943\n      \n      Colossus computer\n      \n        The first electronic computer. Used as a codebreaker in World War II.\n      \n    \n  \n\n  \n    \n      1952\n      First use of HIT\n      \n        Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.\n      \n    \n  \n\n  \n    \n      1974\n      First personal computer\n      \n        The first computer for personal use."
   }
 ]
