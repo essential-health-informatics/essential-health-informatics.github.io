@@ -23,9 +23,9 @@
   {
     "objectID": "chapters/topics.html",
     "href": "chapters/topics.html",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "",
-    "text": "Introduction To Health Informatics\nHealth and Disease\nPopulation health\nHistory Of Digital Health In The NHS UK\nHistory Of Digital Health In Other Countries"
+    "text": "Introduction To Health Informatics\nHealth and Disease\nPopulation health\nWhat is digital?\nHistory Of Digital Health In The NHS UK\nHistory Of Digital Health In Other Countries"
   },
   {
     "objectID": "chapters/topics.html#foundational-concepts-historical-context",
@@ -58,28 +58,28 @@
   {
     "objectID": "chapters/topics.html#leadership-governance-and-policy",
     "href": "chapters/topics.html#leadership-governance-and-policy",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "5. Leadership, Governance, and Policy",
     "text": "5. Leadership, Governance, and Policy\n\nClinical Informatics Leadership And Governance\nRegulatory And Policy Issues In Digital Health\nStandards And Regulatory Compliance\nHealth Economics And Informatics\nClinical safety\nMedicolegal Aspects"
   },
   {
     "objectID": "chapters/topics.html#patient-focused-informatics",
     "href": "chapters/topics.html#patient-focused-informatics",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "6. Patient-Focused Informatics",
     "text": "6. Patient-Focused Informatics\n\nPatient Safety And Quality Improvement\nPatient Engagement And Empowerment\nSocial Determinants Of Health (SDOH) And Informatics\nBehavioural Health Informatics\nDigital Therapeutics And Remote Monitoring\nTelemedicine And Telehealth\nMobile Health (mHealth)"
   },
   {
     "objectID": "chapters/topics.html#privacy-security-and-ethics",
     "href": "chapters/topics.html#privacy-security-and-ethics",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "7. Privacy, Security, and Ethics",
     "text": "7. Privacy, Security, and Ethics\n\nPrivacy And Security\nEthics In Digital Health\nDiversity"
   },
   {
     "objectID": "chapters/topics.html#innovation-and-emerging-trends",
     "href": "chapters/topics.html#innovation-and-emerging-trends",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "8. Innovation and Emerging Trends",
     "text": "8. Innovation and Emerging Trends\n\nDigital Health Innovation And Entrepreneurship\nDigital Twins And Simulation In Healthcare\nGlobal Health Informatics"
   },
@@ -93,7 +93,7 @@
   {
     "objectID": "chapters/topics.html#interdisciplinary-collaboration",
     "href": "chapters/topics.html#interdisciplinary-collaboration",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "11. Interdisciplinary Collaboration",
     "text": "11. Interdisciplinary Collaboration\n\nInterdisciplinary Collaboration And Communication\nDigital Therapeutics And Remote Monitoring"
   },
@@ -107,7 +107,7 @@
   {
     "objectID": "chapters/topics.html#emerging-trends-and-future-directions",
     "href": "chapters/topics.html#emerging-trends-and-future-directions",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "12. Emerging Trends and Future Directions",
     "text": "12. Emerging Trends and Future Directions\n\nArtificial intelligence and machine learning in clinical informatics\nBlockchain technology in healthcare\nGenomic informatics and precision medicine"
   },
@@ -121,15 +121,71 @@
   {
     "objectID": "chapters/topics.html#building-digital-systems",
     "href": "chapters/topics.html#building-digital-systems",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "9. Building digital systems",
     "text": "9. Building digital systems\n\nProgramming In Clinical Informatics"
   },
   {
     "objectID": "chapters/topics.html#glossary",
     "href": "chapters/topics.html#glossary",
-    "title": "Essentials of Health Informatics",
+    "title": "Index",
     "section": "13. Glossary",
     "text": "13. Glossary"
+  },
+  {
+    "objectID": "chapters/topics.html#foundational",
+    "href": "chapters/topics.html#foundational",
+    "title": "Index",
+    "section": "",
+    "text": "Introduction To Health Informatics\nHealth and Disease\nPopulation health\nWhat is digital?\nHistory Of Digital Health In The NHS UK\nHistory Of Digital Health In Other Countries"
+  },
+  {
+    "objectID": "chapters/topics.html#types-of-digital-systems",
+    "href": "chapters/topics.html#types-of-digital-systems",
+    "title": "Index",
+    "section": "2. Types of digital systems",
+    "text": "2. Types of digital systems\n\nTypes of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE\nTelemedicine And Telehealth (duplicate)"
+  },
+  {
+    "objectID": "chapters/topics.html#infrastructure",
+    "href": "chapters/topics.html#infrastructure",
+    "title": "Index",
+    "section": "3. Infrastructure",
+    "text": "3. Infrastructure\n\nHealthcare IT Infrastructure\nHealth Information Exchange (HIE)\nUsability And User Experience (UX) In Health IT\nData Standards And Interoperability\nHealth IT Project Management\nEmerging Technologies In Healthcare"
+  },
+  {
+    "objectID": "chapters/topics.html#decision-support",
+    "href": "chapters/topics.html#decision-support",
+    "title": "Index",
+    "section": "3. Decision Support",
+    "text": "3. Decision Support\n\nClinical Decision Support Systems (CDSS)\nCognitive Informatics And Human Factors\nArtificial Intelligence And Machine Learning In Healthcare"
+  },
+  {
+    "objectID": "chapters/topics.html#it-is-all-about-the-data",
+    "href": "chapters/topics.html#it-is-all-about-the-data",
+    "title": "Index",
+    "section": "4. It is all about the data",
+    "text": "4. It is all about the data\n\nHealth Data Analytics\nResearch And Development In Clinical Informatics\nClinical Trials And Research Informatics\nPopulation Health Management\nPersonalised Medicine And Genomics"
+  },
+  {
+    "objectID": "chapters/topics.html#terminologies",
+    "href": "chapters/topics.html#terminologies",
+    "title": "Index",
+    "section": "Terminologies",
+    "text": "Terminologies\n\nSNOMED-CT"
+  },
+  {
+    "objectID": "chapters/topics.html#lets-get-down-to-business",
+    "href": "chapters/topics.html#lets-get-down-to-business",
+    "title": "Index",
+    "section": "10. Let’s get down to business",
+    "text": "10. Let’s get down to business\n\nProcess mapping\nClinical Workflow And Process Improvement\nChange management\nBusiness Process\nEvaluation and impact assessment\nInterprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams Collaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies"
+  },
+  {
+    "objectID": "chapters/topics.html#further-reading",
+    "href": "chapters/topics.html#further-reading",
+    "title": "Index",
+    "section": "Further reading",
+    "text": "Further reading"
   }
 ]
