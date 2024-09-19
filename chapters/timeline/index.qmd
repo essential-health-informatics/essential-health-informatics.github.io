@@ -8,8 +8,8 @@ title: "Clinical Informatics Timeline"
 
   <div class="container">
     <div class="bubble">
-      <h2>1943</h2>
-      <img src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
+      <p class="container-header">1943</p>
+      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
       <button class="collapsible">Colossus computer</button>
       <div class="collapsible-content">
         <p>The first electronic computer. Used as a codebreaker in World War II.</p>
@@ -19,7 +19,8 @@ title: "Clinical Informatics Timeline"
 
   <div class="container">
     <div class="bubble">
-      <h2>1952</h2>
+      <p class="container-header">1952</p>
+      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
       <button class="collapsible">First use of HIT</button>
       <div class="collapsible-content">
         <p>Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.</p>
@@ -29,7 +30,19 @@ title: "Clinical Informatics Timeline"
 
   <div class="container">
     <div class="bubble">
-      <h2>1974</h2>
+      <p class="container-header">1950s</p>
+      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
+      <button class="collapsible">First use of Computers in GP surgeries</button>
+      <div class="collapsible-content">
+        <p>First use of Computers in GP surgeries</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bubble">
+      <p class="container-header">1974</p>
+      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
       <button class="collapsible">First personal computer</button>
       <div class="collapsible-content">
         <p>The first computer for personal use.</p>
