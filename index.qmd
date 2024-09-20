@@ -1,6 +1,7 @@
 ---
 title: "Essentials of Health Informatics"
 description: "A guide"
+image: /media/single-rj45.jpg
 ---
 
 

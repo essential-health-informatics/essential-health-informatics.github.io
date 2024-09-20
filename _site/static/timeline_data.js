@@ -31,7 +31,7 @@ export const dateContainers = [
   },
   {
     year: "1970s",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/emis-logo.png",
     alt_text: "Another description",
     header: "EMIS",
     content:
@@ -47,7 +47,7 @@ export const dateContainers = [
   },
   {
     year: "...",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/snomed-ct-logo.jpg",
     alt_text: "Another description",
     header: "SNOMED-CT",
     content:
@@ -127,7 +127,7 @@ In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals o
   },
   {
     year: "2019",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/topol-review-hand.jpeg",
     alt_text: "Another description",
     header: "Topol Review",
     content: `Talks about digital and genomics are the future.
@@ -136,7 +136,7 @@ Extensive education and training of the clinician workforce and the public, with
   },
   {
     year: "2019",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/fci-logo.png",
     alt_text: "Another description",
     header: "Formation of the Faculty of Clinical Informatics",
     content: `The Idea of the FCI started in the 1990s inside the Royal College of GPs Health Informatics Group (RCGP HIG)
@@ -145,6 +145,20 @@ Academy of Colleges Information Group (ACIG, from AoMRC) tried an initial attemp
 Prof Maureen Baker as chair of RCGP HIG set up a steering group that gave final push to start positive steps to form the FCI – April 2017
 FCI formed by founding fellows November 2017 as a “spin off” faculty from the RCGP
 FCI is now an independent Charitable Incorporated Organisation - September 2019`,
+  },
+  {
+    year: "...",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Care.data",
+    content: `...`,
+  },
+  {
+    year: "...",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "GP Data for Planning and Research (GPDPR)",
+    content: `...`,
   },
   {
     year: "2020",
@@ -166,11 +180,16 @@ Principle 8: inform patients and services users about how their confidential inf
     image_src: "/media/colossus-computer.jpg",
     alt_text: "Another description",
     header: "Federated Data Platform",
-    content: `...`,
+    content: `Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.” 
+Mixture of use cases such as:
+Direct care
+Public health
+Healthcare planning and research
+This mixed use case has complications in English law.`,
   },
   {
     year: "2024",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/fci-logo.png",
     alt_text: "Another description",
     header:
       "Faculty of Clinical Informatics absorbed into British Computer Society",
