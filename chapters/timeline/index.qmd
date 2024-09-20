@@ -3,54 +3,8 @@ title: "Clinical Informatics Timeline"
 ---
 
 ```{=html}
+<div id="timeline" class="timeline"></div>
 
-<div class="timeline">
-
-  <div class="container">
-    <div class="bubble">
-      <p class="container-header">1943</p>
-      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
-      <button class="collapsible">Colossus computer</button>
-      <div class="collapsible-content">
-        <p>The first electronic computer. Used as a codebreaker in World War II.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="bubble">
-      <p class="container-header">1952</p>
-      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
-      <button class="collapsible">First use of HIT</button>
-      <div class="collapsible-content">
-        <p>Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="bubble">
-      <p class="container-header">1950s</p>
-      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
-      <button class="collapsible">First use of Computers in GP surgeries</button>
-      <div class="collapsible-content">
-        <p>First use of Computers in GP surgeries</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="bubble">
-      <p class="container-header">1974</p>
-      <img class="observed-image" src="/media/colossus-computer.jpg" alt="Description of the image" style="width: 100%;">
-      <button class="collapsible">First personal computer</button>
-      <div class="collapsible-content">
-        <p>The first computer for personal use.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
+<script type="module" src="/static/timeline.js"></script>
 ```
 
-{{< include ../../scripts.qmd >}}

@@ -131,7 +131,8 @@ ul.task-list li input[type="checkbox"] {
       });
   }
 
-  var containers = document.querySelectorAll(".timeline .container");
+  var containers = document.querySelectorAll(".bubble");
+
   containers.forEach((container, index) => {
     if (index % 2 === 0) {
       container.classList.add("left");
@@ -184,16 +185,8 @@ function adjustContainerClasses() {
       observer.observe(image);
     });
   });
-</script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
   document.addEventListener("DOMContentLoaded", function() {
-    AOS.init();
-  });
-
-    document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll('.observed-image');
   
     // Define the options for the Intersection Observer

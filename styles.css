@@ -6,14 +6,13 @@ body {
   min-width: 280px; /* Adjust this value as needed */
 }
   
-/* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  padding: 0px 10px;
 }
-  
-/* The actual timeline (the vertical ruler) */
+
 .timeline::after {
   content: '';
   position: absolute;
@@ -25,60 +24,60 @@ body {
   margin-left: -3px;
 }
   
-/* Container around content */
-.container {
-  padding: 10px 40px;
+.date-container {
   position: relative;
-  width: 50%;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 /* The circles on the timeline */
-.container::after {
+.date-container::after {
   content: '';
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  left: 50%;
+  transform: translateX(-12px);
   background-color: white;
   border: 4px solid #FF9F55;
-  top: 27px;
+  top: 19px;
   border-radius: 50%;
   z-index: 1;
 }
 
-/* Place the container to the left */
+/* Place the bubble to the left */
 .left {
-  left: -25.7%;
+  left: 1.5%;
 }
 
-/* Place the container to the right */
+/* Place the bubble to the right */
 .right {
-  left: 25.5%;
+  left: 53.5%;
 }
 
-/* Add arrows to the left container (pointing right) */
+/* Add arrows to the left bubble (pointing right) */
 .left::before {
   content: " ";
   height: 0;
   position: absolute;
-  top: 30px;
+  top: 23px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: -10px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent #f1f1f1;
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Add arrows to the right bubble (pointing left) */
 .right::before {
   content: " ";
   height: 0;
   position: absolute;
-  top: 30px;
+  top: 23px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: -10px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent #f1f1f1 transparent transparent;
@@ -95,6 +94,7 @@ body {
   background-color: #f1f1f1;
   position: relative;
   border-radius: 6px;
+  width: 45%; /* Set the width to 50% of the parent container */
 }
 
 .collapsible {
@@ -121,20 +121,24 @@ body {
   font-size: 26px;
   font-weight: bold;
   color: #000000;
+  padding: 0px 10px;
 }
 
 @media screen and (max-width: 600px) {
-  .timeline .container {
+  .timeline .date-container {
     width: 100%;
     float: none;
-    margin-bottom: 0px; /* Add some space between stacked containers */
+  }
+
+  .bubble {
+    width: 100%;
   }
 
   .timeline::after {
     display: none; /* Hide the center line */
   }
 
-  .container::after {
+  .date-container::after {
     display: none; /* Hide the circles */
   }
 
@@ -158,6 +162,7 @@ body {
 .observed-image {
   opacity: 0;
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  padding: 0px 10px;
 }
 
 /* Add a class to the element to trigger the animation */

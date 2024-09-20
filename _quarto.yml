@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+  - "static/*"
 
 website:
   title: "Essentials of Health Informatics"
@@ -9,6 +11,7 @@ website:
       - href: /chapters/timeline/index.html
         text: Timeline
   favicon: media/eohi-logo.png
+
 
 
 format:
