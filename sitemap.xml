@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://essential-health-informatics.com/scripts.html</loc>
-    <lastmod>2024-09-19T15:29:27.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://essential-health-informatics.com/chapters/timeline/index.html</loc>
-    <lastmod>2024-09-19T15:29:27.649Z</lastmod>
+    <loc>https://essential-health-informatics.com/chapters/topics.html</loc>
+    <lastmod>2024-09-20T12:23:59.844Z</lastmod>
   </url>
   <url>
     <loc>https://essential-health-informatics.com/index.html</loc>
-    <lastmod>2024-09-19T15:29:27.649Z</lastmod>
+    <lastmod>2024-09-20T12:23:59.844Z</lastmod>
   </url>
   <url>
-    <loc>https://essential-health-informatics.com/chapters/topics.html</loc>
-    <lastmod>2024-09-19T15:29:27.649Z</lastmod>
+    <loc>https://essential-health-informatics.com/chapters/timeline/index.html</loc>
+    <lastmod>2024-09-20T12:23:59.844Z</lastmod>
   </url>
 </urlset>

@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "chapters/timeline/index.html",
-    "href": "chapters/timeline/index.html",
-    "title": "Clinical Informatics Timeline",
-    "section": "",
-    "text": "1943\n      \n      Colossus computer\n      \n        The first electronic computer. Used as a codebreaker in World War II.\n      \n    \n  \n\n  \n    \n      1952\n      \n      First use of HIT\n      \n        Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.\n      \n    \n  \n\n  \n    \n      1950s\n      \n      First use of Computers in GP surgeries\n      \n        First use of Computers in GP surgeries\n      \n    \n  \n\n  \n    \n      1974\n      \n      First personal computer\n      \n        The first computer for personal use."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Essentials of Health Informatics",
-    "section": "",
-    "text": "We will be building the guidebook here\nWatch this space"
-  },
-  {
     "objectID": "chapters/topics.html",
     "href": "chapters/topics.html",
     "title": "Index",
@@ -166,5 +152,12 @@
     "title": "Index",
     "section": "Glossary",
     "text": "Glossary"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Essentials of Health Informatics",
+    "section": "",
+    "text": "We will be building the guidebook here\nWatch this space"
   }
 ]
