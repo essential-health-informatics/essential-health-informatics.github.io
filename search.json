@@ -1,163 +1,163 @@
 [
   {
-    "objectID": "chapters/topics.html",
-    "href": "chapters/topics.html",
-    "title": "Index",
-    "section": "",
-    "text": "Introduction To Health Informatics"
-  },
-  {
-    "objectID": "chapters/topics.html#introduction",
-    "href": "chapters/topics.html#introduction",
-    "title": "Index",
-    "section": "",
-    "text": "Introduction To Health Informatics"
-  },
-  {
-    "objectID": "chapters/topics.html#what-is-digital",
-    "href": "chapters/topics.html#what-is-digital",
-    "title": "Index",
-    "section": "What is digital?",
-    "text": "What is digital?\n\nWhat is digital?"
-  },
-  {
-    "objectID": "chapters/topics.html#health-and-disease",
-    "href": "chapters/topics.html#health-and-disease",
-    "title": "Index",
-    "section": "Health and disease",
-    "text": "Health and disease\n\nHealth and Disease\nPopulation health"
-  },
-  {
-    "objectID": "chapters/topics.html#digital-health-system-types",
-    "href": "chapters/topics.html#digital-health-system-types",
-    "title": "Index",
-    "section": "Digital health system types",
-    "text": "Digital health system types\n\nTypes of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE\nTelemedicine And Telehealth (duplicate)"
-  },
-  {
-    "objectID": "chapters/topics.html#decision-support",
-    "href": "chapters/topics.html#decision-support",
-    "title": "Index",
-    "section": "Decision Support",
-    "text": "Decision Support\n\nClinical Decision Support Systems (CDSS)\nCognitive Informatics And Human Factors\nArtificial Intelligence And Machine Learning In Healthcare"
-  },
-  {
-    "objectID": "chapters/topics.html#infrastructure",
-    "href": "chapters/topics.html#infrastructure",
-    "title": "Index",
-    "section": "Infrastructure",
-    "text": "Infrastructure\n\nHealthcare IT Infrastructure\nHealth Information Exchange (HIE)"
-  },
-  {
-    "objectID": "chapters/topics.html#interoperability",
-    "href": "chapters/topics.html#interoperability",
-    "title": "Index",
-    "section": "Interoperability",
-    "text": "Interoperability\n\nInteroperability\nData standards\nInteroperability"
-  },
-  {
-    "objectID": "chapters/topics.html#terminologies",
-    "href": "chapters/topics.html#terminologies",
-    "title": "Index",
-    "section": "Terminologies",
-    "text": "Terminologies\n\nSNOMED-CT\nREAD CODES\nICD"
-  },
-  {
-    "objectID": "chapters/topics.html#history",
-    "href": "chapters/topics.html#history",
-    "title": "Index",
-    "section": "History",
-    "text": "History\n\nHistory Of Digital Health In The NHS UK\nHistory Of Digital Health In Other Countries"
-  },
-  {
-    "objectID": "chapters/topics.html#governance",
-    "href": "chapters/topics.html#governance",
-    "title": "Index",
-    "section": "Governance",
-    "text": "Governance\n\nRegulatory And Policy Issues\nStandards And Regulatory Compliance\nMedicolegal Aspects"
-  },
-  {
-    "objectID": "chapters/topics.html#safety",
-    "href": "chapters/topics.html#safety",
-    "title": "Index",
-    "section": "Safety",
-    "text": "Safety\n\nClinical safety"
-  },
-  {
-    "objectID": "chapters/topics.html#audit",
-    "href": "chapters/topics.html#audit",
-    "title": "Index",
-    "section": "Audit",
-    "text": "Audit\n\nQuality Improvement"
-  },
-  {
-    "objectID": "chapters/topics.html#patient-focused-informatics",
-    "href": "chapters/topics.html#patient-focused-informatics",
-    "title": "Index",
-    "section": "Patient-Focused Informatics",
-    "text": "Patient-Focused Informatics\n\nPatient Engagement And Empowerment\nSocial Determinants Of Health (SDOH) And Informatics\nBehavioural Health Informatics\nDigital Therapeutics And Remote Monitoring\nTelemedicine And Telehealth\nMobile Health (mHealth)"
-  },
-  {
-    "objectID": "chapters/topics.html#privacy-security-and-ethics",
-    "href": "chapters/topics.html#privacy-security-and-ethics",
-    "title": "Index",
-    "section": "Privacy, Security, and Ethics",
-    "text": "Privacy, Security, and Ethics\n\nPrivacy and Security\nEthics\nDiversity"
-  },
-  {
-    "objectID": "chapters/topics.html#lets-get-down-to-business",
-    "href": "chapters/topics.html#lets-get-down-to-business",
-    "title": "Index",
-    "section": "Let’s get down to business",
-    "text": "Let’s get down to business\n\nHealth Economics And Informatics\nLeadership And Governance\nProcess mapping\nClinical Workflow And Process Improvement\nChange management\nCommunication skills\nBusiness Process\nEvaluation and impact assessment\nInterprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams\nCollaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies"
-  },
-  {
-    "objectID": "chapters/topics.html#building-digital-systems",
-    "href": "chapters/topics.html#building-digital-systems",
-    "title": "Index",
-    "section": "Building digital systems",
-    "text": "Building digital systems\n\nUsability And User Experience (UX) In Health IT\nProgramming In Clinical Informatics\nTesting"
-  },
-  {
-    "objectID": "chapters/topics.html#innovation-and-emerging-trends",
-    "href": "chapters/topics.html#innovation-and-emerging-trends",
-    "title": "Index",
-    "section": "Innovation and Emerging Trends",
-    "text": "Innovation and Emerging Trends\n\nDigital Health Innovation And Entrepreneurship\nDigital Twins And Simulation In Healthcare\nGlobal Health Informatics"
-  },
-  {
-    "objectID": "chapters/topics.html#emerging-trends-and-future-directions",
-    "href": "chapters/topics.html#emerging-trends-and-future-directions",
-    "title": "Index",
-    "section": "Emerging Trends and Future Directions",
-    "text": "Emerging Trends and Future Directions\n\nArtificial intelligence and machine learning in clinical informatics\nBlockchain technology in healthcare\nGenomic informatics and precision medicine"
-  },
-  {
-    "objectID": "chapters/topics.html#research",
-    "href": "chapters/topics.html#research",
-    "title": "Index",
-    "section": "Research",
-    "text": "Research\n\nResearch And Development In Clinical Informatics\nClinical Trials And Research Informatics"
-  },
-  {
-    "objectID": "chapters/topics.html#further-reading",
-    "href": "chapters/topics.html#further-reading",
-    "title": "Index",
-    "section": "Further reading",
-    "text": "Further reading"
-  },
-  {
-    "objectID": "chapters/topics.html#glossary",
-    "href": "chapters/topics.html#glossary",
-    "title": "Index",
-    "section": "Glossary",
-    "text": "Glossary"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Essentials of Health Informatics",
     "section": "",
-    "text": "We will be building the guidebook here\nWatch this space"
+    "text": "Digital technology has become an integral part of our daily lives, driving remarkable progress across countless fields. However, while it holds immense potential, its use must be approached with care, especially in healthcare, where the impact can be profound.\nIn the realm of health and care, the stakes are higher than ever. Health Informatics, also known as Clinical Informatics, explores how digital systems can transform health management for the better. This guide, The Essentials of Health Informatics, is a comprehensive, open-source resource designed to support everyone—from newcomers to seasoned professionals. Whether you’re just stepping into the field or seeking a go-to reference as an advanced practitioner, this guide covers the full spectrum of health informatics and will be continuously updated to reflect the rapid changes in this evolving discipline.\nComplementing the guide, we offer a series of webinars that delve into core topics in Health Informatics. These will soon be available for viewing.\nReady to dive into the Essentials of Health Informatics? Access the guide here."
+  },
+  {
+    "objectID": "chapters/index.html",
+    "href": "chapters/index.html",
+    "title": "Chapters",
+    "section": "",
+    "text": "Introduction To Health Informatics"
+  },
+  {
+    "objectID": "chapters/index.html#introduction",
+    "href": "chapters/index.html#introduction",
+    "title": "Chapters",
+    "section": "",
+    "text": "Introduction To Health Informatics"
+  },
+  {
+    "objectID": "chapters/index.html#what-is-digital",
+    "href": "chapters/index.html#what-is-digital",
+    "title": "Chapters",
+    "section": "What is digital?",
+    "text": "What is digital?\n\nWhat is digital?\nHardware\nSoftware"
+  },
+  {
+    "objectID": "chapters/index.html#health-and-disease",
+    "href": "chapters/index.html#health-and-disease",
+    "title": "Chapters",
+    "section": "Health and disease",
+    "text": "Health and disease\n\nHealth and Disease\nPopulation health"
+  },
+  {
+    "objectID": "chapters/index.html#digital-health-system-types",
+    "href": "chapters/index.html#digital-health-system-types",
+    "title": "Chapters",
+    "section": "Digital health system types",
+    "text": "Digital health system types\n\nTypes of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE\nTelemedicine And Telehealth (duplicate)"
+  },
+  {
+    "objectID": "chapters/index.html#decision-support",
+    "href": "chapters/index.html#decision-support",
+    "title": "Chapters",
+    "section": "Decision Support",
+    "text": "Decision Support\n\nClinical Decision Support Systems (CDSS)\nCognitive Informatics And Human Factors\nArtificial Intelligence And Machine Learning In Healthcare"
+  },
+  {
+    "objectID": "chapters/index.html#infrastructure",
+    "href": "chapters/index.html#infrastructure",
+    "title": "Chapters",
+    "section": "Infrastructure",
+    "text": "Infrastructure\n\nHealthcare IT Infrastructure\nHealth Information Exchange (HIE)"
+  },
+  {
+    "objectID": "chapters/index.html#interoperability",
+    "href": "chapters/index.html#interoperability",
+    "title": "Chapters",
+    "section": "Interoperability",
+    "text": "Interoperability\n\nInteroperability\nData standards\nInteroperability"
+  },
+  {
+    "objectID": "chapters/index.html#terminologies",
+    "href": "chapters/index.html#terminologies",
+    "title": "Chapters",
+    "section": "Terminologies",
+    "text": "Terminologies\n\nSNOMED-CT\nRead Codes\nICD"
+  },
+  {
+    "objectID": "chapters/index.html#history",
+    "href": "chapters/index.html#history",
+    "title": "Chapters",
+    "section": "History",
+    "text": "History\n\nNHS UK\nHistory Of Digital Health In Other Countries"
+  },
+  {
+    "objectID": "chapters/index.html#governance",
+    "href": "chapters/index.html#governance",
+    "title": "Chapters",
+    "section": "Governance",
+    "text": "Governance\n\nRegulatory And Policy Issues\nStandards And Regulatory Compliance\nMedicolegal Aspects"
+  },
+  {
+    "objectID": "chapters/index.html#safety",
+    "href": "chapters/index.html#safety",
+    "title": "Chapters",
+    "section": "Safety",
+    "text": "Safety\n\nClinical safety"
+  },
+  {
+    "objectID": "chapters/index.html#audit",
+    "href": "chapters/index.html#audit",
+    "title": "Chapters",
+    "section": "Audit",
+    "text": "Audit\n\nQuality Improvement"
+  },
+  {
+    "objectID": "chapters/index.html#patient-focused-informatics",
+    "href": "chapters/index.html#patient-focused-informatics",
+    "title": "Chapters",
+    "section": "Patient-Focused Informatics",
+    "text": "Patient-Focused Informatics\n\nPatient Engagement And Empowerment\nSocial Determinants Of Health (SDOH) And Informatics\nBehavioural Health Informatics\nDigital Therapeutics And Remote Monitoring\nTelemedicine And Telehealth\nMobile Health (mHealth)"
+  },
+  {
+    "objectID": "chapters/index.html#privacy-security-and-ethics",
+    "href": "chapters/index.html#privacy-security-and-ethics",
+    "title": "Chapters",
+    "section": "Privacy, Security, and Ethics",
+    "text": "Privacy, Security, and Ethics\n\nPrivacy and Security\nEthics\nDiversity"
+  },
+  {
+    "objectID": "chapters/index.html#lets-get-down-to-business",
+    "href": "chapters/index.html#lets-get-down-to-business",
+    "title": "Chapters",
+    "section": "Let’s get down to business",
+    "text": "Let’s get down to business\n\nHealth Economics And Informatics\nLeadership And Governance\nProcess mapping\nClinical Workflow And Process Improvement\nChange management\nCommunication skills\nBusiness Process\nEvaluation and impact assessment\nInterprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams\nCollaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies"
+  },
+  {
+    "objectID": "chapters/index.html#building-digital-systems",
+    "href": "chapters/index.html#building-digital-systems",
+    "title": "Chapters",
+    "section": "Building digital systems",
+    "text": "Building digital systems\n\nMachine / human interface\nUsability And User Experience (UX)\nProgramming In Clinical Informatics\nTesting"
+  },
+  {
+    "objectID": "chapters/index.html#innovation-and-emerging-trends",
+    "href": "chapters/index.html#innovation-and-emerging-trends",
+    "title": "Chapters",
+    "section": "Innovation and Emerging Trends",
+    "text": "Innovation and Emerging Trends\n\nDigital Health Innovation And Entrepreneurship\nDigital Twins And Simulation In Healthcare\nGlobal Health Informatics"
+  },
+  {
+    "objectID": "chapters/index.html#emerging-trends-and-future-directions",
+    "href": "chapters/index.html#emerging-trends-and-future-directions",
+    "title": "Chapters",
+    "section": "Emerging Trends and Future Directions",
+    "text": "Emerging Trends and Future Directions\n\nArtificial intelligence and machine learning in clinical informatics\nBlockchain technology in healthcare\nGenomic informatics and precision medicine"
+  },
+  {
+    "objectID": "chapters/index.html#research",
+    "href": "chapters/index.html#research",
+    "title": "Chapters",
+    "section": "Research",
+    "text": "Research\n\nResearch And Development In Clinical Informatics\nClinical Trials And Research Informatics"
+  },
+  {
+    "objectID": "chapters/index.html#further-reading",
+    "href": "chapters/index.html#further-reading",
+    "title": "Chapters",
+    "section": "Further reading",
+    "text": "Further reading"
+  },
+  {
+    "objectID": "chapters/index.html#glossary",
+    "href": "chapters/index.html#glossary",
+    "title": "Chapters",
+    "section": "Glossary",
+    "text": "Glossary"
   }
 ]
