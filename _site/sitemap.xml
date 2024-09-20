@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://essential-health-informatics.com/index.html</loc>
-    <lastmod>2024-08-10T08:22:21.358Z</lastmod>
+    <lastmod>2024-09-20T13:51:43.499Z</lastmod>
   </url>
   <url>
     <loc>https://essential-health-informatics.com/chapters/timeline/index.html</loc>
@@ -23,5 +23,13 @@
   <url>
     <loc>https://essential-health-informatics.com/chapters/timeline/scripts.html</loc>
     <lastmod>2024-09-20T10:04:51.743Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/index.html</loc>
+    <lastmod>2024-09-20T13:10:36.854Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/timeline/uk.html</loc>
+    <lastmod>2024-09-20T13:22:29.416Z</lastmod>
   </url>
 </urlset>

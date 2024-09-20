@@ -1,8 +1,15 @@
 ---
 title: "Essentials of Health Informatics"
+description: "A guide"
 ---
 
-We will be building the guidebook here
 
+![](/media/single-rj45.jpg){alt="Ideas about digital on Post-it Notes"}
 
-Watch this space
+Digital technology has become an integral part of our daily lives, driving remarkable progress across countless fields. However, while it holds immense potential, its use must be approached with care, especially in healthcare, where the impact can be profound.
+
+In the realm of health and care, the stakes are higher than ever. Health Informatics, also known as Clinical Informatics, explores how digital systems can transform health management for the better. This guide, The Essentials of Health Informatics, is a comprehensive, open-source resource designed to support everyone—from newcomers to seasoned professionals. Whether you're just stepping into the field or seeking a go-to reference as an advanced practitioner, this guide covers the full spectrum of health informatics and will be continuously updated to reflect the rapid changes in this evolving discipline.
+
+Complementing the guide, we offer a series of webinars that delve into core topics in Health Informatics. These will soon be available for viewing.
+
+Ready to dive into the Essentials of Health Informatics? Access the guide [here](/chapters/index.qmd).

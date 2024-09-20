@@ -1,68 +1,83 @@
 ---
-title: "Index"
+title: "Chapters"
 ---
 
 ## Introduction
+
 * Introduction To Health Informatics
 
 
 ## What is digital?
+
 * What is digital?
+* Hardware
+* Software
 
 
 ## Health and disease
+
 * Health and Disease
 * Population health
 
 
 ## Digital health system types
+
 * Types of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE
 * Telemedicine And Telehealth (duplicate)
 
 
 ## Decision Support
+
 * Clinical Decision Support Systems (CDSS)
 * Cognitive Informatics And Human Factors
 * Artificial Intelligence And Machine Learning In Healthcare
 
 
 ## Infrastructure
+
 * Healthcare IT Infrastructure
 * Health Information Exchange (HIE)
 
 
 ## Interoperability
+
 * Interoperability
 * Data standards
 * Interoperability
 
  
 ## Terminologies
+
 * SNOMED-CT
-* READ CODES
+* Read Codes
 * ICD
 
 
 ## History
-* History Of Digital Health In The NHS UK
+
+* [NHS UK](./timeline/uk.qmd)
 * History Of Digital Health In Other Countries
 
 
 ## Governance
+
 * Regulatory And Policy Issues
 * Standards And Regulatory Compliance
 * Medicolegal Aspects
 
 
 ## Safety
+
 * Clinical safety
 
 
 ## Audit
+
 * Quality Improvement
 
 
 ## Patient-Focused Informatics
+
 * Patient Engagement And Empowerment
 * Social Determinants Of Health (SDOH) And Informatics
 * Behavioural Health Informatics
@@ -72,12 +87,14 @@ title: "Index"
 
 
 ## Privacy, Security, and Ethics
+
 * Privacy and Security
 * Ethics
 * Diversity
 
 
 ## Let's get down to business
+
 * Health Economics And Informatics
 * Leadership And Governance
 * Process mapping
@@ -91,24 +108,29 @@ title: "Index"
 
 
 ## Building digital systems
-* Usability And User Experience (UX) In Health IT
+
+* Machine / human interface
+* Usability And User Experience (UX)
 * Programming In Clinical Informatics
 * Testing
 
 
 ## Innovation and Emerging Trends
+
 * Digital Health Innovation And Entrepreneurship
 * Digital Twins And Simulation In Healthcare
 * Global Health Informatics
 
 
 ## Emerging Trends and Future Directions
+
 * Artificial intelligence and machine learning in clinical informatics
 * Blockchain technology in healthcare
 * Genomic informatics and precision medicine
 
 
 ## Research 
+
 * Research And Development In Clinical Informatics
 * Clinical Trials And Research Informatics
 

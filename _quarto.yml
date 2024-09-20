@@ -8,8 +8,10 @@ website:
   site-url: "https://essential-health-informatics.com/"
   navbar:
     left:
-      - href: /chapters/timeline/index.html
-        text: Timeline
+      - href: /chapters/index.html
+        text: Chapters
+      - href: /chapters/timeline/uk.html
+        text: UK timeline
   favicon: media/eohi-logo.png
 
 
