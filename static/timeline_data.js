@@ -53,4 +53,127 @@ export const dateContainers = [
     content:
       "Systematized Nomenclature of Medicine Clinical Terms (SNOWMED CT)",
   },
+  {
+    year: "1992",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Drury - Getting Better with Information",
+    content:
+      "Information will be person-based. Information should focus on health. Systems should be integrated. Information will be derived from operational systems. Information will be secure and confidential. Information will be shared across the NHS",
+  },
+  {
+    year: "1997",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Caldicott Principles of data sharing",
+    content: `Principle 1: justify the purpose(s) for using confidential information.
+Principle 2: use confidential information only when it is necessary.
+Principle 3: use the minimum necessary confidential information.
+Principle 4: access to confidential information should be on a strict need-to-know basis.
+Principle 5: everyone with access to confidential information should be aware of their responsibilities.
+Principle 6: comply with the law.`,
+  },
+  {
+    year: "2001",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Wanless",
+    content:
+      "We have achieved less because we have spent very much less and not spent it well.",
+  },
+  {
+    year: "2002",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Protti",
+    content: `UK - 59% of primary care physicians
+New Zealand - 52% 
+USA - 17%
+The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking. 
+A true patient-centric model is needed.`,
+  },
+  {
+    year: "2002-2012",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "National Program for IT (NPfIT)",
+    content: `Delivering 21st Century IT Support for the NHS - paper
+National Program for IT (NPfIT) starts 2002
+NPfIT closes down in 2012
+£12.5 billion spent (167.56 billion SEK)
+Very little in terms of deliveries - mainly PACS (picture archiving and communication system)`,
+  },
+  {
+    year: "2016",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Wachter Review, Making IT work",
+    content: `10 findings, the most important:
+Interoperability should be built in from the start
+Health IT systems must embrace user-centred design
+A successful digital strategy must be multifaceted, and requires workforce development (more to come in this afternoon’s session)
+Health IT is about both technical and adaptive change`,
+  },
+  {
+    year: "2017",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "WannaCry NHS attack",
+    content: `A Microsoft Windows Operation System exploit.
+Largest hit service was England and Scotland. Wales and Northern Ireland were not affected.
+Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
+Some NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[
+In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.`,
+  },
+  {
+    year: "2019",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Topol Review",
+    content: `Talks about digital and genomics are the future.
+The patient must be considered to be at the centre when assessing and implementing any new technologies. (I would argue staff as well)
+Extensive education and training of the clinician workforce and the public, with cultivation of a cross-disciplinary approach that includes data scientists, computer scientists, engineers, bioinformaticians, in addition to the traditional mix of pharmacists, nurses and doctors.`,
+  },
+  {
+    year: "2019",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Formation of the Faculty of Clinical Informatics",
+    content: `The Idea of the FCI started in the 1990s inside the Royal College of GPs Health Informatics Group (RCGP HIG)
+RCGP HIG gave joint representation to the Computer Group within the British Medical Association (BMA)
+Academy of Colleges Information Group (ACIG, from AoMRC) tried an initial attempt to create an FCI, but National Program for IT (NPfIT) waylay this.
+Prof Maureen Baker as chair of RCGP HIG set up a steering group that gave final push to start positive steps to form the FCI – April 2017
+FCI formed by founding fellows November 2017 as a “spin off” faculty from the RCGP
+FCI is now an independent Charitable Incorporated Organisation - September 2019`,
+  },
+  {
+    year: "2020",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Caldicott Principles 7 & 8",
+    content: `Principle 7: the duty to share information for individual care is as important as the duty to protect patient confidentiality.
+Principle 8: inform patients and services users about how their confidential information is used and what choice they have. There should be no surprises.)`,
+  },
+  {
+    year: "2022-23",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "England's NHS bodies become a single organisation",
+    content: `The mergence of NHS Health Education England, NHS Improvement, NHS X and the NHS Digital into NHS England.`,
+  },
+  {
+    year: "2023",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header: "Federated Data Platform",
+    content: `...`,
+  },
+  {
+    year: "2024",
+    image_src: "/media/colossus-computer.jpg",
+    alt_text: "Another description",
+    header:
+      "Faculty of Clinical Informatics absorbed into British Computer Society",
+    content: `The Faculty of Clinical Informatics (FCI) has been absorbed into the British Computer Society (BCS). The FCI will continue to operate as a special interest group within the BCS.`,
+  },
 ];
