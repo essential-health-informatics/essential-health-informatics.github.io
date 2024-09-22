@@ -114,8 +114,9 @@ Very little in terms of deliveries - mainly PACS (picture archiving and communic
   },
   {
     year: "2016",
-    image_src: "/media/microchip-placeholder.png",
-    alt_text: "Another description",
+    image_src: "/media/wachter-review.png",
+    alt_text:
+      "Front cover of Wachter Review with net connectivity like structure",
     header: "Wachter Review, Making IT work",
     content: `10 findings, the most important:
 Interoperability should be built in from the start
@@ -125,7 +126,7 @@ Health IT is about both technical and adaptive change`,
   },
   {
     year: "2017",
-    image_src: "/media/microchip-placeholder.png",
+    image_src: "/media/wanna-cry.jpeg",
     alt_text: "Another description",
     header: "WannaCry NHS attack",
     content: `A Microsoft Windows Operation System exploit.
