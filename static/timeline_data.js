@@ -9,7 +9,7 @@ export const dateContainers = [
   },
   {
     year: "1952",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/mcbee-punch-card.jpg",
     alt_text: "Another description",
     header: "First use of HIT",
     content:
@@ -17,17 +17,17 @@ export const dateContainers = [
   },
   {
     year: "1950s",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/hand-written-table.jpg",
     alt_text: "Another description",
-    header: "First use of Computers in GP surgeries",
-    content: "First use of Computers in GP surgeries",
+    header: "Computers first used for administrative purposes",
+    content: "...",
   },
   {
-    year: "1974",
-    image_src: "/media/colossus-computer.jpg",
+    year: "1969",
+    image_src: "/media/john-preece.jpg",
     alt_text: "Another description",
-    header: "First personal computer",
-    content: "The first computer for personal use.",
+    header: "Dr John Preece and the Ottery St Mary project",
+    content: "...",
   },
   {
     year: "1970s",
@@ -39,7 +39,7 @@ export const dateContainers = [
   },
   {
     year: "1980s",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/read-codes.png",
     alt_text: "Another description",
     header: "Read codes",
     content:
@@ -54,19 +54,28 @@ export const dateContainers = [
       "Systematized Nomenclature of Medicine Clinical Terms (SNOWMED CT)",
   },
   {
+    year: "1991",
+    image_src: "/media/Tim Berners-Lee.jpg",
+    alt_text: "Picture of Tim Berners-Lee",
+    header: "World Wide Web launched",
+    content:
+      "In 1989, British scientist Tim Berners-Lee created the World Wide Web (WWW) while working at CERN. His intention was to develop a system that would enable automated sharing of information among scientists across universities and research institutions globally.",
+  },
+  {
     year: "1992",
-    image_src: "/media/colossus-computer.jpg",
-    alt_text: "Another description",
+    image_src: "/media/peter-drury.jpeg",
+    alt_text: "Picture of Peter Drury",
     header: "Drury - Getting Better with Information",
     content:
       "Information will be person-based. Information should focus on health. Systems should be integrated. Information will be derived from operational systems. Information will be secure and confidential. Information will be shared across the NHS",
   },
   {
     year: "1997",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/fiona-caldicott.jpg",
     alt_text: "Another description",
     header: "Caldicott Principles of data sharing",
-    content: `Principle 1: justify the purpose(s) for using confidential information.
+    content: `The first 6 (2 more came later)
+Principle 1: justify the purpose(s) for using confidential information.
 Principle 2: use confidential information only when it is necessary.
 Principle 3: use the minimum necessary confidential information.
 Principle 4: access to confidential information should be on a strict need-to-know basis.
@@ -75,15 +84,15 @@ Principle 6: comply with the law.`,
   },
   {
     year: "2001",
-    image_src: "/media/colossus-computer.jpg",
-    alt_text: "Another description",
+    image_src: "/media/derek-wanless.jpg",
+    alt_text: "Picture of Derek Wanless",
     header: "Wanless",
     content:
       "We have achieved less because we have spent very much less and not spent it well.",
   },
   {
     year: "2002",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/denis-protti.jpg",
     alt_text: "Another description",
     header: "Protti",
     content: `UK - 59% of primary care physicians
@@ -94,7 +103,7 @@ A true patient-centric model is needed.`,
   },
   {
     year: "2002-2012",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "National Program for IT (NPfIT)",
     content: `Delivering 21st Century IT Support for the NHS - paper
@@ -105,7 +114,7 @@ Very little in terms of deliveries - mainly PACS (picture archiving and communic
   },
   {
     year: "2016",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "Wachter Review, Making IT work",
     content: `10 findings, the most important:
@@ -116,7 +125,7 @@ Health IT is about both technical and adaptive change`,
   },
   {
     year: "2017",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "WannaCry NHS attack",
     content: `A Microsoft Windows Operation System exploit.
@@ -148,21 +157,21 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019`
   },
   {
     year: "...",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "Care.data",
     content: `...`,
   },
   {
     year: "...",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "GP Data for Planning and Research (GPDPR)",
     content: `...`,
   },
   {
     year: "2020",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "Caldicott Principles 7 & 8",
     content: `Principle 7: the duty to share information for individual care is as important as the duty to protect patient confidentiality.
@@ -170,14 +179,14 @@ Principle 8: inform patients and services users about how their confidential inf
   },
   {
     year: "2022-23",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "England's NHS bodies become a single organisation",
     content: `The mergence of NHS Health Education England, NHS Improvement, NHS X and the NHS Digital into NHS England.`,
   },
   {
     year: "2023",
-    image_src: "/media/colossus-computer.jpg",
+    image_src: "/media/microchip-placeholder.png",
     alt_text: "Another description",
     header: "Federated Data Platform",
     content: `Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.” 
