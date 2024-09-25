@@ -4,154 +4,242 @@
     "href": "chapters/index.html",
     "title": "Chapters",
     "section": "",
-    "text": "Introduction To Health Informatics"
+    "text": "Introduction To Health Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#introduction",
     "href": "chapters/index.html#introduction",
     "title": "Chapters",
     "section": "",
-    "text": "Introduction To Health Informatics"
+    "text": "Introduction To Health Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#what-is-digital",
     "href": "chapters/index.html#what-is-digital",
     "title": "Chapters",
-    "section": "What is digital?",
-    "text": "What is digital?\n\nWhat is digital?\nHardware\nSoftware"
+    "section": "What is Digital?",
+    "text": "What is Digital?\n\nWhat is Digital?\nHardware\nSoftware",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#health-and-disease",
     "href": "chapters/index.html#health-and-disease",
     "title": "Chapters",
-    "section": "Health and disease",
-    "text": "Health and disease\n\nHealth and Disease\nPopulation health"
+    "section": "Health and Disease",
+    "text": "Health and Disease\n\nWhat is Health?\nWhat is Disease?\nPopulation Health",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#digital-health-system-types",
     "href": "chapters/index.html#digital-health-system-types",
     "title": "Chapters",
-    "section": "Digital health system types",
-    "text": "Digital health system types\n\nTypes of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE\nTelemedicine And Telehealth (duplicate)"
+    "section": "Digital Health System Types",
+    "text": "Digital Health System Types\n\nTypes of Digital healthcare systems (- EHR, PAS, PACS, patient portals, TIE).\nTelemedicine and Telehealth (duplicate)",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
-    "objectID": "chapters/index.html#decision-support",
-    "href": "chapters/index.html#decision-support",
+    "objectID": "chapters/index.html#clinical-decision-support-systems-cdss",
+    "href": "chapters/index.html#clinical-decision-support-systems-cdss",
     "title": "Chapters",
-    "section": "Decision Support",
-    "text": "Decision Support\n\nClinical Decision Support Systems (CDSS)\nCognitive Informatics And Human Factors\nArtificial Intelligence And Machine Learning In Healthcare"
+    "section": "Clinical Decision Support Systems (CDSS)",
+    "text": "Clinical Decision Support Systems (CDSS)\n\nOverview",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#infrastructure",
     "href": "chapters/index.html#infrastructure",
     "title": "Chapters",
     "section": "Infrastructure",
-    "text": "Infrastructure\n\nHealthcare IT Infrastructure\nHealth Information Exchange (HIE)"
+    "text": "Infrastructure\n\nHealthcare IT Infrastructure\nHealth Information Exchange (HIE)",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#interoperability",
     "href": "chapters/index.html#interoperability",
     "title": "Chapters",
     "section": "Interoperability",
-    "text": "Interoperability\n\nInteroperability\nData standards\nInteroperability"
+    "text": "Interoperability\n\nInteroperability\nData standards\nInteroperability",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#terminologies",
     "href": "chapters/index.html#terminologies",
     "title": "Chapters",
     "section": "Terminologies",
-    "text": "Terminologies\n\nSNOMED-CT\nRead Codes\nICD"
+    "text": "Terminologies\n\nSNOMED-CT\nRead Codes\nICD",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#history",
     "href": "chapters/index.html#history",
     "title": "Chapters",
     "section": "History",
-    "text": "History\n\nNHS UK\nHistory Of Digital Health In Other Countries"
+    "text": "History\n\nNHS UK\nHistory of Digital Health in other Countries",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#governance",
     "href": "chapters/index.html#governance",
     "title": "Chapters",
     "section": "Governance",
-    "text": "Governance\n\nRegulatory And Policy Issues\nStandards And Regulatory Compliance\nMedicolegal Aspects"
+    "text": "Governance\n\nRegulatory and Policy Issues\nStandards and Regulatory Compliance\nMedicolegal Aspects",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#safety",
     "href": "chapters/index.html#safety",
     "title": "Chapters",
     "section": "Safety",
-    "text": "Safety\n\nClinical safety"
+    "text": "Safety\n\nClinical safety",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#audit",
     "href": "chapters/index.html#audit",
     "title": "Chapters",
     "section": "Audit",
-    "text": "Audit\n\nQuality Improvement"
+    "text": "Audit\n\nQuality Improvement",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#patient-focused-informatics",
     "href": "chapters/index.html#patient-focused-informatics",
     "title": "Chapters",
     "section": "Patient-Focused Informatics",
-    "text": "Patient-Focused Informatics\n\nPatient Engagement And Empowerment\nSocial Determinants Of Health (SDOH) And Informatics\nBehavioural Health Informatics\nDigital Therapeutics And Remote Monitoring\nTelemedicine And Telehealth\nMobile Health (mHealth)"
+    "text": "Patient-Focused Informatics\n\nPatient Engagement and Empowerment\nSocial Determinants of Health (SDOH) and Informatics\nBehavioural Health Informatics\nDigital Therapeutics and Remote Monitoring\nTelemedicine and Telehealth\nMobile Health (mHealth)",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#privacy-security-and-ethics",
     "href": "chapters/index.html#privacy-security-and-ethics",
     "title": "Chapters",
     "section": "Privacy, Security, and Ethics",
-    "text": "Privacy, Security, and Ethics\n\nPrivacy and Security\nEthics\nDiversity"
+    "text": "Privacy, Security, and Ethics\n\nPrivacy and Security\nEthics\nDiversity",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
-    "objectID": "chapters/index.html#lets-get-down-to-business",
-    "href": "chapters/index.html#lets-get-down-to-business",
+    "objectID": "chapters/index.html#business",
+    "href": "chapters/index.html#business",
     "title": "Chapters",
-    "section": "Let’s get down to business",
-    "text": "Let’s get down to business\n\nHealth Economics And Informatics\nLeadership And Governance\nProcess mapping\nClinical Workflow And Process Improvement\nChange management\nCommunication skills\nBusiness Process\nEvaluation and impact assessment\nInterprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams\nCollaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies"
+    "section": "Business",
+    "text": "Business\n\nHealth Economics and Informatics\nLeadership and Governance\nProcess Mapping\nClinical Workflow and Process Improvement\nChange Management\nCommunication Skills\nBusiness Process\nEvaluation and Impact Assessment\nInterprofessional Collaboration (Role of Clinical Informaticians in Interdisciplinary Teams\nCollaboration with Clinicians, IT professionals, administrators, etc. Effective communication strategies)",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#building-digital-systems",
     "href": "chapters/index.html#building-digital-systems",
     "title": "Chapters",
-    "section": "Building digital systems",
-    "text": "Building digital systems\n\nMachine / human interface\nUsability And User Experience (UX)\nProgramming In Clinical Informatics\nTesting"
+    "section": "Building Digital Systems",
+    "text": "Building Digital Systems\n\nMachine / Human Interface\nUsability and User Experience (UX)\nProgramming in Clinical Informatics\nTesting",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#innovation-and-emerging-trends",
     "href": "chapters/index.html#innovation-and-emerging-trends",
     "title": "Chapters",
     "section": "Innovation and Emerging Trends",
-    "text": "Innovation and Emerging Trends\n\nDigital Health Innovation And Entrepreneurship\nDigital Twins And Simulation In Healthcare\nGlobal Health Informatics"
+    "text": "Innovation and Emerging Trends\n\nDigital Health Innovation and Entrepreneurship\nDigital Twins and Simulation in Healthcare\nGlobal Health Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#emerging-trends-and-future-directions",
     "href": "chapters/index.html#emerging-trends-and-future-directions",
     "title": "Chapters",
     "section": "Emerging Trends and Future Directions",
-    "text": "Emerging Trends and Future Directions\n\nArtificial intelligence and machine learning in clinical informatics\nBlockchain technology in healthcare\nGenomic informatics and precision medicine"
+    "text": "Emerging Trends and Future Directions\n\nArtificial Intelligence and Machine Learning in Clinical Informatics\nBlockchain Technology in Healthcare\nGenomic Informatics and Precision Medicine",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#research",
     "href": "chapters/index.html#research",
     "title": "Chapters",
     "section": "Research",
-    "text": "Research\n\nResearch And Development In Clinical Informatics\nClinical Trials And Research Informatics"
+    "text": "Research\n\nResearch and Development in Clinical Informatics\nClinical Trials and Research Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#further-reading",
     "href": "chapters/index.html#further-reading",
     "title": "Chapters",
     "section": "Further reading",
-    "text": "Further reading"
+    "text": "Further reading",
+    "crumbs": [
+      "Chapters"
+    ]
   },
   {
     "objectID": "chapters/index.html#glossary",
     "href": "chapters/index.html#glossary",
     "title": "Chapters",
     "section": "Glossary",
-    "text": "Glossary"
+    "text": "Glossary",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/decision-support/index.html#introduction",
+    "href": "chapters/decision-support/index.html#introduction",
+    "title": "Decision Support",
+    "section": "Introduction",
+    "text": "Introduction\nClinical Decision Support Systems (CDSS) are tools designed to support clinicians by providing information that may assist in decision-making. These systems can offer diagnostic suggestions, treatment guidelines, or alerts based on a patient’s data, with the goal of improving clinical outcomes and streamlining care.\nWhile CDSS have shown promise in reducing errors, improving adherence to clinical guidelines, and supporting personalised care, the overall impact can vary depending on the specific system and context in which it is used. Some challenges, such as alert fatigue and over-reliance on technology, need to be carefully managed to ensure effective implementation.\nAs CDSS becomes more integrated with electronic health records (EHRs), there is growing interest in refining these tools to maximise their benefits while addressing potential limitations. Ensuring that CDSS is used in a thoughtful and appropriate manner remains essential for optimising its role in modern healthcare.",
+    "crumbs": [
+      "Chapters",
+      "Decision Support"
+    ]
+  },
+  {
+    "objectID": "chapters/decision-support/index.html#chapters",
+    "href": "chapters/decision-support/index.html#chapters",
+    "title": "Decision Support",
+    "section": "Chapters",
+    "text": "Chapters\n\nMedical calculators\nAlert systems\nRules based\nModels based",
+    "crumbs": [
+      "Chapters",
+      "Decision Support"
+    ]
   },
   {
     "objectID": "index.html",

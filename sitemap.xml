@@ -2,14 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://essential-health-informatics.com/chapters/index.html</loc>
-    <lastmod>2024-09-22T15:54:43.124Z</lastmod>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/decision-support/medical-calculators.html</loc>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/decision-support/index.html</loc>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
   </url>
   <url>
     <loc>https://essential-health-informatics.com/index.html</loc>
-    <lastmod>2024-09-22T15:54:43.125Z</lastmod>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/decision-support/models-based.html</loc>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/decision-support/rules-based.html</loc>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://essential-health-informatics.com/chapters/decision-support/alert-systems.html</loc>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
   </url>
   <url>
     <loc>https://essential-health-informatics.com/chapters/timeline/uk.html</loc>
-    <lastmod>2024-09-22T15:54:43.125Z</lastmod>
+    <lastmod>2024-09-25T14:18:30.835Z</lastmod>
   </url>
 </urlset>

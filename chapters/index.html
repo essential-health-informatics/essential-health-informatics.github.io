@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -106,10 +106,90 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/index.html">Chapters</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../chapters/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Chapters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../chapters/decision-support/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Decision Support</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/decision-support/alert-systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Alert Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/decision-support/medical-calculators.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Medical Calculators</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/decision-support/models-based.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Models Based Clinical Decision Support System</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/decision-support/rules-based.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rules Based Clinical Decision Support System</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Timeline</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/timeline/uk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">England NHS Timeline</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -117,10 +197,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#what-is-digital" id="toc-what-is-digital" class="nav-link" data-scroll-target="#what-is-digital">What is digital?</a></li>
-  <li><a href="#health-and-disease" id="toc-health-and-disease" class="nav-link" data-scroll-target="#health-and-disease">Health and disease</a></li>
-  <li><a href="#digital-health-system-types" id="toc-digital-health-system-types" class="nav-link" data-scroll-target="#digital-health-system-types">Digital health system types</a></li>
-  <li><a href="#decision-support" id="toc-decision-support" class="nav-link" data-scroll-target="#decision-support">Decision Support</a></li>
+  <li><a href="#what-is-digital" id="toc-what-is-digital" class="nav-link" data-scroll-target="#what-is-digital">What is Digital?</a></li>
+  <li><a href="#health-and-disease" id="toc-health-and-disease" class="nav-link" data-scroll-target="#health-and-disease">Health and Disease</a></li>
+  <li><a href="#digital-health-system-types" id="toc-digital-health-system-types" class="nav-link" data-scroll-target="#digital-health-system-types">Digital Health System Types</a></li>
+  <li><a href="#clinical-decision-support-systems-cdss" id="toc-clinical-decision-support-systems-cdss" class="nav-link" data-scroll-target="#clinical-decision-support-systems-cdss">Clinical Decision Support Systems (CDSS)</a></li>
   <li><a href="#infrastructure" id="toc-infrastructure" class="nav-link" data-scroll-target="#infrastructure">Infrastructure</a></li>
   <li><a href="#interoperability" id="toc-interoperability" class="nav-link" data-scroll-target="#interoperability">Interoperability</a></li>
   <li><a href="#terminologies" id="toc-terminologies" class="nav-link" data-scroll-target="#terminologies">Terminologies</a></li>
@@ -130,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#audit" id="toc-audit" class="nav-link" data-scroll-target="#audit">Audit</a></li>
   <li><a href="#patient-focused-informatics" id="toc-patient-focused-informatics" class="nav-link" data-scroll-target="#patient-focused-informatics">Patient-Focused Informatics</a></li>
   <li><a href="#privacy-security-and-ethics" id="toc-privacy-security-and-ethics" class="nav-link" data-scroll-target="#privacy-security-and-ethics">Privacy, Security, and Ethics</a></li>
-  <li><a href="#lets-get-down-to-business" id="toc-lets-get-down-to-business" class="nav-link" data-scroll-target="#lets-get-down-to-business">Let’s get down to business</a></li>
-  <li><a href="#building-digital-systems" id="toc-building-digital-systems" class="nav-link" data-scroll-target="#building-digital-systems">Building digital systems</a></li>
+  <li><a href="#business" id="toc-business" class="nav-link" data-scroll-target="#business">Business</a></li>
+  <li><a href="#building-digital-systems" id="toc-building-digital-systems" class="nav-link" data-scroll-target="#building-digital-systems">Building Digital Systems</a></li>
   <li><a href="#innovation-and-emerging-trends" id="toc-innovation-and-emerging-trends" class="nav-link" data-scroll-target="#innovation-and-emerging-trends">Innovation and Emerging Trends</a></li>
   <li><a href="#emerging-trends-and-future-directions" id="toc-emerging-trends-and-future-directions" class="nav-link" data-scroll-target="#emerging-trends-and-future-directions">Emerging Trends and Future Directions</a></li>
   <li><a href="#research" id="toc-research" class="nav-link" data-scroll-target="#research">Research</a></li>
@@ -169,33 +249,32 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="what-is-digital" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-digital">What is digital?</h2>
+<h2 class="anchored" data-anchor-id="what-is-digital">What is Digital?</h2>
 <ul>
-<li>What is digital?</li>
+<li>What is Digital?</li>
 <li>Hardware</li>
 <li>Software</li>
 </ul>
 </section>
 <section id="health-and-disease" class="level2">
-<h2 class="anchored" data-anchor-id="health-and-disease">Health and disease</h2>
+<h2 class="anchored" data-anchor-id="health-and-disease">Health and Disease</h2>
 <ul>
-<li>Health and Disease</li>
-<li>Population health</li>
+<li>What is Health?</li>
+<li>What is Disease?</li>
+<li>Population Health</li>
 </ul>
 </section>
 <section id="digital-health-system-types" class="level2">
-<h2 class="anchored" data-anchor-id="digital-health-system-types">Digital health system types</h2>
+<h2 class="anchored" data-anchor-id="digital-health-system-types">Digital Health System Types</h2>
 <ul>
-<li>Types of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE</li>
-<li>Telemedicine And Telehealth (duplicate)</li>
+<li>Types of Digital healthcare systems (- EHR, PAS, PACS, patient portals, TIE).</li>
+<li>Telemedicine and Telehealth (duplicate)</li>
 </ul>
 </section>
-<section id="decision-support" class="level2">
-<h2 class="anchored" data-anchor-id="decision-support">Decision Support</h2>
+<section id="clinical-decision-support-systems-cdss" class="level2">
+<h2 class="anchored" data-anchor-id="clinical-decision-support-systems-cdss">Clinical Decision Support Systems (CDSS)</h2>
 <ul>
-<li>Clinical Decision Support Systems (CDSS)</li>
-<li>Cognitive Informatics And Human Factors</li>
-<li>Artificial Intelligence And Machine Learning In Healthcare</li>
+<li><a href="../chapters/decision-support/index.html">Overview</a></li>
 </ul>
 </section>
 <section id="infrastructure" class="level2">
@@ -225,14 +304,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="history">History</h2>
 <ul>
 <li><a href="../chapters/timeline/uk.html">NHS UK</a></li>
-<li>History Of Digital Health In Other Countries</li>
+<li>History of Digital Health in other Countries</li>
 </ul>
 </section>
 <section id="governance" class="level2">
 <h2 class="anchored" data-anchor-id="governance">Governance</h2>
 <ul>
-<li>Regulatory And Policy Issues</li>
-<li>Standards And Regulatory Compliance</li>
+<li>Regulatory and Policy Issues</li>
+<li>Standards and Regulatory Compliance</li>
 <li>Medicolegal Aspects</li>
 </ul>
 </section>
@@ -251,11 +330,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="patient-focused-informatics" class="level2">
 <h2 class="anchored" data-anchor-id="patient-focused-informatics">Patient-Focused Informatics</h2>
 <ul>
-<li>Patient Engagement And Empowerment</li>
-<li>Social Determinants Of Health (SDOH) And Informatics</li>
+<li>Patient Engagement and Empowerment</li>
+<li>Social Determinants of Health (SDOH) and Informatics</li>
 <li>Behavioural Health Informatics</li>
-<li>Digital Therapeutics And Remote Monitoring</li>
-<li>Telemedicine And Telehealth</li>
+<li>Digital Therapeutics and Remote Monitoring</li>
+<li>Telemedicine and Telehealth</li>
 <li>Mobile Health (mHealth)</li>
 </ul>
 </section>
@@ -267,51 +346,51 @@ ul.task-list li input[type="checkbox"] {
 <li>Diversity</li>
 </ul>
 </section>
-<section id="lets-get-down-to-business" class="level2">
-<h2 class="anchored" data-anchor-id="lets-get-down-to-business">Let’s get down to business</h2>
+<section id="business" class="level2">
+<h2 class="anchored" data-anchor-id="business">Business</h2>
 <ul>
-<li>Health Economics And Informatics</li>
-<li>Leadership And Governance</li>
-<li>Process mapping</li>
-<li>Clinical Workflow And Process Improvement</li>
-<li>Change management</li>
-<li>Communication skills</li>
+<li>Health Economics and Informatics</li>
+<li>Leadership and Governance</li>
+<li>Process Mapping</li>
+<li>Clinical Workflow and Process Improvement</li>
+<li>Change Management</li>
+<li>Communication Skills</li>
 <li>Business Process</li>
-<li>Evaluation and impact assessment</li>
-<li>Interprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams</li>
-<li>Collaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies</li>
+<li>Evaluation and Impact Assessment</li>
+<li>Interprofessional Collaboration (Role of Clinical Informaticians in Interdisciplinary Teams</li>
+<li>Collaboration with Clinicians, IT professionals, administrators, etc. Effective communication strategies)</li>
 </ul>
 </section>
 <section id="building-digital-systems" class="level2">
-<h2 class="anchored" data-anchor-id="building-digital-systems">Building digital systems</h2>
+<h2 class="anchored" data-anchor-id="building-digital-systems">Building Digital Systems</h2>
 <ul>
-<li>Machine / human interface</li>
-<li>Usability And User Experience (UX)</li>
-<li>Programming In Clinical Informatics</li>
+<li>Machine / Human Interface</li>
+<li>Usability and User Experience (UX)</li>
+<li>Programming in Clinical Informatics</li>
 <li>Testing</li>
 </ul>
 </section>
 <section id="innovation-and-emerging-trends" class="level2">
 <h2 class="anchored" data-anchor-id="innovation-and-emerging-trends">Innovation and Emerging Trends</h2>
 <ul>
-<li>Digital Health Innovation And Entrepreneurship</li>
-<li>Digital Twins And Simulation In Healthcare</li>
+<li>Digital Health Innovation and Entrepreneurship</li>
+<li>Digital Twins and Simulation in Healthcare</li>
 <li>Global Health Informatics</li>
 </ul>
 </section>
 <section id="emerging-trends-and-future-directions" class="level2">
 <h2 class="anchored" data-anchor-id="emerging-trends-and-future-directions">Emerging Trends and Future Directions</h2>
 <ul>
-<li>Artificial intelligence and machine learning in clinical informatics</li>
-<li>Blockchain technology in healthcare</li>
-<li>Genomic informatics and precision medicine</li>
+<li>Artificial Intelligence and Machine Learning in Clinical Informatics</li>
+<li>Blockchain Technology in Healthcare</li>
+<li>Genomic Informatics and Precision Medicine</li>
 </ul>
 </section>
 <section id="research" class="level2">
 <h2 class="anchored" data-anchor-id="research">Research</h2>
 <ul>
-<li>Research And Development In Clinical Informatics</li>
-<li>Clinical Trials And Research Informatics</li>
+<li>Research and Development in Clinical Informatics</li>
+<li>Clinical Trials and Research Informatics</li>
 </ul>
 </section>
 <section id="further-reading" class="level2">
