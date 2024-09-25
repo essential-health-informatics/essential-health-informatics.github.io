@@ -4,6 +4,8 @@ project:
   - "static/*"
   - "media/*"
 
+bibliography: references.bib
+
 website:
   title: "Essentials of Health Informatics"
   site-url: "https://essential-health-informatics.com/"
@@ -14,6 +16,8 @@ website:
       - href: /chapters/timeline/uk.html
         text: UK timeline
   favicon: media/eohi-logo.png
+  sidebar:
+    contents: chapters
 
 
 

@@ -1,5 +1,6 @@
 ---
 title: "England NHS Timeline"
+sidebar: false
 ---
 
 ```{=html}

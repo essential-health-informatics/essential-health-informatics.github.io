@@ -2,35 +2,35 @@
 title: "Chapters"
 ---
 
+
 ## Introduction
 
 * Introduction To Health Informatics
 
 
-## What is digital?
+## What is Digital?
 
-* What is digital?
+* What is Digital?
 * Hardware
 * Software
 
 
-## Health and disease
+## Health and Disease
 
-* Health and Disease
-* Population health
-
-
-## Digital health system types
-
-* Types of digital healthcare systems - EHR, PAS, PACS, patient portals, TIE
-* Telemedicine And Telehealth (duplicate)
+* What is Health?
+* What is Disease?
+* Population Health
 
 
-## Decision Support
+## Digital Health System Types
 
-* Clinical Decision Support Systems (CDSS)
-* Cognitive Informatics And Human Factors
-* Artificial Intelligence And Machine Learning In Healthcare
+* Types of Digital healthcare systems (- EHR, PAS, PACS, patient portals, TIE).
+* Telemedicine and Telehealth (duplicate)
+
+
+## Clinical Decision Support Systems (CDSS)
+
+* [Overview](decision-support/index.qmd)
 
 
 ## Infrastructure
@@ -56,13 +56,13 @@ title: "Chapters"
 ## History
 
 * [NHS UK](./timeline/uk.qmd)
-* History Of Digital Health In Other Countries
+* History of Digital Health in other Countries
 
 
 ## Governance
 
-* Regulatory And Policy Issues
-* Standards And Regulatory Compliance
+* Regulatory and Policy Issues
+* Standards and Regulatory Compliance
 * Medicolegal Aspects
 
 
@@ -78,11 +78,11 @@ title: "Chapters"
 
 ## Patient-Focused Informatics
 
-* Patient Engagement And Empowerment
-* Social Determinants Of Health (SDOH) And Informatics
+* Patient Engagement and Empowerment
+* Social Determinants of Health (SDOH) and Informatics
 * Behavioural Health Informatics
-* Digital Therapeutics And Remote Monitoring
-* Telemedicine And Telehealth
+* Digital Therapeutics and Remote Monitoring
+* Telemedicine and Telehealth
 * Mobile Health (mHealth)
 
 
@@ -93,46 +93,46 @@ title: "Chapters"
 * Diversity
 
 
-## Let's get down to business
+## Business
 
-* Health Economics And Informatics
-* Leadership And Governance
-* Process mapping
-* Clinical Workflow And Process Improvement
-* Change management
-* Communication skills
+* Health Economics and Informatics
+* Leadership and Governance
+* Process Mapping
+* Clinical Workflow and Process Improvement
+* Change Management
+* Communication Skills
 * Business Process
-* Evaluation and impact assessment
-* Interprofessional Collaboration - Role of clinical informaticians in interdisciplinary teams
-* Collaboration with clinicians, IT professionals, administrators, etc. Effective communication strategies
+* Evaluation and Impact Assessment
+* Interprofessional Collaboration (Role of Clinical Informaticians in Interdisciplinary Teams
+* Collaboration with Clinicians, IT professionals, administrators, etc. Effective communication strategies)
 
 
-## Building digital systems
+## Building Digital Systems
 
-* Machine / human interface
-* Usability And User Experience (UX)
-* Programming In Clinical Informatics
+* Machine / Human Interface
+* Usability and User Experience (UX)
+* Programming in Clinical Informatics
 * Testing
 
 
 ## Innovation and Emerging Trends
 
-* Digital Health Innovation And Entrepreneurship
-* Digital Twins And Simulation In Healthcare
+* Digital Health Innovation and Entrepreneurship
+* Digital Twins and Simulation in Healthcare
 * Global Health Informatics
 
 
 ## Emerging Trends and Future Directions
 
-* Artificial intelligence and machine learning in clinical informatics
-* Blockchain technology in healthcare
-* Genomic informatics and precision medicine
+* Artificial Intelligence and Machine Learning in Clinical Informatics
+* Blockchain Technology in Healthcare
+* Genomic Informatics and Precision Medicine
 
 
 ## Research 
 
-* Research And Development In Clinical Informatics
-* Clinical Trials And Research Informatics
+* Research and Development in Clinical Informatics
+* Clinical Trials and Research Informatics
 
 
 ## Further reading

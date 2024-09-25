@@ -1,0 +1,6 @@
+---
+title: "Rules Based Clinical Decision Support System"
+image: /media/ifttt.png
+---
+
+![](/media/ifttt.png){alt="Text reading if this than that"}
