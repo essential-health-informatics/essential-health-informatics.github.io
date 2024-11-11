@@ -1,12 +1,20 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Essentials of Health Informatics",
+    "section": "",
+    "text": "Digital technology has become an integral part of our daily lives, driving remarkable progress across countless fields. However, while it holds immense potential, its use must be approached with care, especially in healthcare, where the impact can be profound.\nIn the realm of health and care, the stakes are higher than ever. Health Informatics, also known as Clinical Informatics or Medical Informatics, explores how digital systems can transform health management for the better. This guide, The Essentials of Health Informatics, is a comprehensive, open-source resource designed to support everyone—from newcomers to seasoned professionals. Whether you’re just stepping into the field or seeking a go-to reference as an advanced practitioner, this guide covers the full spectrum of health informatics and will be continuously updated to reflect the rapid changes in this evolving discipline.\nComplementing the guide, we offer a series of webinars that delve into core topics in Health Informatics. These will soon be available for viewing.\nReady to dive into the Essentials of Health Informatics? Access the guide here."
+  },
+  {
     "objectID": "chapters/index.html",
     "href": "chapters/index.html",
     "title": "Chapters",
     "section": "",
     "text": "Introduction To Health Informatics",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -16,7 +24,8 @@
     "section": "",
     "text": "Introduction To Health Informatics",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -24,9 +33,10 @@
     "href": "chapters/index.html#what-is-digital",
     "title": "Chapters",
     "section": "What is Digital?",
-    "text": "What is Digital?\n\nWhat is Digital?\nHardware\nSoftware",
+    "text": "What is Digital?\n\nOverview\nDigital\nHardware\nSoftware",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -36,7 +46,8 @@
     "section": "Health and Disease",
     "text": "Health and Disease\n\nWhat is Health?\nWhat is Disease?\nPopulation Health",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -46,7 +57,8 @@
     "section": "Digital Health System Types",
     "text": "Digital Health System Types\n\nTypes of Digital healthcare systems (- EHR, PAS, PACS, patient portals, TIE).\nTelemedicine and Telehealth (duplicate)",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -54,9 +66,10 @@
     "href": "chapters/index.html#clinical-decision-support-systems-cdss",
     "title": "Chapters",
     "section": "Clinical Decision Support Systems (CDSS)",
-    "text": "Clinical Decision Support Systems (CDSS)\n\nOverview",
+    "text": "Clinical Decision Support Systems (CDSS)\n\nOverview\nMedical calculators\nAlert systems\nRules based\nModels based",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -66,7 +79,8 @@
     "section": "Infrastructure",
     "text": "Infrastructure\n\nHealthcare IT Infrastructure\nHealth Information Exchange (HIE)",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -76,7 +90,8 @@
     "section": "Interoperability",
     "text": "Interoperability\n\nInteroperability\nData standards\nInteroperability",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -86,7 +101,8 @@
     "section": "Terminologies",
     "text": "Terminologies\n\nSNOMED-CT\nRead Codes\nICD",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -96,7 +112,8 @@
     "section": "History",
     "text": "History\n\nNHS UK\nHistory of Digital Health in other Countries",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -106,17 +123,19 @@
     "section": "Governance",
     "text": "Governance\n\nRegulatory and Policy Issues\nStandards and Regulatory Compliance\nMedicolegal Aspects",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
-    "objectID": "chapters/index.html#safety",
-    "href": "chapters/index.html#safety",
+    "objectID": "chapters/index.html#clinical-safety",
+    "href": "chapters/index.html#clinical-safety",
     "title": "Chapters",
-    "section": "Safety",
-    "text": "Safety\n\nClinical safety",
+    "section": "Clinical safety",
+    "text": "Clinical safety\n\nClinical safety",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -126,7 +145,8 @@
     "section": "Audit",
     "text": "Audit\n\nQuality Improvement",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -136,7 +156,8 @@
     "section": "Patient-Focused Informatics",
     "text": "Patient-Focused Informatics\n\nPatient Engagement and Empowerment\nSocial Determinants of Health (SDOH) and Informatics\nBehavioural Health Informatics\nDigital Therapeutics and Remote Monitoring\nTelemedicine and Telehealth\nMobile Health (mHealth)",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -146,7 +167,8 @@
     "section": "Privacy, Security, and Ethics",
     "text": "Privacy, Security, and Ethics\n\nPrivacy and Security\nEthics\nDiversity",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -156,7 +178,8 @@
     "section": "Business",
     "text": "Business\n\nHealth Economics and Informatics\nLeadership and Governance\nProcess Mapping\nClinical Workflow and Process Improvement\nChange Management\nCommunication Skills\nBusiness Process\nEvaluation and Impact Assessment\nInterprofessional Collaboration (Role of Clinical Informaticians in Interdisciplinary Teams\nCollaboration with Clinicians, IT professionals, administrators, etc. Effective communication strategies)",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -166,7 +189,8 @@
     "section": "Building Digital Systems",
     "text": "Building Digital Systems\n\nMachine / Human Interface\nUsability and User Experience (UX)\nProgramming in Clinical Informatics\nTesting",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -176,7 +200,8 @@
     "section": "Innovation and Emerging Trends",
     "text": "Innovation and Emerging Trends\n\nDigital Health Innovation and Entrepreneurship\nDigital Twins and Simulation in Healthcare\nGlobal Health Informatics",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -186,7 +211,8 @@
     "section": "Emerging Trends and Future Directions",
     "text": "Emerging Trends and Future Directions\n\nArtificial Intelligence and Machine Learning in Clinical Informatics\nBlockchain Technology in Healthcare\nGenomic Informatics and Precision Medicine",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -196,7 +222,8 @@
     "section": "Research",
     "text": "Research\n\nResearch and Development in Clinical Informatics\nClinical Trials and Research Informatics",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -206,7 +233,8 @@
     "section": "Further reading",
     "text": "Further reading",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
@@ -216,36 +244,248 @@
     "section": "Glossary",
     "text": "Glossary",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Contents"
     ]
   },
   {
-    "objectID": "chapters/decision-support/index.html#introduction",
-    "href": "chapters/decision-support/index.html#introduction",
-    "title": "Decision Support",
-    "section": "Introduction",
-    "text": "Introduction\nClinical Decision Support Systems (CDSS) are tools designed to support clinicians by providing information that may assist in decision-making. These systems can offer diagnostic suggestions, treatment guidelines, or alerts based on a patient’s data, with the goal of improving clinical outcomes and streamlining care.\nWhile CDSS have shown promise in reducing errors, improving adherence to clinical guidelines, and supporting personalised care, the overall impact can vary depending on the specific system and context in which it is used. Some challenges, such as alert fatigue and over-reliance on technology, need to be carefully managed to ensure effective implementation.\nAs CDSS becomes more integrated with electronic health records (EHRs), there is growing interest in refining these tools to maximise their benefits while addressing potential limitations. Ensuring that CDSS is used in a thoughtful and appropriate manner remains essential for optimising its role in modern healthcare.",
+    "objectID": "chapters/timeline/uk/test.html",
+    "href": "chapters/timeline/uk/test.html",
+    "title": "Essentials of Health Informatics",
+    "section": "",
+    "text": "Hello World"
+  },
+  {
+    "objectID": "chapters/timeline/uk/first-use-of-hit.html",
+    "href": "chapters/timeline/uk/first-use-of-hit.html",
+    "title": "First use of Health Informatics Technology",
+    "section": "",
+    "text": "Dr Artrhur Rappoport. 1952 Porth A.J."
+  },
+  {
+    "objectID": "chapters/what-is-digital/index.html#overview",
+    "href": "chapters/what-is-digital/index.html#overview",
+    "title": "What is digital?",
+    "section": "Overview",
+    "text": "Overview\nDigital technology refers to the use of electronic tools, systems, devices, and resources that generate, store, or process data. In its simplest form, it involves encoding information as binary—combinations of zeros and ones—which underpin everything from the internet to smartphones, complex health systems, and artificial intelligence.\nIn the context of health informatics, digital tools are indispensable. They enable the management and analysis of vast amounts of health data, streamline communication between healthcare professionals, and improve patient care through technologies like electronic health records (EHRs), telemedicine, and clinical decision support systems.\nUnderstanding the fundamentals of digital systems is crucial to navigating the landscape of health informatics. This section will explore the core components of digital technology, from the basics of hardware and software to the specific digital concepts that power health informatics.",
     "crumbs": [
       "Chapters",
-      "Decision Support"
+      "What is Digital?"
     ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/index.html#chapters",
+    "href": "chapters/what-is-digital/index.html#chapters",
+    "title": "What is digital?",
+    "section": "Chapters",
+    "text": "Chapters\n\nDigital\nHardware\nSoftware\nKey Digital Concepts in Health Informatics",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/software.html",
+    "href": "chapters/what-is-digital/software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Software refers to the programs, applications, and instructions that run on a computer or digital system, telling the hardware what tasks to perform. While hardware is the physical component of a system, software is the non-physical element that drives functionality, enabling users to interact with the system, run applications, and process data. Without software, hardware would be a collection of inert parts, incapable of performing meaningful tasks. Software can range from simple applications, like word processors and calculators, to complex systems, such as operating systems and databases that handle large-scale processing and data management.\nSoftware is what gives a system its purpose. Whether it’s a laptop, smartphone, or any digital device, software controls the way users interact with it. From sending an email to streaming a video, it’s the software that manages how these actions are carried out behind the scenes, providing a seamless user experience.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/software.html#types-of-software",
+    "href": "chapters/what-is-digital/software.html#types-of-software",
+    "title": "Software",
+    "section": "Types of Software",
+    "text": "Types of Software\nSoftware is generally divided into three broad categories: system software, application software, and utility software. Each plays a unique role in enabling a computer system to function effectively.\n\nSystem Software\nSystem software manages the basic functions of a computer or device and allows the hardware to communicate with other software. It acts as the interface between the hardware and the user, ensuring that resources like memory and processing power are allocated efficiently. The most common type of system software is the Operating System (OS), which serves as the foundation for all other software on a device. The OS handles fundamental tasks such as file management, memory management, and controlling peripheral devices like printers or external drives.\nExamples: Windows, macOS, Linux, Android.\nFunctionality: The OS provides a platform for application software to run. It manages the computer’s resources, including memory, processor time, and storage space, and ensures that these resources are used effectively. Without system software, users wouldn’t be able to install or use application software or interact with the hardware in a meaningful way. The OS also acts as a bridge between the user and the machine, translating user commands into actions that the hardware can execute.\n\n\nApplication Software\nApplication software is designed to perform specific tasks for the user, such as creating documents, browsing the internet, or editing images. Applications sit on top of the system software and depend on it to function, but their focus is on helping the user accomplish a particular goal. Application software is varied and covers everything from basic productivity tools to advanced design and analysis software.\nExamples: Microsoft Word, Google Chrome, Adobe Photoshop.\nFunctionality: Applications allow users to complete specific tasks. These tasks can be as simple as typing a document or as complex as editing a high-definition video. Application software is what most people interact with directly on a daily basis, as it provides the tools needed for activities such as communication, entertainment, and productivity. Applications are often designed with user-friendly interfaces, making it easy for people to use them without needing to understand the technical details of how they work.\n\n\nUtility Software\nUtility software is designed to help maintain and optimise a system’s performance. While system software provides the basic environment for running applications, utility software focuses on enhancing that environment by providing specialised tools for managing, securing, and optimising the system. It operates in the background, ensuring that the system runs smoothly by performing tasks like cleaning up disk space, organising files, or protecting the system from security threats.\nExamples: Antivirus programs, file compression tools, disk clean-up utilities.\nFunctionality: Utility software focuses on improving system performance and keeping it running efficiently. These tools often come bundled with the operating system, but many are also available as standalone applications. Utility software can scan for malware, defragment a hard drive, back up important files, or recover deleted data. It plays a crucial role in extending the life and efficiency of a digital system by ensuring that everything is running as smoothly and securely as possible.\n\n\nOthers\nIn addition to system, application, and utility software, other specialised types include embedded software for specific devices like medical equipment, and real-time software for processing data instantly in time-sensitive environments. Firmware manages low-level hardware functions, while virtualization and containerization software enable multiple systems or applications to run on a single machine. Enterprise software supports large-scale business operations, and cloud-based applications provide scalable services accessed remotely. Mobile applications are designed for use on smartphones and tablets. These software types serve unique roles, enhancing the functionality and efficiency of digital systems.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/software.html#conclusion",
+    "href": "chapters/what-is-digital/software.html#conclusion",
+    "title": "Software",
+    "section": "Conclusion",
+    "text": "Conclusion\nSoftware is an essential part of any digital system, acting as the interface between hardware and users, and enabling the performance of a wide range of tasks, from basic user interactions to large-scale data processing. It comes in various forms—system software, application software, and utilities—all working together to create functional and efficient digital systems. Each type of software plays a unique role in ensuring that a system operates effectively and reliably.\nAs technology evolves, software continues to adapt and expand, shaping how we work, learn, and connect in nearly every aspect of life. From simplifying daily tasks to handling complex processes, software has become the driving force behind modern digital experiences, making it indispensable to both individuals and organisations.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "authors-guide.html",
+    "href": "authors-guide.html",
+    "title": "Author’s guide",
+    "section": "",
+    "text": "Our aim with this guide is to ensure that the concepts of health informatics are accessible to a broad audience. To aid you in setting the tone of your writings, we ask you to aim the level of your writing at those who have recently completed A-level education or have an equivalent understanding. This means writing in a way that is clear, straightforward, and avoids overly technical jargon. We want to present the material in a way that someone of average intelligence, without a specialised background in technology or healthcare, can understand and engage with the subject.\nWhen writing or reviewing sections of the guide, please keep the following in mind:\n\nSimplify complex ideas: Break down technical terms and concepts into easy-to-understand explanations without oversimplifying or losing key details.\nUse familiar language: Avoid highly technical or academic language where possible, and explain any necessary terms clearly.\nBalance depth and clarity: While we want the guide to be informative, it should not overwhelm the reader with excessive details or complex language. Focus on explaining the core concepts and their relevance.\nRelatable examples: Use relatable examples when possible to help illustrate points. Drawing on everyday technology or scenarios that a general audience would recognise can help demystify abstract ideas.\nExplain abbreviations: All abbreviations or acronyms should be fully explained the first time they are used in each subchapter. This ensures clarity for readers who may not be familiar with specialised terms.\nUse illustration: Where appropriate, use illustrations to help demonstrate your key points. Consider 0-5 illustrations per subchapter, although more may be needed for more complicated or visual topics.\nReference key points: Wherever possible, provide references to support key points, especially for facts, figures, or widely accepted practices. This adds credibility and allows readers to explore topics further if they wish.\nNo plagiarism: Do not copy and paste text from other people’s work unless you specifically state you are quoting this work. In all other cases, write out the concept you are explaining in your own words.\n\nBy adopting this approach, we aim to make the guide not only a useful resource for beginners in health informatics but also an engaging and approachable one for those coming from various educational backgrounds.",
+    "crumbs": [
+      "Chapters",
+      "Author's guide"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html",
+    "href": "chapters/what-is-digital/digital.html",
+    "title": "Digital",
+    "section": "",
+    "text": "Digital systems are all around us, from smartphones to computers. The term “digital” refers to the use of discrete values, typically the numbers 0 and 1, to represent information. Unlike analogue systems, which use continuous signals, digital technology encodes data into these two discrete values, 0 and 1, making it easier to store, process, and send information.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#analogue-vs.-digital-what-are-continuous-signals",
+    "href": "chapters/what-is-digital/digital.html#analogue-vs.-digital-what-are-continuous-signals",
+    "title": "Digital",
+    "section": "Analogue vs. Digital: What are Continuous Signals?",
+    "text": "Analogue vs. Digital: What are Continuous Signals?\n\n\n\n\n\nIn analogue systems, information is represented using continuous signals. This means that data is stored or transmitted as a smooth, uninterrupted wave, where any value between a minimum and maximum can be represented. For example, an analogue signal can take any value between 0 and 1, including numbers like 0.1, 0.55, or 0.9999. This smooth, continuous variation is how real-world phenomena, like sound, light and data obtained from human subjects, are naturally represented.\nHowever, while analogue systems capture more detail due to this continuity, they are also more prone to distortion or noise. Even small amounts of interference can alter an analogue signal, reducing its reliability.\nIn contrast, digital systems break information down into discrete steps. Rather than storing or transmitting a continuous wave, digital systems sample the data at regular intervals and convert these samples into binary numbers (0s and 1s). For example, instead of recording every point on a smooth wave of sound, a digital system takes many small snapshots of the wave. These snapshots are stored as discrete whole numbers, which makes digital systems more resistant to noise and interference.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#examples-of-digital-technology",
+    "href": "chapters/what-is-digital/digital.html#examples-of-digital-technology",
+    "title": "Digital",
+    "section": "Examples of Digital Technology",
+    "text": "Examples of Digital Technology\n\nComputers: Digital technology forms the basis of modern computers, allowing them to process huge amounts of data quickly and accurately.\nTelecommunications: Digital systems have changed the way we communicate, from mobile phones to the internet, allowing us to connect instantly across the globe.\nMultimedia: Whether it’s images, music, or video, digital technology makes it easy to create, edit, and share media with others.\nAutomation: Digital systems control everything from home appliances to industrial machines, making our lives more efficient and automated.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#encoding-information",
+    "href": "chapters/what-is-digital/digital.html#encoding-information",
+    "title": "Digital",
+    "section": "Encoding Information",
+    "text": "Encoding Information\n\n\n\n\n\nTo turn human-readable information, like letters and pictures, into binary, encoding systems are used. An encoding system is a set of rules or formats that convert data from one form into another—typically from something humans can easily understand, like text or images, into binary, which computers can process.\nFor example, in text encoding systems like ASCII (American Standard Code for Information Interchange), each letter, number, or symbol is assigned a unique binary number.\nLet’s take the letter “A” as an example. In the ASCII encoding system, the letter “A” is represented by the decimal number 65. Decimal is the numbering system we use every day, based on ten digits (0-9), while binary is based on only two digits (0 and 1). When you convert this decimal number into binary, it becomes 01000001. So, when you press the letter “A” on your keyboard, the encoding system translates it into the binary sequence 01000001 that the computer can process. This binary sequence is then stored or transmitted as a series of electrical signals that represent 0s and 1s.\nSimilarly, every letter and symbol has its own unique binary code. For example:\n\nThe lowercase “a” is represented by 97 in ASCII, which translates to 01100001 in binary.\nThe space character is represented by 32 in ASCII, which is 00100000 in binary.\n\nThis process allows computers to handle and store text as a series of 0s and 1s, making it possible for digital systems to manipulate and display information.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#encoding-images-and-sound",
+    "href": "chapters/what-is-digital/digital.html#encoding-images-and-sound",
+    "title": "Digital",
+    "section": "Encoding Images and Sound",
+    "text": "Encoding Images and Sound\n\n\n\n\n\nSimilarly, for images or audio, there are specific encoding systems like JPEG for pictures or MP3 for sound files. These systems break down visual or auditory data into binary form, allowing computers to store, manipulate, and share them efficiently. Without encoding, digital devices wouldn’t be able to process the information that we interact with daily.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#how-digital-technology-evolved",
+    "href": "chapters/what-is-digital/digital.html#how-digital-technology-evolved",
+    "title": "Digital",
+    "section": "How Digital Technology Evolved",
+    "text": "How Digital Technology Evolved\nDigital technology has come a long way, starting with simple machines and growing into the powerful systems we use today. Some key developments include:\n\nThe First Digital Computers: Early computers used binary logic to perform basic calculations, setting the stage for modern computing.\nMicroprocessors: The invention of the microprocessor made it possible to shrink computers, leading to personal computers and portable devices like smartphones.\nThe Internet: The development of digital communication networks, such as the internet, connected the world and made it easier to share information.\nData Storage: Digital storage systems have improved, making it possible to store massive amounts of data, which is essential for applications like cloud computing and big data.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#the-impact-of-digital-technology-on-society",
+    "href": "chapters/what-is-digital/digital.html#the-impact-of-digital-technology-on-society",
+    "title": "Digital",
+    "section": "The Impact of Digital Technology on Society",
+    "text": "The Impact of Digital Technology on Society\nDigital technology has transformed many areas of life, making processes faster, more reliable, and more accessible. Some key impacts include:\n\nProcessing Information: Digital systems can process data quickly and accurately, helping us solve problems and analyse information in fields like science and business.\nConnecting People: Digital communication tools, such as the internet and mobile phones, have brought people together, allowing us to share ideas and information instantly.\nStoring Data: The ability to store large amounts of data digitally has led to innovations like big data and cloud computing, which are essential for modern industries.\nAutomation: Digital systems have automated many tasks, making everything from manufacturing to household chores more efficient and reliable.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/digital.html#conclusion",
+    "href": "chapters/what-is-digital/digital.html#conclusion",
+    "title": "Digital",
+    "section": "Conclusion",
+    "text": "Conclusion\nDigital technology, powered by binary logic, forms the foundation of many systems we rely on today. It enables the processing, storage, and sharing of vast amounts of data, supports global communication, and automates complex tasks. In healthcare, digital systems are transforming patient records, diagnostics, and care delivery. However, one challenge remains: much of the real-world information, like medical images or heartbeats, starts as analogue data. Converting this data into digital form can lead to a loss of detail or introduce errors, highlighting the need for precise and reliable analogue-to-digital conversion. As digital systems continue to evolve, understanding these foundational concepts is crucial—not just for navigating the modern world, but for ensuring accuracy and trust in fields like healthcare, where the stakes are highest.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Digital"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/hardware.html",
+    "href": "chapters/what-is-digital/hardware.html",
+    "title": "Hardware",
+    "section": "",
+    "text": "Hardware refers to the physical components of a computer or digital system. These components work together to perform tasks, process data, and run software applications. In contrast to software, which consists of the programs and instructions that tell a computer what to do, hardware provides the necessary infrastructure to execute these tasks.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/hardware.html#key-hardware-components",
+    "href": "chapters/what-is-digital/hardware.html#key-hardware-components",
+    "title": "Hardware",
+    "section": "Key Hardware Components",
+    "text": "Key Hardware Components\n\nCentral Processing Unit (CPU)\nThe CPU is often referred to as the brain of the computer. It performs all the calculations and tasks required to run software and process data. The CPU is responsible for interpreting instructions from programs and controlling all other components of the system.\n\n\nMemory (RAM)\nRandom Access Memory (RAM) is the temporary storage used by a computer while it is running. RAM stores data and instructions that the CPU needs to access quickly. The more RAM a system has, the more data it can handle at once, making it essential for multitasking and running complex applications.\n\n\nStorage Devices\nHard Disk Drive (HDD) and Solid State Drive (SSD) are the primary storage devices in most digital systems. These components store data long-term, even when the system is powered off. While HDDs use spinning disks to read and write data, SSDs use flash memory, which is faster and more reliable.\n\n\nMotherboard\nThe motherboard is the main circuit board that connects all the components of a system. It allows the CPU, memory, storage, and peripheral devices to communicate with each other. The motherboard also houses essential chips that control the system’s basic functions.\n\n\nInput Devices\nThese are devices that allow users to interact with the system. Examples include keyboards, mice, scanners, and microphones. In healthcare, specialised input devices, such as barcode scanners or digital stethoscopes, are often used to input patient data.\n\n\nOutput Devices\nOutput devices allow the system to communicate with the user by displaying or transmitting information. Examples include monitors, printers, and speakers. In healthcare, output devices can include displays for medical imaging or monitors that show patient data.\n\n\nGraphics Processing Unit (GPU)\nThe GPU is responsible for rendering images, videos, and animations. While traditionally used in gaming and multimedia, GPUs are increasingly important in healthcare applications, such as medical imaging and data visualisation, where high-quality rendering is required.\n\n\nNetwork Interface Card (NIC)\nThe NIC enables a computer to connect to a network, whether it’s a local network or the internet. In healthcare settings, NICs are essential for communication between systems, such as electronic health record systems and diagnostic tools.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/hardware.html#conclusion",
+    "href": "chapters/what-is-digital/hardware.html#conclusion",
+    "title": "Hardware",
+    "section": "Conclusion",
+    "text": "Conclusion\nHardware forms the backbone of any digital system, providing the infrastructure for software to run and data to be processed. In healthcare, specialised hardware plays a critical role in ensuring the efficient, accurate, and safe management of patient information. As the demands of health informatics grow, the importance of selecting the right hardware becomes increasingly clear—whether it’s for storing large datasets, processing complex algorithms, or enabling telemedicine and remote monitoring.",
+    "crumbs": [
+      "Chapters",
+      "What is Digital?",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "chapters/decision-support/index.html#overview",
+    "href": "chapters/decision-support/index.html#overview",
+    "title": "Decision Support",
+    "section": "Overview",
+    "text": "Overview\nClinical Decision Support Systems (CDSS) are digital tools designed to support clinicians by providing information that may assist in decision-making. These systems can offer diagnostic suggestions, treatment guidelines, or alerts based on a patient’s data, with the goal of improving clinical outcomes and streamlining care.\nWhile CDSSs have shown promise in reducing errors, improving adherence to clinical guidelines, and supporting personalised care, the overall impact can vary depending on the specific system and context in which it is used. Some challenges, such as alert fatigue and over-reliance on technology, need to be carefully managed to ensure effective implementation.\nAs CDSS becomes more integrated with electronic patient records (EPRs), there is growing interest in refining these tools to maximise their benefits while addressing potential limitations. Ensuring that CDSS is used in a thoughtful and appropriate manner remains essential for optimising its role in modern healthcare."
   },
   {
     "objectID": "chapters/decision-support/index.html#chapters",
     "href": "chapters/decision-support/index.html#chapters",
     "title": "Decision Support",
     "section": "Chapters",
-    "text": "Chapters\n\nMedical calculators\nAlert systems\nRules based\nModels based",
-    "crumbs": [
-      "Chapters",
-      "Decision Support"
-    ]
+    "text": "Chapters\n\nMedical calculators\nAlert systems\nRules based\nModels based"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Essentials of Health Informatics",
+    "objectID": "chapters/introduction/index.html",
+    "href": "chapters/introduction/index.html",
+    "title": "Introduction to Health Informatics",
     "section": "",
-    "text": "Digital technology has become an integral part of our daily lives, driving remarkable progress across countless fields. However, while it holds immense potential, its use must be approached with care, especially in healthcare, where the impact can be profound.\nIn the realm of health and care, the stakes are higher than ever. Health Informatics, also known as Clinical Informatics or Medical Informatics, explores how digital systems can transform health management for the better. This guide, The Essentials of Health Informatics, is a comprehensive, open-source resource designed to support everyone—from newcomers to seasoned professionals. Whether you’re just stepping into the field or seeking a go-to reference as an advanced practitioner, this guide covers the full spectrum of health informatics and will be continuously updated to reflect the rapid changes in this evolving discipline.\nComplementing the guide, we offer a series of webinars that delve into core topics in Health Informatics. These will soon be available for viewing.\nReady to dive into the Essentials of Health Informatics? Access the guide here."
+    "text": "Many thanks for joining us on this incredible journey of health, disease, human emotions, human reasoning and digital health. Health Informatics is a very broad and very complicated discipline, so much so than the underlying digital architecture of the systems it involves.",
+    "crumbs": [
+      "Chapters",
+      "Introduction"
+    ]
   }
 ]
