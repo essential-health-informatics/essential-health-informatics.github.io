@@ -6,6 +6,6 @@ sidebar: false
 ```{=html}
 <div id="timeline" class="timeline"></div>
 
-<script type="module" src="/static/timeline_uk.js"></script>
+<script type="module" src="/static/timeline-uk.js"></script>
 ```
 

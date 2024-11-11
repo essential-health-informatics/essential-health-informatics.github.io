@@ -1,0 +1,17 @@
+  
+website:
+  sidebar:
+    contents:
+      - text: "Contents"
+        href: chapters/index.qmd
+      - text: "Introduction"
+        href: chapters/introduction/index.qmd
+      - section: "What is Digital?"
+        href: chapters/what-is-digital/index.qmd
+        contents:
+          - chapters/what-is-digital/digital.qmd
+          - chapters/what-is-digital/hardware.qmd
+          - chapters/what-is-digital/software.qmd
+      - text: "Timeline - UK"
+        href: chapters/timeline/uk/index.qmd
+      - authors-guide.qmd

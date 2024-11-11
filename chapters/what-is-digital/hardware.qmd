@@ -1,0 +1,53 @@
+---
+title: "Hardware"
+image: /media/computer-external-ports.jpg
+---
+
+![](/media/computer-external-ports.jpg){alt="External ports, as seen at the back of computer"}
+
+Hardware refers to the physical components of a computer or digital system. These components work together to perform tasks, process data, and run software applications. In contrast to software, which consists of the programs and instructions that tell a computer what to do, hardware provides the necessary infrastructure to execute these tasks.
+
+
+## Key Hardware Components
+
+### Central Processing Unit (CPU)
+
+The CPU is often referred to as the brain of the computer. It performs all the calculations and tasks required to run software and process data. The CPU is responsible for interpreting instructions from programs and controlling all other components of the system.
+
+### Memory (RAM)
+
+Random Access Memory (RAM) is the temporary storage used by a computer while it is running. RAM stores data and instructions that the CPU needs to access quickly. The more RAM a system has, the more data it can handle at once, making it essential for multitasking and running complex applications.
+
+
+### Storage Devices
+
+Hard Disk Drive (HDD) and Solid State Drive (SSD) are the primary storage devices in most digital systems. These components store data long-term, even when the system is powered off. While HDDs use spinning disks to read and write data, SSDs use flash memory, which is faster and more reliable.
+
+### Motherboard
+
+The motherboard is the main circuit board that connects all the components of a system. It allows the CPU, memory, storage, and peripheral devices to communicate with each other. The motherboard also houses essential chips that control the system’s basic functions.
+
+
+### Input Devices
+
+These are devices that allow users to interact with the system. Examples include keyboards, mice, scanners, and microphones. In healthcare, specialised input devices, such as barcode scanners or digital stethoscopes, are often used to input patient data.
+
+
+### Output Devices
+
+Output devices allow the system to communicate with the user by displaying or transmitting information. Examples include monitors, printers, and speakers. In healthcare, output devices can include displays for medical imaging or monitors that show patient data.
+
+
+### Graphics Processing Unit (GPU)
+
+The GPU is responsible for rendering images, videos, and animations. While traditionally used in gaming and multimedia, GPUs are increasingly important in healthcare applications, such as medical imaging and data visualisation, where high-quality rendering is required.
+
+
+### Network Interface Card (NIC)
+
+The NIC enables a computer to connect to a network, whether it's a local network or the internet. In healthcare settings, NICs are essential for communication between systems, such as electronic health record systems and diagnostic tools.
+
+## Conclusion
+
+Hardware forms the backbone of any digital system, providing the infrastructure for software to run and data to be processed. In healthcare, specialised hardware plays a critical role in ensuring the efficient, accurate, and safe management of patient information. As the demands of health informatics grow, the importance of selecting the right hardware becomes increasingly clear—whether it’s for storing large datasets, processing complex algorithms, or enabling telemedicine and remote monitoring.
+

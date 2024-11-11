@@ -5,13 +5,14 @@ image: /media/man-at-fork-in-road.jpg
 
 ![](/media/man-at-fork-in-road.jpg){alt="A man standing at a fork in the the road in a forest"}
 
-## Introduction
+## Overview
 
-Clinical Decision Support Systems (CDSS) are tools designed to support clinicians by providing information that may assist in decision-making. These systems can offer diagnostic suggestions, treatment guidelines, or alerts based on a patient’s data, with the goal of improving clinical outcomes and streamlining care.
+Clinical Decision Support Systems (CDSS) are digital tools designed to support clinicians by providing information that may assist in decision-making. These systems can offer diagnostic suggestions, treatment guidelines, or alerts based on a patient’s data, with the goal of improving clinical outcomes and streamlining care.
 
-While CDSS have shown promise in reducing errors, improving adherence to clinical guidelines, and supporting personalised care, the overall impact can vary depending on the specific system and context in which it is used. Some challenges, such as alert fatigue and over-reliance on technology, need to be carefully managed to ensure effective implementation.
+While CDSSs have shown promise in reducing errors, improving adherence to clinical guidelines, and supporting personalised care, the overall impact can vary depending on the specific system and context in which it is used. Some challenges, such as alert fatigue and over-reliance on technology, need to be carefully managed to ensure effective implementation.
 
-As CDSS becomes more integrated with electronic health records (EHRs), there is growing interest in refining these tools to maximise their benefits while addressing potential limitations. Ensuring that CDSS is used in a thoughtful and appropriate manner remains essential for optimising its role in modern healthcare.
+As CDSS becomes more integrated with electronic patient records (EPRs), there is growing interest in refining these tools to maximise their benefits while addressing potential limitations. Ensuring that CDSS is used in a thoughtful and appropriate manner remains essential for optimising its role in modern healthcare.
+
 
 ## Chapters
 

@@ -1,4 +1,4 @@
-export function run_timeline(dateContainers) {
+export function runTimeline(dateContainers) {
   document.addEventListener("DOMContentLoaded", function () {
     initializeCollapsibles();
     initializeBubbleContainers();

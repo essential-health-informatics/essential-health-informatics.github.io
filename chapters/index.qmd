@@ -5,12 +5,13 @@ title: "Chapters"
 
 ## Introduction
 
-* Introduction To Health Informatics
+* [Introduction To Health Informatics](/chapters/introduction/index.qmd)
 
 
 ## What is Digital?
 
-* What is Digital?
+* [Overview](/chapters/what-is-digital/index.qmd)
+* Digital
 * Hardware
 * Software
 
@@ -30,7 +31,11 @@ title: "Chapters"
 
 ## Clinical Decision Support Systems (CDSS)
 
-* [Overview](decision-support/index.qmd)
+* [Overview](/chapters/decision-support/index.qmd)
+* [Medical calculators](/chapters/decision-support/medical-calculators.qmd)
+* [Alert systems](/chapters/decision-support/alert-systems.qmd)
+* [Rules based](/chapters/decision-support/rules-based.qmd)
+* [Models based](/chapters/decision-support/models-based.qmd)
 
 
 ## Infrastructure
@@ -66,7 +71,7 @@ title: "Chapters"
 * Medicolegal Aspects
 
 
-## Safety
+## Clinical safety
 
 * Clinical safety
 

@@ -3,6 +3,7 @@ project:
   resources:
   - "static/*"
   - "media/*"
+  pre-render: pre-render/timeline.ts
 
 bibliography: references.bib
 
@@ -13,12 +14,12 @@ website:
     left:
       - href: /chapters/index.html
         text: Chapters
-      - href: /chapters/timeline/uk.html
+      - href: /chapters/timeline/uk/index.html
         text: UK timeline
   favicon: media/eohi-logo.png
-  sidebar:
-    contents: chapters
 
+metadata-files:
+  - sidebar.yml
 
 
 format:

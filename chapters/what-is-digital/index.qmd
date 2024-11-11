@@ -1,0 +1,22 @@
+---
+title: "What is digital?"
+image: /media/binary-blue.jpg
+---
+
+![](/media/binary-blue.jpg){alt="Zeros and ones in blue on a black background"}
+
+## Overview
+
+Digital technology refers to the use of electronic tools, systems, devices, and resources that generate, store, or process data. In its simplest form, it involves encoding information as binary—combinations of zeros and ones—which underpin everything from the internet to smartphones, complex health systems, and artificial intelligence.
+
+In the context of health informatics, digital tools are indispensable. They enable the management and analysis of vast amounts of health data, streamline communication between healthcare professionals, and improve patient care through technologies like electronic health records (EHRs), telemedicine, and clinical decision support systems.
+
+Understanding the fundamentals of digital systems is crucial to navigating the landscape of health informatics. This section will explore the core components of digital technology, from the basics of hardware and software to the specific digital concepts that power health informatics.
+
+
+## Chapters
+
+* [Digital](digital.qmd)
+* [Hardware](hardware.qmd)
+* [Software](software.qmd)
+* [Key Digital Concepts in Health Informatics](key-digital-concepts-in-health-informatics.qmd)
