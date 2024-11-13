@@ -1,0 +1,26 @@
+{
+  "name": "essential-health-informatics.github.io",
+  "version": "1.0.0",
+  "description": "The essential guide for Health Informatics",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-render": "ts-node pre-render/timeline-main.ts",
+    "post-render": "ts-node post-render/url_non_200.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "glob": "^11.0.0"
+  }
+}

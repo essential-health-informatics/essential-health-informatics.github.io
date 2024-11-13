@@ -3,10 +3,10 @@ project:
   resources:
   - "static/*"
   - "media/*"
-  pre-render: 
-    - pre-render/timeline-main.ts
-    # - bundle src/timeline-runtime.ts  static/timeline-runtime.js
-    # - deno run --check -A pre-render/test.ts
+  pre-render:
+    - npm run pre-render 
+  # post-render:
+  #   - npm run post-render
 
 bibliography: references.bib
 

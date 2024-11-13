@@ -1,4 +1,4 @@
-import { MetaData, DateContainer } from "../../../pre-render/timeline-main.ts";
+import { MetaData, DateContainer } from "../../../pre-render/timeline-main";
 
 export const metaData: MetaData = {
   title: "England NHS Timeline",
@@ -12,6 +12,7 @@ export const dateContainers: DateContainer[] = [
     header: "Colossus computer",
     content:
       "The first electronic computer. Used as a codebreaker in World War II.",
+    further_details: true,
   },
   {
     year: "1952",
@@ -20,6 +21,7 @@ export const dateContainers: DateContainer[] = [
     header: "First use of HIT",
     content:
       "Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.",
+    further_details: false,
   },
   {
     year: "1950s",
@@ -27,6 +29,7 @@ export const dateContainers: DateContainer[] = [
     alt_text: "Another description",
     header: "Computers first used for administrative purposes",
     content: "...",
+    further_details: true,
   },
   {
     year: "1969",
@@ -42,6 +45,7 @@ export const dateContainers: DateContainer[] = [
     header: "EMIS",
     content:
       "A GP in the village of Egton in Yorkshire, persuaded IBM to give him a computer and a suitable programme, built a room onto his surgery to house it and created Egton Medical Information Systems (EMIS)",
+    further_details: "https://www.emishealth.com/",
   },
   {
     year: "1980s",

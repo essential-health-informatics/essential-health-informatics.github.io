@@ -1,3 +1,7 @@
+import { promises as fs } from "fs";
+import * as glob from "glob";
+import * as path from "path";
+
 export interface MetaData {
   title: string;
 }
@@ -8,9 +12,10 @@ export interface DateContainer {
   alt_text: string;
   header: string;
   content: string;
+  further_details?: boolean | string;
 }
 
-export function populateTimeline(
+function populateTimeline(
   dateContainers: DateContainer[],
   title: string,
   outputFilename: string
@@ -34,11 +39,27 @@ sidebar: false
 \`\`\`
 `;
 
-  Deno.writeTextFile(outputFilename, openingHTML);
+  fs.writeFile(outputFilename, openingHTML);
 
   dateContainers.forEach((container) => {
     const positionClass = isLeft ? "left" : "right";
     isLeft = !isLeft; // Toggle the flag
+    let further_details: boolean | string = "";
+
+    if (container.further_details) {
+      let url = "";
+      if (typeof container.further_details === "boolean") {
+        url =
+          container.header
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/(^-|-$)+/g, "") + ".html";
+      } else {
+        url = container.further_details;
+      }
+      further_details = `
+      <p><a href="${url}" target="_blank">Further details...</a></p>`;
+    }
 
     timelineEvent = `
     <div class="date-container">
@@ -47,62 +68,46 @@ sidebar: false
         <img class="observed-image" src="${container.image_src}" alt="${container.alt_text}" style="width: 100%;">
         <button class="collapsible">${container.header}</button>
         <div class="collapsible-content">
-          <p>${container.content}</p>
+          <p>${container.content}</p>${further_details}
         </div>
       </div>
     </div>
     `;
 
-    Deno.writeTextFile(outputFilename, timelineEvent, { append: true });
+    fs.appendFile(outputFilename, timelineEvent);
   });
 
-  Deno.writeTextFile(outputFilename, closingHTML, { append: true });
-  console.log(`File ${outputFilename} created successfully.`);
+  fs.appendFile(outputFilename, closingHTML);
 }
 
-// Function to find and log .ts files in the ../chapters directory and its subfolders
-export async function logTsFilesInChapters(
+function logTsFilesInChapters(
   directoryPath: string = "chapters/"
-): Promise<{ directory: string; filename: string }[]> {
+): { directory: string; filename: string }[] {
   const tsFiles: { directory: string; filename: string }[] = [];
+  const pattern = path.join(directoryPath, "**/*.ts");
+  const files = glob.sync(pattern);
 
-  async function findTsFiles(path: string): Promise<void> {
-    for await (const dirEntry of Deno.readDir(path)) {
-      const fullPath = `${path}${dirEntry.name}`;
-      if (dirEntry.isFile && dirEntry.name.endsWith(".ts")) {
-        if (dirEntry.name.includes("timeline")) {
-          tsFiles.push({ directory: path, filename: dirEntry.name });
-        }
-      } else if (dirEntry.isDirectory) {
-        // Recursively search in subdirectories
-        await findTsFiles(`${fullPath}/`);
-      }
-    }
-  }
+  files.forEach((file) => {
+    tsFiles.push({
+      directory: path.dirname(file),
+      filename: path.basename(file),
+    });
+  });
 
-  await findTsFiles(directoryPath);
   return tsFiles;
 }
 
-logTsFilesInChapters()
-  .then(async (tsFiles) => {
-    for (const { directory, filename } of tsFiles) {
-      console.log(`Directory: ${directory}`);
-      console.log(`Filename: ${filename}`);
+console.log("Creating timeline index.qmd pages...");
 
-      const modulePath = `../${directory}${filename}`;
-      const module = await import(modulePath);
-      const dateContainers: DateContainer[] = module.dateContainers;
-      const metaData: MetaData = module.metaData;
+const tsFiles = logTsFilesInChapters();
 
-      populateTimeline(
-        dateContainers,
-        metaData.title,
-        `${directory}/index.qmd`
-      );
-    }
-  })
-  .then(() => console.log("Finished logging TypeScript files in chapters"))
-  .catch((error) =>
-    console.error("Error logging TypeScript files in chapters:", error)
-  );
+tsFiles.forEach(({ directory, filename }) => {
+  const modulePath = path.join(process.cwd(), directory, filename);
+  const module = require(modulePath);
+  const dateContainers: DateContainer[] = module.dateContainers;
+  const metaData: MetaData = module.metaData;
+  populateTimeline(dateContainers, metaData.title, `${directory}/index.qmd`);
+  console.log(`  * ${directory}`);
+});
+
+console.log("Finished creating index pages for timeline.");
