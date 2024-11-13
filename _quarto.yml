@@ -3,7 +3,10 @@ project:
   resources:
   - "static/*"
   - "media/*"
-  pre-render: pre-render/timeline.ts
+  # pre-render: 
+    # - pre-render/timeline-main.ts
+    # - bundle src/timeline-runtime.ts  static/timeline-runtime.js
+    # - deno run --check -A pre-render/test.ts
 
 bibliography: references.bib
 
@@ -14,7 +17,7 @@ website:
     left:
       - href: /chapters/index.html
         text: Chapters
-      - href: /chapters/timeline/uk/index.html
+      - href: /chapters/timeline/england/index.html
         text: UK timeline
   favicon: media/eohi-logo.png
 

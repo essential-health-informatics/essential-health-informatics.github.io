@@ -83,7 +83,7 @@ body {
   border-color: transparent #f1f1f1 transparent transparent;
 }
 
-/* Fix the circle for containers on the right side */
+/* Fix the containers for circles on the right side */
 .right::after {
   left: -16px;
 }

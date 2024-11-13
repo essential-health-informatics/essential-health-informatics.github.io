@@ -13,5 +13,5 @@ website:
           - chapters/what-is-digital/hardware.qmd
           - chapters/what-is-digital/software.qmd
       - text: "Timeline - UK"
-        href: chapters/timeline/uk/index.qmd
+        href: chapters/timeline/england/index.qmd
       - authors-guide.qmd
