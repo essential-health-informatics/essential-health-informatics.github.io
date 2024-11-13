@@ -3,8 +3,8 @@ project:
   resources:
   - "static/*"
   - "media/*"
-  # pre-render: 
-    # - pre-render/timeline-main.ts
+  pre-render: 
+    - pre-render/timeline-main.ts
     # - bundle src/timeline-runtime.ts  static/timeline-runtime.js
     # - deno run --check -A pre-render/test.ts
 

@@ -98,7 +98,7 @@ logTsFilesInChapters()
       populateTimeline(
         dateContainers,
         metaData.title,
-        `${directory}/index-test.qmd`
+        `${directory}/index.qmd`
       );
     }
   })
