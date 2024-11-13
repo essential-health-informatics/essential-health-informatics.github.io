@@ -10,7 +10,7 @@ const outputDir = "./static/js";
 await Deno.mkdir(outputDir, { recursive: true });
 
 async function checkType(filename: string): Promise<void> {
-  const domProxyContent = await Deno.readTextFile(`${currentDir}/dom-proxy.ts`);
+  const domProxyContent = await Deno.readTextFile(`../dom-proxy/dom-proxy.ts`);
   const fileContent = await Deno.readTextFile(filename);
   const combinedContent = `${domProxyContent}\n${fileContent}`;
   await Deno.writeTextFile(tempFilePath, combinedContent);
@@ -22,15 +22,16 @@ async function checkType(filename: string): Promise<void> {
     stderr: "piped",
   });
 
-  const { code, stdout, stderr } = await typeCheckProcess.output();
-  const output = new TextDecoder().decode(stdout);
+  // const { code, stdout, stderr } = await typeCheckProcess.output();
+  const { code, stderr } = await typeCheckProcess.output();
+  // const output = new TextDecoder().decode(stdout);
   const error = new TextDecoder().decode(stderr);
 
   await Deno.remove(tempFilePath);
 
   if (code === 0) {
     console.log("TypeScript type check passed.");
-    console.log(output);
+    // console.log(output);
   } else {
     console.error("TypeScript type check failed:");
     console.error(error);
