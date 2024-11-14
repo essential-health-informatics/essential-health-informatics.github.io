@@ -2,7 +2,7 @@
  * Initializes and runs the timeline functionality when the DOM content is loaded.
  */
 
-export function runTimeline(): void {
+function runTimeline(): void {
   document.addEventListener("DOMContentLoaded", function () {
     initializeCollapsibles();
     adjustContainerClasses();
@@ -12,7 +12,7 @@ export function runTimeline(): void {
   });
 }
 
-export function initializeObserver(): void {
+function initializeObserver(): void {
   const elements = document.querySelectorAll(".observed-image");
 
   // Define the options for the Intersection Observer
@@ -46,7 +46,7 @@ export function initializeObserver(): void {
   });
 }
 
-export function initializeImageObserver(): void {
+function initializeImageObserver(): void {
   const images = document.querySelectorAll(".observed-image.hidden");
 
   const viewportHeight = window.innerHeight;
@@ -75,7 +75,7 @@ export function initializeImageObserver(): void {
   });
 }
 
-export function initializeCollapsibles(): void {
+function initializeCollapsibles(): void {
   const coll = document.getElementsByClassName(
     "collapsible"
   ) as HTMLCollectionOf<HTMLElement>;
@@ -92,7 +92,7 @@ export function initializeCollapsibles(): void {
   }
 }
 
-export function adjustContainerClasses() {
+function adjustContainerClasses() {
   var containers = document.querySelectorAll(".bubble");
   if (window.innerWidth < 600) {
     containers.forEach((container) => {

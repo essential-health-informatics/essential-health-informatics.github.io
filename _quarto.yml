@@ -3,8 +3,8 @@ project:
   resources:
   - "static/*"
   - "media/*"
-  pre-render:
-    - npm run pre-render 
+  # pre-render:
+  #   - npm run pre-render 
   # post-render:
   #   - npm run post-render
 

@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pre-render": "ts-node pre-render/timeline-main.ts",
-    "post-render": "ts-node post-render/url_non_200.ts"
+    "post-render": "ts-node post-render/url_non_200.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
