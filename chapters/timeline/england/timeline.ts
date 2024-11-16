@@ -1,10 +1,10 @@
-import { MetaData, DateContainer } from "../../../pre-render/timeline-main";
+import { MetaData, DatesContainer } from "../../../utils/timeline-main";
 
 export const metaData: MetaData = {
   title: "England NHS Timeline",
 };
 
-export const dateContainers: DateContainer[] = [
+export const datesContainer: DatesContainer[] = [
   {
     year: "1943",
     image_src: "/media/colossus-computer.jpg",

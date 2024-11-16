@@ -96,10 +96,15 @@ async function checkUrlsInSiteFolder() {
   }
 }
 
-checkUrlsInSiteFolder()
-  .then(() => {
-    console.log("Finished checking URLs.");
-  })
-  .catch((error: any) => {
-    console.error("Error checking URLs (see above)");
+describe("URLs in site folder", () => {
+  it("should return 200 for all URLs", async () => {
+    await checkUrlsInSiteFolder();
   });
+});
+// checkUrlsInSiteFolder()
+//   .then(() => {
+//     console.log("Finished checking URLs.");
+//   })
+//   .catch((error: any) => {
+//     console.error("Error checking URLs (see above)");
+//   });

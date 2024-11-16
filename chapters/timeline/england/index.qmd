@@ -12,8 +12,7 @@ sidebar: false
         <img class="observed-image" src="/media/colossus-computer.jpg" alt="Colossus computer" style="width: 100%;">
         <button class="collapsible">Colossus computer</button>
         <div class="collapsible-content">
-          <p>The first electronic computer. Used as a codebreaker in World War II.</p>
-      <p><a href="colossus-computer.html" target="_blank">Further details...</a></p>
+          <p>The first electronic computer. Used as a codebreaker in World War II.</p><p><a href="colossus-computer.html" target="_blank">Further details...</a></p>
         </div>
       </div>
     </div>
@@ -35,8 +34,7 @@ sidebar: false
         <img class="observed-image" src="/media/hand-written-table.jpg" alt="Another description" style="width: 100%;">
         <button class="collapsible">Computers first used for administrative purposes</button>
         <div class="collapsible-content">
-          <p>...</p>
-      <p><a href="computers-first-used-for-administrative-purposes.html" target="_blank">Further details...</a></p>
+          <p>...</p><p><a href="computers-first-used-for-administrative-purposes.html" target="_blank">Further details...</a></p>
         </div>
       </div>
     </div>
@@ -58,8 +56,7 @@ sidebar: false
         <img class="observed-image" src="/media/emis-logo.png" alt="Another description" style="width: 100%;">
         <button class="collapsible">EMIS</button>
         <div class="collapsible-content">
-          <p>A GP in the village of Egton in Yorkshire, persuaded IBM to give him a computer and a suitable programme, built a room onto his surgery to house it and created Egton Medical Information Systems (EMIS)</p>
-      <p><a href="https://www.emishealth.com/" target="_blank">Further details...</a></p>
+          <p>A GP in the village of Egton in Yorkshire, persuaded IBM to give him a computer and a suitable programme, built a room onto his surgery to house it and created Egton Medical Information Systems (EMIS)</p><p><a href="https://www.emishealth.com/" target="_blank">Further details...</a></p>
         </div>
       </div>
     </div>
