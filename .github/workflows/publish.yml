@@ -6,7 +6,7 @@ on:
 name: Quarto Publish
 
 jobs:
-  test:
+  cicd_pipeline:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -20,24 +20,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: run CI CD tasks
-        run: bash ci-cd.sh
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: test
-    permissions:
-      contents: write
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
+      - name: run CI CD tasks
+        run: bash ci-cd.sh
+
+      - name: Publish site
+        run: quarto publish gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
