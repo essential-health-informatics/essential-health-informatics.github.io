@@ -8,6 +8,8 @@ name: Quarto Publish
 jobs:
   cicd_pipeline:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
