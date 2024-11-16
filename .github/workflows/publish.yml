@@ -26,11 +26,9 @@ jobs:
       - name: run CI CD tasks
         run: bash ci-cd.sh
       
-      - name: Configure Git
-        run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
-      - name: Publish site
-        run: quarto publish gh-pages --no-render
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
