@@ -6,8 +6,26 @@ on:
 name: Quarto Publish
 
 jobs:
-  build-deploy:
+  test:
     runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: run CI CD tasks
+        run: bash ci-cd.sh
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
     permissions:
       contents: write
     steps:
