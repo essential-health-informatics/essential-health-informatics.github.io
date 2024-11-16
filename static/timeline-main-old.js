@@ -1,4 +1,4 @@
-export function runTimeline(dateContainers) {
+export function runTimeline(DatesContainers) {
   document.addEventListener("DOMContentLoaded", function () {
     initializeCollapsibles();
     initializeBubbleContainers();
@@ -8,17 +8,17 @@ export function runTimeline(dateContainers) {
     initializeObserver();
   });
 
-  populateTimeline(dateContainers);
+  populateTimeline(DatesContainers);
 }
 
-export function populateTimeline(dateContainers) {
+export function populateTimeline(DatesContainers) {
   const timeline = document.getElementById("timeline");
 
-  dateContainers.forEach((container) => {
-    const dateContainerDiv = document.createElement("div");
-    dateContainerDiv.className = "date-container";
+  DatesContainers.forEach((container) => {
+    const DatesContainerDiv = document.createElement("div");
+    DatesContainerDiv.className = "date-container";
 
-    dateContainerDiv.innerHTML = `
+    DatesContainerDiv.innerHTML = `
         <div class="bubble">
           <p class="container-header">${container.year}</p>
           <img class="observed-image" src="${container.image_src}" alt="${container.alt_text}" style="width: 100%;">
@@ -29,7 +29,7 @@ export function populateTimeline(dateContainers) {
         </div>
       `;
 
-    timeline.appendChild(dateContainerDiv);
+    timeline.appendChild(DatesContainerDiv);
   });
 }
 

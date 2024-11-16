@@ -1,4 +1,4 @@
-export const dateContainers = [
+export const DatesContainers = [
   {
     year: "1943",
     image_src: "/media/colossus-computer.jpg",
