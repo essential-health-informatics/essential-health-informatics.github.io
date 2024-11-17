@@ -293,7 +293,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Hardware"
+      "image: /media/computer-external-ports.jpg"
     ]
   },
   {
@@ -305,7 +305,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Hardware"
+      "image: /media/computer-external-ports.jpg"
     ]
   },
   {
@@ -317,7 +317,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Hardware"
+      "image: /media/computer-external-ports.jpg"
     ]
   },
   {
@@ -329,7 +329,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -341,7 +341,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -353,7 +353,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -365,7 +365,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -377,7 +377,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -389,7 +389,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -401,7 +401,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -413,7 +413,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Digital"
+      "image: /media/colourful-digits.jpg"
     ]
   },
   {
@@ -428,6 +428,27 @@
     ]
   },
   {
+    "objectID": "todo.html",
+    "href": "todo.html",
+    "title": "Todo list for the EOHI guide",
+    "section": "",
+    "text": "Start\nMiddle\nEnd"
+  },
+  {
+    "objectID": "todo.html#to-do",
+    "href": "todo.html#to-do",
+    "title": "Todo list for the EOHI guide",
+    "section": "To do",
+    "text": "To do\n\nTechnical\n\nAutomatically build side bar content from actual content in the guide.\nCheck that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).\n\n\n\nContent\n\nMost major content."
+  },
+  {
+    "objectID": "todo.html#done",
+    "href": "todo.html#done",
+    "title": "Todo list for the EOHI guide",
+    "section": "Done",
+    "text": "Done\n\nTechnical\n\nObtained a domain name."
+  },
+  {
     "objectID": "chapters/what-is-digital/software.html",
     "href": "chapters/what-is-digital/software.html",
     "title": "Software",
@@ -436,7 +457,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Software"
+      "image: /media/soft-focus-code-block.jpg"
     ]
   },
   {
@@ -448,7 +469,7 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Software"
+      "image: /media/soft-focus-code-block.jpg"
     ]
   },
   {
@@ -460,8 +481,15 @@
     "crumbs": [
       "Chapters",
       "What is Digital?",
-      "Software"
+      "image: /media/soft-focus-code-block.jpg"
     ]
+  },
+  {
+    "objectID": "chapters/what-is-digital/key-digital-concepts-in-health-informatics.html",
+    "href": "chapters/what-is-digital/key-digital-concepts-in-health-informatics.html",
+    "title": "Essentials of Health Informatics",
+    "section": "",
+    "text": "title: “Key Digital Concepts in Health Informatics” —"
   },
   {
     "objectID": "chapters/decision-support/index.html#overview",
