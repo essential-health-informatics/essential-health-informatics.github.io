@@ -8,6 +8,9 @@ project:
   # post-render:
   #   - npm run post-render
 
+# include-after:
+#     <script type="module" src="/static/js/image-crop.js"></script>
+
 bibliography: references.bib
 
 website:

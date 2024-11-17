@@ -1,4 +1,4 @@
----
+<html><head></head><body>---
 title: "Digital"
 image: /media/colourful-digits.jpg
 ---
@@ -72,4 +72,4 @@ Digital technology has transformed many areas of life, making processes faster, 
 
 ## Conclusion
 
-Digital technology, powered by binary logic, forms the foundation of many systems we rely on today. It enables the processing, storage, and sharing of vast amounts of data, supports global communication, and automates complex tasks. In healthcare, digital systems are transforming patient records, diagnostics, and care delivery. However, one challenge remains: much of the real-world information, like medical images or heartbeats, starts as analogue data. Converting this data into digital form can lead to a loss of detail or introduce errors, highlighting the need for precise and reliable analogue-to-digital conversion. As digital systems continue to evolve, understanding these foundational concepts is crucial—not just for navigating the modern world, but for ensuring accuracy and trust in fields like healthcare, where the stakes are highest.
+Digital technology, powered by binary logic, forms the foundation of many systems we rely on today. It enables the processing, storage, and sharing of vast amounts of data, supports global communication, and automates complex tasks. In healthcare, digital systems are transforming patient records, diagnostics, and care delivery. However, one challenge remains: much of the real-world information, like medical images or heartbeats, starts as analogue data. Converting this data into digital form can lead to a loss of detail or introduce errors, highlighting the need for precise and reliable analogue-to-digital conversion. As digital systems continue to evolve, understanding these foundational concepts is crucial—not just for navigating the modern world, but for ensuring accuracy and trust in fields like healthcare, where the stakes are highest.</body></html>

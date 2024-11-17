@@ -1,4 +1,4 @@
----
+<html><head></head><body>---
 title: "Decision Support"
 image: /media/man-at-fork-in-road.jpg
 ---
@@ -19,4 +19,4 @@ As CDSS becomes more integrated with electronic patient records (EPRs), there is
 * [Medical calculators](medical-calculators.qmd)
 * [Alert systems](alert-systems.qmd)
 * [Rules based](rules-based.qmd)
-* [Models based](models-based.qmd)
+* [Models based](models-based.qmd)</body></html>

@@ -1,4 +1,4 @@
----
+<html><head></head><body>---
 title: "What is digital?"
 image: /media/binary-blue.jpg
 ---
@@ -19,4 +19,4 @@ Understanding the fundamentals of digital systems is crucial to navigating the l
 * [Digital](digital.qmd)
 * [Hardware](hardware.qmd)
 * [Software](software.qmd)
-* [Key Digital Concepts in Health Informatics](key-digital-concepts-in-health-informatics.qmd)
+* [Key Digital Concepts in Health Informatics](key-digital-concepts-in-health-informatics.qmd)</body></html>

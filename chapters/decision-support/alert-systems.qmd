@@ -1,6 +1,6 @@
----
+<html><head></head><body>---
 title: "Alert Systems"
 image: /media/siren-lights.jpg
 ---
 
-![](/media/siren-lights.jpg){alt="A red siren light"}
+![](/media/siren-lights.jpg){alt="A red siren light"}</body></html>

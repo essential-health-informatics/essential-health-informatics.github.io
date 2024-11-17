@@ -1,5 +1,5 @@
----
+<html><head></head><body>---
 title: "Colossus computer"
 ---
 
-Some material
+Some material</body></html>
