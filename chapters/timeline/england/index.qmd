@@ -86,7 +86,7 @@ sidebar: false
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1991</p>
-        <img class="observed-image" src="/media/tim-berners-lee.jpg" alt="Picture of Tim Berners-Lee" style="width: 100%;">
+        <img class="observed-image" src="/media/Tim Berners-Lee.jpg" alt="Picture of Tim Berners-Lee" style="width: 100%;">
         <button class="collapsible">World Wide Web launched</button>
         <div class="collapsible-content">
           <p>In 1989, British scientist Tim Berners-Lee created the World Wide Web (WWW) while working at CERN. His intention was to develop a system that would enable automated sharing of information among scientists across universities and research institutions globally.</p>
@@ -186,7 +186,7 @@ Health IT is about both technical and adaptive change</p>
         <div class="collapsible-content">
           <p>A Microsoft Windows Operation System exploit.
 Largest hit service was England and Scotland. Wales and Northern Ireland were not affected.
-Up to 70,000 devices&nbsp;– including computers,&nbsp;MRI scanners, blood-storage refrigerators and theatre equipment&nbsp;affected.
+Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
 Some NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[
 In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.</p>
         </div>
@@ -248,7 +248,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
       <div class="bubble right">
         <p class="container-header">2020</p>
         <img class="observed-image" src="/media/microchip-placeholder.png" alt="Another description" style="width: 100%;">
-        <button class="collapsible">Caldicott Principles 7 &amp; 8</button>
+        <button class="collapsible">Caldicott Principles 7 & 8</button>
         <div class="collapsible-content">
           <p>Principle 7: the duty to share information for individual care is as important as the duty to protect patient confidentiality.
 Principle 8: inform patients and services users about how their confidential information is used and what choice they have. There should be no surprises.)</p>
@@ -298,4 +298,3 @@ This mixed use case has complications in English law.</p>
 
 <script type="module" src="/static/js/timeline-runtime.js"></script>
 ```
-</body></html>

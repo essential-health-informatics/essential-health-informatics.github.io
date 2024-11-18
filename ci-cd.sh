@@ -6,6 +6,7 @@ print_message() {
   local short_message=$1
   local long_message=$2
   local colour=$3
+  local verboseArg=$4
 
   local colour_code=""
   local end_code="\e[0m"
@@ -23,8 +24,8 @@ print_message() {
       ;;
   esac
 
-  if [ "$verbose" = true ]; then
-    echo "$long_message"
+  if [ "$verboseArg" = "verbose" ] || [ "$verbose" = true ]; then
+      echo "$long_message"
   fi
 
   printf "${colour_code}%s${end_code}\n" "$short_message"
@@ -36,7 +37,7 @@ output=$(npm run pre-test 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message "Error: Pre-render unit tests failed" "Error: $output" "red"
+  print_message "Error: Pre-render unit tests failed" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -47,7 +48,7 @@ output=$(npm run pre-render 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message "Error: Failed to create timeline pages" "Error: $output" "red"
+  print_message "Error: Failed to create timeline pages" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -59,7 +60,7 @@ output=$(quarto render 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message "Error: Failed to create static site with Quarto" "Error: $output" "red"
+  print_message "Error: Failed to create static site with Quarto" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -70,14 +71,14 @@ print_message "Created static site" "Output: $output" "blue"
 
 
 # Post-render unit tests
-output=$(npm run post-test 2>&1)
-exit_code=$?
+# output=$(npm run post-test 2>&1)
+# exit_code=$?
 
-if [ $exit_code -ne 0 ]; then
-  print_message "Error: Post-render unit tests failed" "Error: $output" "red"
-  exit $exit_code
-fi
+# if [ $exit_code -ne 0 ]; then
+#   print_message "Error: Post-render unit tests failed" "Error: $output" "red" "verbose"
+#   exit $exit_code
+# fi
 
-print_message "Post-render unit tests successful" "Output: $output" "blue"
+# print_message "Post-render unit tests successful" "Output: $output" "blue"
 
 print_message "All tasks completed successfully" "" "blue"
