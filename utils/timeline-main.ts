@@ -16,35 +16,35 @@
  * generates corresponding HTML files.
  */
 
-import * as fs from 'fs';
-import * as glob from 'glob';
-import * as path from 'path';
+import * as fs from 'fs'
+import * as glob from 'glob'
+import * as path from 'path'
 
 interface TimelineModule {
-  datesContainer: DatesContainer[];
-  metaData: MetaData;
+  datesContainer: DatesContainer[]
+  metaData: MetaData
 }
 
 export interface MetaData {
-  title: string;
+  title: string
 }
 
 export interface DatesContainer {
-  year: string;
-  image_src: string;
-  alt_text: string;
-  header: string;
-  content: string;
-  further_details?: boolean | string;
+  year: string
+  image_src: string
+  alt_text: string
+  header: string
+  content: string
+  further_details?: boolean | string
 }
 
 interface FileDescriptor {
-  directory: string;
-  filename: string;
+  directory: string
+  filename: string
 }
 
 export class TimeLineIndexPages {
-  readonly directoryPath: string = 'chapters/';
+  readonly directoryPath: string = 'chapters/'
 
   constructor() {}
 
@@ -67,19 +67,19 @@ export class TimeLineIndexPages {
     outputFilename: string
   ): void {
     if (!datesContainers || datesContainers.length === 0) {
-      throw new Error('DatesContainers can not be empty');
+      throw new Error('DatesContainers can not be empty')
     }
 
     if (!title || title.trim() === '') {
-      throw new Error('Title can not be empty');
+      throw new Error('Title can not be empty')
     }
 
     if (!outputFilename || !outputFilename.endsWith('.qmd')) {
-      throw new Error('OutputFilename must be a .qmd file');
+      throw new Error('OutputFilename must be a .qmd file')
     }
 
-    let timelineEvent: string = '';
-    let isLeft = true;
+    let timelineEvent: string = ''
+    let isLeft = true
 
     const openingHTML = `---
 title: "${title}"
@@ -88,34 +88,34 @@ sidebar: false
 
 \`\`\`{=html}
 <div id="timeline" class="timeline">
-`;
+`
 
     const closingHTML = `
 </div>
 
 <script type="module" src="/static/js/timeline-runtime.js"></script>
 \`\`\`
-`;
+`
 
-    fs.writeFileSync(outputFilename, openingHTML);
+    fs.writeFileSync(outputFilename, openingHTML)
 
     datesContainers.forEach((container) => {
-      const positionClass = isLeft ? 'left' : 'right';
-      isLeft = !isLeft; // Toggle the flag
-      let further_details: boolean | string = '';
+      const positionClass = isLeft ? 'left' : 'right'
+      isLeft = !isLeft // Toggle the flag
+      let further_details: boolean | string = ''
 
       if (container.further_details) {
-        let url = '';
+        let url = ''
         if (typeof container.further_details === 'boolean') {
           url =
             container.header
               .toLowerCase()
               .replace(/[^a-z0-9]+/g, '-')
-              .replace(/(^-|-$)+/g, '') + '.html';
+              .replace(/(^-|-$)+/g, '') + '.html'
         } else {
-          url = container.further_details;
+          url = container.further_details
         }
-        further_details = `<p><a href="${url}" target="_blank">Further details...</a></p>`;
+        further_details = `<p><a href="${url}" target="_blank">Further details...</a></p>`
       }
 
       timelineEvent = `
@@ -129,12 +129,12 @@ sidebar: false
         </div>
       </div>
     </div>
-    `;
+    `
 
-      fs.appendFileSync(outputFilename, timelineEvent);
-    });
+      fs.appendFileSync(outputFilename, timelineEvent)
+    })
 
-    fs.appendFileSync(outputFilename, closingHTML);
+    fs.appendFileSync(outputFilename, closingHTML)
   }
 
   /**
@@ -146,18 +146,18 @@ sidebar: false
    * @returns {FileDescriptor[]} - An array of objects containing the directory and filename of each `timeline.ts` file.
    */
   logTsFilesInChapters(): FileDescriptor[] {
-    const tsFiles: FileDescriptor[] = [];
-    const pattern = path.join(this.directoryPath, '**/timeline.ts');
-    const files = glob.sync(pattern);
+    const tsFiles: FileDescriptor[] = []
+    const pattern = path.join(this.directoryPath, '**/timeline.ts')
+    const files = glob.sync(pattern)
 
     files.forEach((file: string) => {
       tsFiles.push({
         directory: path.dirname(file),
         filename: path.basename(file)
-      });
-    });
+      })
+    })
 
-    return tsFiles;
+    return tsFiles
   }
 
   /**
@@ -166,51 +166,51 @@ sidebar: false
    * Creates index pages for all timelines found in the specified directories.
    */
   populateAllTimelines() {
-    console.log('Creating timeline index.qmd pages...');
+    console.log('Creating timeline index.qmd pages...')
 
-    const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();
+    const tsFiles: FileDescriptor[] = this.logTsFilesInChapters()
 
     if (!tsFiles || tsFiles.length === 0) {
-      console.error('No TypeScript files found in chapters directory.');
-      return;
+      console.error('No TypeScript files found in chapters directory.')
+      return
     }
 
     tsFiles.forEach(({ directory, filename }) => {
-      const modulePath = path.join(process.cwd(), directory, filename);
-      let module: TimelineModule;
+      const modulePath = path.join(process.cwd(), directory, filename)
+      let module: TimelineModule
 
       try {
-        module = require(modulePath);
+        module = require(modulePath)
       } catch {
-        throw new Error(`Failed to load module at '${modulePath}'`);
+        throw new Error(`Failed to load module at '${modulePath}'`)
       }
 
-      const datesContainers: DatesContainer[] = module.datesContainer;
-      const metaData: MetaData = module.metaData;
+      const datesContainers: DatesContainer[] = module.datesContainer
+      const metaData: MetaData = module.metaData
 
       if (!datesContainers || datesContainers.length === 0) {
-        console.error(`No datesContainers found in module at '${modulePath}'`);
-        return;
+        console.error(`No datesContainers found in module at '${modulePath}'`)
+        return
       }
 
       if (!metaData || !metaData.title || metaData.title.trim() === '') {
-        console.error(`Invalid metaData or title in module at '${modulePath}'`);
-        return;
+        console.error(`Invalid metaData or title in module at '${modulePath}'`)
+        return
       }
 
       this.populateTimeline(
         datesContainers,
         metaData.title,
         `${directory}/index.qmd`
-      );
-      console.log(`  * ${directory}`);
-    });
+      )
+      console.log(`  * ${directory}`)
+    })
 
-    console.log('Finished creating index pages for timeline.');
+    console.log('Finished creating index pages for timeline.')
   }
 }
 
 if (require.main === module) {
-  const timelineManager = new TimeLineIndexPages();
-  timelineManager.populateAllTimelines();
+  const timelineManager = new TimeLineIndexPages()
+  timelineManager.populateAllTimelines()
 }
