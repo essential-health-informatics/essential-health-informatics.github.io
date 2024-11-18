@@ -1,4 +1,4 @@
-<html><head></head><body>---
+---
 title: "Medical Calculators"
 image: /media/calculator-end-on.jpg
 ---

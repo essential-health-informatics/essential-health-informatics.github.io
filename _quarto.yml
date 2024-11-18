@@ -5,8 +5,8 @@ project:
   - "media/*"
   # pre-render:
   #   - npm run pre-render 
-  # post-render:
-  #   - npm run post-render
+  post-render:
+    - npm run post-render
 
 # include-after:
 #     <script type="module" src="/static/js/image-crop.js"></script>

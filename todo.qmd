@@ -3,17 +3,7 @@ title: "Todo list for the EOHI guide"
 image: /media/post-its-on-white-board.jpg
 ---
 
-Start
-
-<img src="/media/post-its-on-white-board.jpg" alt="Post it notes on a white board" crop="3:1 0">
- 
-Middle
-
-<img src="/media/john-preece.jpg" alt="Post it notes on a white board" crop="3:1 0">
-
-End
-
-![](/media/post-its-on-white-board.jpg){alt="Post it notes on a white board"}
+![](/media/post-its-on-white-board.jpg){alt="Post it notes on a white board" crop="3:1 50%"}
 
 ## To do
 

@@ -1,4 +1,4 @@
-<html><head></head><body>---
+---
 title: "What is digital?"
 image: /media/binary-blue.jpg
 ---

@@ -169,3 +169,23 @@ body {
 .observed-image.show {
   opacity: 1;
 }
+
+.padding-bottom-17px {
+  padding-bottom: 17px;
+}
+.crop-3-1 {
+  width: 100%;
+  height: 0;
+  padding-top: 33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.crop-3-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,4 +1,4 @@
-<html><head></head><body>---
+---
 title: "Models Based Clinical Decision Support System"
 image: /media/neural-network.png
 ---
