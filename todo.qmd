@@ -10,13 +10,29 @@ image: /media/post-its-on-white-board.jpg
 ### Technical
 * Automatically build side bar content from actual content in the guide.
 * Check that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).
+* Finish banner testing (pre-render)
+* Finish non-200 link testing (post-render)
+* Test all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.
 
 ### Content
 
 * Most major content.
+
+### Creators
+
+* Creators for remaining topics.
 
 ## Done
 
 ### Technical
 
 * Obtained a domain name.
+* Set up a GitHub repository.
+* GitHub pages.
+* Github actions.
+
+### Content
+
+### Creators
+
+* First creators set for first 10 webinars and chapters.

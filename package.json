@@ -7,11 +7,6 @@
     "test": "tests"
   },
   "scripts": {
-    "pre-render": "ts-node utils/timeline-main.ts",
-    "post-render": "ts-node utils/banner.ts",
-    "3rd": "ts-node utils/banner-3-1.ts",
-    "pre-test": "npx jest tests/pre-render",
-    "post-test": "npx jest tests/post-render",
     "build": "tsc"
   },
   "keywords": [],

@@ -32,8 +32,10 @@ print_message() {
 
 }
 
+
+
 # Pre-render unit tests
-output=$(npm run pre-test 2>&1)
+output=$(npm exec npx jest tests/pre-render/*.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
@@ -43,8 +45,10 @@ fi
 
 print_message "Pre-render unit tests successful" "Output: $output" "blue"
 
+
+
 # Create timeline pages
-output=$(npm run pre-render 2>&1)
+output=$(npm exec ts-node utils/timeline-main.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
@@ -53,6 +57,7 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message "Created timeline pages successfully" "Output: $output" "blue"
+
 
 
 # Create static site
@@ -66,19 +71,30 @@ fi
 
 print_message "Created static site" "Output: $output" "blue"
 
-# Client side unit tests
-# TODO
+
+
+# Crop images
+output=$(npm exec ts-node utils/banner.ts 2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message "Error: Failed to crop images" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message "Cropped images" "Output: $output" "blue"
+
 
 
 # Post-render unit tests
-# output=$(npm run post-test 2>&1)
-# exit_code=$?
+output=$(npm exec npx jest tests/post-render/*.ts 2>&1)
+exit_code=$?
 
-# if [ $exit_code -ne 0 ]; then
-#   print_message "Error: Post-render unit tests failed" "Error: $output" "red" "verbose"
-#   exit $exit_code
-# fi
+if [ $exit_code -ne 0 ]; then
+  print_message "Error: Post-render unit tests failed" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
 
-# print_message "Post-render unit tests successful" "Output: $output" "blue"
+print_message "Post-render unit tests successful" "Output: $output" "blue"
 
 print_message "All tasks completed successfully" "" "blue"

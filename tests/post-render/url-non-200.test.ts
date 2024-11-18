@@ -5,6 +5,8 @@ import * as fs from "fs";
 
 const render_folder: string = "_site";
 
+const verbose = false;
+
 async function checkUrlStatus(url: string): Promise<number> {
   if (url.startsWith("file://")) {
     const filePath = url.replace("file://", "");
@@ -54,8 +56,8 @@ async function checkUrlsInSiteFolder() {
             console.error(`URL ${fullUrl} returned status ${status}`);
             hasFailed = true;
           } else {
+            verbose && console.log(`URL ${fullUrl} is OK`);
             continue;
-            // console.log(`URL ${fullUrl} is OK`);
           }
         } else if (
           cleanUrl.startsWith("#") ||
@@ -66,7 +68,8 @@ async function checkUrlsInSiteFolder() {
           fullUrl = path.resolve(process.cwd(), cleanUrl);
           try {
             await fs.promises.access(render_folder, fs.constants.F_OK);
-            // console.log(`\x1b[34mLocal file ${fullUrl} exists\x1b[0m`);
+            verbose &&
+              console.log(`\x1b[34mLocal file ${fullUrl} exists\x1b[0m`);
           } catch {
             console.log(`Found in file: ${file}`);
             console.log(`Checking local file: ${url}`);
@@ -101,10 +104,3 @@ describe("URLs in site folder", () => {
     await checkUrlsInSiteFolder();
   });
 });
-// checkUrlsInSiteFolder()
-//   .then(() => {
-//     console.log("Finished checking URLs.");
-//   })
-//   .catch((error: any) => {
-//     console.error("Error checking URLs (see above)");
-//   });
