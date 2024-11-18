@@ -7,6 +7,8 @@
     "test": "tests"
   },
   "scripts": {
+    "prettier-check": "prettier --log-level warn --config .prettierrc 'utils/**/*.ts' --check",
+    "prettier-format": "prettier --config .prettierrc 'utils/**/*.ts' --write",
     "build": "tsc"
   },
   "keywords": [],
@@ -20,8 +22,11 @@
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.9.0",
     "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.12.0",
     "jest": "^29.7.0",
+    "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",

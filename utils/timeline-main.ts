@@ -16,9 +16,9 @@
  * generates corresponding HTML files.
  */
 
-import * as fs from "fs";
-import * as glob from "glob";
-import * as path from "path";
+import * as fs from 'fs';
+import * as glob from 'glob';
+import * as path from 'path';
 
 interface TimelineModule {
   datesContainer: DatesContainer[];
@@ -44,7 +44,7 @@ interface FileDescriptor {
 }
 
 export class TimeLineIndexPages {
-  readonly directoryPath: string = "chapters/";
+  readonly directoryPath: string = 'chapters/';
 
   constructor() {}
 
@@ -67,18 +67,18 @@ export class TimeLineIndexPages {
     outputFilename: string
   ): void {
     if (!datesContainers || datesContainers.length === 0) {
-      throw new Error("DatesContainers can not be empty");
+      throw new Error('DatesContainers can not be empty');
     }
 
-    if (!title || title.trim() === "") {
-      throw new Error("Title can not be empty");
+    if (!title || title.trim() === '') {
+      throw new Error('Title can not be empty');
     }
 
-    if (!outputFilename || !outputFilename.endsWith(".qmd")) {
-      throw new Error("OutputFilename must be a .qmd file");
+    if (!outputFilename || !outputFilename.endsWith('.qmd')) {
+      throw new Error('OutputFilename must be a .qmd file');
     }
 
-    let timelineEvent: string = "";
+    let timelineEvent: string = '';
     let isLeft = true;
 
     const openingHTML = `---
@@ -99,19 +99,19 @@ sidebar: false
 
     fs.writeFileSync(outputFilename, openingHTML);
 
-    datesContainers.forEach((container, index) => {
-      const positionClass = isLeft ? "left" : "right";
+    datesContainers.forEach((container) => {
+      const positionClass = isLeft ? 'left' : 'right';
       isLeft = !isLeft; // Toggle the flag
-      let further_details: boolean | string = "";
+      let further_details: boolean | string = '';
 
       if (container.further_details) {
-        let url = "";
-        if (typeof container.further_details === "boolean") {
+        let url = '';
+        if (typeof container.further_details === 'boolean') {
           url =
             container.header
               .toLowerCase()
-              .replace(/[^a-z0-9]+/g, "-")
-              .replace(/(^-|-$)+/g, "") + ".html";
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/(^-|-$)+/g, '') + '.html';
         } else {
           url = container.further_details;
         }
@@ -147,13 +147,13 @@ sidebar: false
    */
   logTsFilesInChapters(): FileDescriptor[] {
     const tsFiles: FileDescriptor[] = [];
-    const pattern = path.join(this.directoryPath, "**/timeline.ts");
+    const pattern = path.join(this.directoryPath, '**/timeline.ts');
     const files = glob.sync(pattern);
 
     files.forEach((file: string) => {
       tsFiles.push({
         directory: path.dirname(file),
-        filename: path.basename(file),
+        filename: path.basename(file)
       });
     });
 
@@ -166,12 +166,12 @@ sidebar: false
    * Creates index pages for all timelines found in the specified directories.
    */
   populateAllTimelines() {
-    console.log("Creating timeline index.qmd pages...");
+    console.log('Creating timeline index.qmd pages...');
 
     const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();
 
     if (!tsFiles || tsFiles.length === 0) {
-      console.error("No TypeScript files found in chapters directory.");
+      console.error('No TypeScript files found in chapters directory.');
       return;
     }
 
@@ -193,7 +193,7 @@ sidebar: false
         return;
       }
 
-      if (!metaData || !metaData.title || metaData.title.trim() === "") {
+      if (!metaData || !metaData.title || metaData.title.trim() === '') {
         console.error(`Invalid metaData or title in module at '${modulePath}'`);
         return;
       }
@@ -206,7 +206,7 @@ sidebar: false
       console.log(`  * ${directory}`);
     });
 
-    console.log("Finished creating index pages for timeline.");
+    console.log('Finished creating index pages for timeline.');
   }
 }
 

@@ -9,6 +9,6 @@
     "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
-  "editor.rulers": [80],
+  "editor.formatOnPaste": true,
   "editor.wordWrap": "on"
 }
