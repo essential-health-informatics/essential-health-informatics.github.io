@@ -432,14 +432,14 @@
     "href": "todo.html#to-do",
     "title": "Todo list for the EOHI guide",
     "section": "To do",
-    "text": "To do\n\nTechnical\n\nAutomatically build side bar content from actual content in the guide.\nCheck that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).\n\n\n\nContent\n\nMost major content."
+    "text": "To do\n\nTechnical\n\nAutomatically build side bar content from actual content in the guide.\nCheck that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).\nFinish banner testing (pre-render)\nFinish non-200 link testing (post-render)\nTest all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.\n\n\n\nContent\n\nMost major content.\n\n\n\nCreators\n\nCreators for remaining topics."
   },
   {
     "objectID": "todo.html#done",
     "href": "todo.html#done",
     "title": "Todo list for the EOHI guide",
     "section": "Done",
-    "text": "Done\n\nTechnical\n\nObtained a domain name."
+    "text": "Done\n\nTechnical\n\nObtained a domain name.\nSet up a GitHub repository.\nGitHub pages.\nGithub actions.\n\n\n\nContent\n\n\nCreators\n\nFirst creators set for first 10 webinars and chapters."
   },
   {
     "objectID": "chapters/what-is-digital/software.html",
