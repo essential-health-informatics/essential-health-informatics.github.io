@@ -26,12 +26,12 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: run CI CD tasks
-        run: bash ci-cd.sh
+        run: bash cicd.sh
       
       - name: Configure Git
         run: |
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "quarto-github-actions-publish@example.com"
+          git config --global user.name "Quarto GHA Workflow Runner"
 
       - name: Publish site
         run: quarto publish gh-pages --no-render
