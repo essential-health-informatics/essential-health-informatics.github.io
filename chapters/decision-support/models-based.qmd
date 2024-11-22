@@ -1,6 +1,0 @@
----
-title: "Models Based Clinical Decision Support System"
-image: /media/neural-network.png
----
-
-![](/media/neural-network.png){alt="A man standing at a fork in the the road in a forest"}</body></html>

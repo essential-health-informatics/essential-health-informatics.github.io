@@ -17,3 +17,4 @@ When writing or reviewing sections of the guide, please keep the following in mi
 
 By adopting this approach, we aim to make the guide not only a useful resource for beginners in health informatics but also an engaging and approachable one for those coming from various educational backgrounds.
 
+* Title case for titles (expand)

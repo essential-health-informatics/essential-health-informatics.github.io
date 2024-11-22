@@ -1,0 +1,10 @@
+---
+title: "Technical guide"
+---
+
+## Chapters folder
+* The first qmd file in a folder must be named 'index.qmd'.
+* Every qmd file:
+    * Every qmd file must have a title in the front matter.
+    * Every qmd file must have a image in the front matter.
+    * Every qmd file must start the body with a banner in 3:1 aspect ratio.

@@ -1,148 +1,88 @@
 ---
-title: "Chapters"
+title: Chapters
+sidebar: false
 ---
 
 
-## Introduction
+## Introduction to Health Informatics
 
-* [Introduction To Health Informatics](/chapters/introduction/index.qmd)
+* [Introduction to Health Informatics](/chapters/1-introduction/index.qmd)
 
 
-## What is Digital?
+## What is digital?
 
-* [Overview](/chapters/what-is-digital/index.qmd)
-* Digital
-* Hardware
-* Software
+* [What is digital?](/chapters/2-what-is-digital/index.qmd)
+* [Digital](/chapters/2-what-is-digital/1-digital.qmd)
+* [Hardware](/chapters/2-what-is-digital/2-hardware.qmd)
+* [Software](/chapters/2-what-is-digital/3-software.qmd)
+* [Key Digital Concepts in Health Informatics](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)
 
 
 ## Health and Disease
 
-* What is Health?
-* What is Disease?
-* Population Health
+* [Health and Disease](/chapters/3-health-and-disease/index.qmd)
+* [What is Health and Disease](/chapters/3-health-and-disease/1-what-is-health.qmd)
 
 
-## Digital Health System Types
+## Index test 0
 
-* Types of Digital healthcare systems (- EHR, PAS, PACS, patient portals, TIE).
-* Telemedicine and Telehealth (duplicate)
+* [Index test 0](/chapters/4-healthcare-professionals-facing-systems/index.qmd)
 
+### Index test 1
 
-## Clinical Decision Support Systems (CDSS)
+* [Index test 1](/chapters/4-healthcare-professionals-facing-systems/test-1/index.qmd)
 
-* [Overview](/chapters/decision-support/index.qmd)
-* [Medical calculators](/chapters/decision-support/medical-calculators.qmd)
-* [Alert systems](/chapters/decision-support/alert-systems.qmd)
-* [Rules based](/chapters/decision-support/rules-based.qmd)
-* [Models based](/chapters/decision-support/models-based.qmd)
+### Index test 2
 
+* [Index test 2](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/index.qmd)
+* [Test 3](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/test-3.qmd)
 
-## Infrastructure
+### Index test 3
 
-* Healthcare IT Infrastructure
-* Health Information Exchange (HIE)
+* [Index test 3](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/index.qmd)
 
+### Index test 4
 
-## Interoperability
-
-* Interoperability
-* Data standards
-* Interoperability
-
- 
-## Terminologies
-
-* SNOMED-CT
-* Read Codes
-* ICD
+* [Index test 4](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/index.qmd)
+* [B test](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/b-test.qmd)
 
 
-## History
+## History of Digital Health Across the Globe
 
-* [NHS UK](./timeline/england/index.qmd)
-* History of Digital Health in other Countries
+* [History of Digital Health Across the Globe](/chapters/7-history-of-digital-health-across-the-globe/index.qmd)
+
+### England NHS Timeline
+
+* [England NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
+* [Colossus computer](/chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.qmd)
+* [Computers first used for administrative purposes](/chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.qmd)
+* [First use of Health Informatics Technology](/chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.qmd)
+
+### Welsh NHS Timeline
+
+* [Welsh NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/2-wales/index.qmd)
+
+
+## Decision Support
+
+* [Decision Support](/chapters/9-clinical-decision-support-systems/index.qmd)
+* [Medical Calculators](/chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd)
+* [Alert Systems](/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd)
+* [Rules Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
+* [Models Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
 
 
 ## Governance
 
-* Regulatory and Policy Issues
-* Standards and Regulatory Compliance
-* Medicolegal Aspects
+* [Governance](/chapters/13-governance/index.qmd)
 
 
-## Clinical safety
+## Author's guide
 
-* Clinical safety
-
-
-## Audit
-
-* Quality Improvement
+* [Author's guide](/chapters/28-authors-guide/index.qmd)
+* [Technical guide](/chapters/28-authors-guide/1-technical-guide.qmd)
 
 
-## Patient-Focused Informatics
+## Todo list for the EOHI guide
 
-* Patient Engagement and Empowerment
-* Social Determinants of Health (SDOH) and Informatics
-* Behavioural Health Informatics
-* Digital Therapeutics and Remote Monitoring
-* Telemedicine and Telehealth
-* Mobile Health (mHealth)
-
-
-## Privacy, Security, and Ethics
-
-* Privacy and Security
-* Ethics
-* Diversity
-
-
-## Business
-
-* Health Economics and Informatics
-* Leadership and Governance
-* Process Mapping
-* Clinical Workflow and Process Improvement
-* Change Management
-* Communication Skills
-* Business Process
-* Evaluation and Impact Assessment
-* Interprofessional Collaboration (Role of Clinical Informaticians in Interdisciplinary Teams
-* Collaboration with Clinicians, IT professionals, administrators, etc. Effective communication strategies)
-
-
-## Building Digital Systems
-
-* Machine / Human Interface
-* Usability and User Experience (UX)
-* Programming in Clinical Informatics
-* Testing
-
-
-## Innovation and Emerging Trends
-
-* Digital Health Innovation and Entrepreneurship
-* Digital Twins and Simulation in Healthcare
-* Global Health Informatics
-
-
-## Emerging Trends and Future Directions
-
-* Artificial Intelligence and Machine Learning in Clinical Informatics
-* Blockchain Technology in Healthcare
-* Genomic Informatics and Precision Medicine
-
-
-## Research 
-
-* Research and Development in Clinical Informatics
-* Clinical Trials and Research Informatics
-
-
-## Further reading
-
-
-## Glossary
-
-</body></html>
+* [Todo list for the EOHI guide](/chapters/29-todo.qmd)

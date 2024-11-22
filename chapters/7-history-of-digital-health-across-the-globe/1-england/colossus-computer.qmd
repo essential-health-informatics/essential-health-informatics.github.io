@@ -2,4 +2,4 @@
 title: "Colossus computer"
 ---
 
-Some material</body></html>
+Some material

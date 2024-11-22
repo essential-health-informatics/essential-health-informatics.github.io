@@ -3,4 +3,4 @@ title: "Medical Calculators"
 image: /media/calculator-end-on.jpg
 ---
 
-![](/media/calculator-end-on.jpg){alt="A calculator end on"}</body></html>
+![](/media/calculator-end-on.jpg){alt="A calculator end on"}

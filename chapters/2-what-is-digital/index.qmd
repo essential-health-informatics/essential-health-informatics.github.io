@@ -16,7 +16,7 @@ Understanding the fundamentals of digital systems is crucial to navigating the l
 
 ## Chapters
 
-* [Digital](digital.qmd)
-* [Hardware](hardware.qmd)
-* [Software](software.qmd)
-* [Key Digital Concepts in Health Informatics](key-digital-concepts-in-health-informatics.qmd)</body></html>
+* [Digital](1-digital.qmd)
+* [Hardware](2-hardware.qmd)
+* [Software](3-software.qmd)
+* [Key Digital Concepts in Health Informatics](4-key-digital-concepts-in-health-informatics.qmd)

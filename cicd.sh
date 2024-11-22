@@ -46,7 +46,7 @@ output=$(npx prettier --config .prettierrc  --check './utils/**/*.ts' --color 2>
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - failed!" "Error: $output" "red" "verbose"
+  print_message "Formatting/linting of TypeScript - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -60,7 +60,7 @@ output=$(npm exec npx jest tests/pre-render/*.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - failed!" "Error: $output" "red" "verbose"
+  print_message "Pre-render unit testing - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -74,7 +74,7 @@ output=$(npm exec ts-node utils/timeline-main.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - failed!" "Error: $output" "red" "verbose"
+  print_message "Creating timeline pages - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -88,7 +88,7 @@ output=$(quarto render 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - failed!" "Error: $output" "red" "verbose"
+  print_message "Creating Quarto static pages - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
@@ -96,12 +96,12 @@ print_message " - pass" "Output: $output" "blue"
 
 
 # Post-render unit tests
-print_message "Post-render tests" "" "blue" "" "in-line"
+print_message "Post-render unit tests" "" "blue" "" "in-line"
 output=$(npm exec npx jest tests/post-render/*.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - failed!" "Error: $output" "red" "verbose"
+  print_message "Post-render unit tests - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 

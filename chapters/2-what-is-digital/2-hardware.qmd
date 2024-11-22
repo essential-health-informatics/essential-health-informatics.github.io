@@ -51,4 +51,5 @@ The NIC enables a computer to connect to a network, whether it's a local network
 
 Hardware forms the backbone of any digital system, providing the infrastructure for software to run and data to be processed. In healthcare, specialised hardware plays a critical role in ensuring the efficient, accurate, and safe management of patient information. As the demands of health informatics grow, the importance of selecting the right hardware becomes increasingly clear—whether it’s for storing large datasets, processing complex algorithms, or enabling telemedicine and remote monitoring.
 
-</body></html>
+
+## GPU

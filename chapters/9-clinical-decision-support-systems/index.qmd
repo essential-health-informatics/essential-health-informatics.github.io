@@ -16,7 +16,7 @@ As CDSS becomes more integrated with electronic patient records (EPRs), there is
 
 ## Chapters
 
-* [Medical calculators](medical-calculators.qmd)
-* [Alert systems](alert-systems.qmd)
-* [Rules based](rules-based.qmd)
-* [Models based](models-based.qmd)</body></html>
+* [Medical calculators](1-medical-calculators.qmd)
+* [Alert systems](2-alert-systems.qmd)
+* [Rules based](3-rules-based.qmd)
+* [Models based](4-models-based.qmd)

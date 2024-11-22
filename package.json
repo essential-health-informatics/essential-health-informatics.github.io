@@ -37,9 +37,12 @@
     "axios": "^1.7.7",
     "cropperjs": "^1.6.2",
     "deasync": "^0.1.30",
+    "front-matter": "^4.0.2",
     "glob": "^11.0.0",
+    "gray-matter": "^4.0.3",
     "image-size": "^1.1.1",
     "jsdom": "^25.0.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "yaml": "^2.6.1"
   }
 }

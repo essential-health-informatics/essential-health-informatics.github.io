@@ -1,8 +1,0 @@
----
-title: "Introduction to Health Informatics"
-image: /media/monopoly-start.jpg
----
-
-![](/media/monopoly-start.jpg){alt="The start tile on a Monopoly game board"}
-
-Many thanks for joining us on this incredible journey of health, disease, human emotions, human reasoning and digital health. Health Informatics is a very broad and very complicated discipline, so much so than the underlying digital architecture of the systems it involves. </body></html>

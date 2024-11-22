@@ -1,17 +1,44 @@
-  
 website:
   sidebar:
+    collapse-level: 1
     contents:
-      - text: "Contents"
-        href: chapters/index.qmd
-      - text: "Introduction"
-        href: chapters/introduction/index.qmd
-      - section: "What is Digital?"
-        href: chapters/what-is-digital/index.qmd
+      - chapters/index.qmd
+      - chapters/1-introduction/index.qmd
+      - section: chapters/2-what-is-digital/index.qmd
         contents:
-          - chapters/what-is-digital/digital.qmd
-          - chapters/what-is-digital/hardware.qmd
-          - chapters/what-is-digital/software.qmd
-      - text: "Timeline - UK"
-        href: chapters/timeline/england/index.qmd
-      - authors-guide.qmd
+          - chapters/2-what-is-digital/1-digital.qmd
+          - chapters/2-what-is-digital/2-hardware.qmd
+          - chapters/2-what-is-digital/3-software.qmd
+          - chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd
+      - section: chapters/3-health-and-disease/index.qmd
+        contents:
+          - chapters/3-health-and-disease/1-what-is-health.qmd
+      - section: chapters/4-healthcare-professionals-facing-systems/index.qmd
+        contents:
+          - chapters/4-healthcare-professionals-facing-systems/test-1/index.qmd
+          - section: chapters/4-healthcare-professionals-facing-systems/test-1/test-2/index.qmd
+            contents:
+              - chapters/4-healthcare-professionals-facing-systems/test-1/test-2/test-3.qmd
+          - chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/index.qmd
+          - section: chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/index.qmd
+            contents:
+              - chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/b-test.qmd
+      - section: chapters/7-history-of-digital-health-across-the-globe/index.qmd
+        contents:
+          - section: chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd
+            contents:
+              - chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.qmd
+              - chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.qmd
+              - chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.qmd
+          - chapters/7-history-of-digital-health-across-the-globe/2-wales/index.qmd
+      - section: chapters/9-clinical-decision-support-systems/index.qmd
+        contents:
+          - chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd
+          - chapters/9-clinical-decision-support-systems/2-alert-systems.qmd
+          - chapters/9-clinical-decision-support-systems/3-rules-based.qmd
+          - chapters/9-clinical-decision-support-systems/4-models-based.qmd
+      - chapters/13-governance/index.qmd
+      - section: chapters/28-authors-guide/index.qmd
+        contents:
+          - chapters/28-authors-guide/1-technical-guide.qmd
+      - chapters/29-todo.qmd
