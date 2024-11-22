@@ -82,6 +82,20 @@ print_message " - pass" "Output: $output" "blue"
 
 
 
+# Create chapter page and sidebar
+print_message "Creating chapter page and side bar" "" "blue" "" "in-line"
+output=$(npm exec ts-node ./utils/chapters.ts 2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message "Creating chapter page and side bar - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "Output: $output" "blue"
+
+
+
 # Create static site
 print_message "Creating Quarto static pages" "" "blue" "" "in-line"
 output=$(quarto render 2>&1)
@@ -93,6 +107,7 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message " - pass" "Output: $output" "blue"
+
 
 
 # Post-render unit tests

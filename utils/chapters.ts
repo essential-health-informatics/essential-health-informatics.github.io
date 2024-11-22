@@ -183,7 +183,6 @@ sidebar: false
 ---
 `;
     let yamlString = '';
-    console.log('');
 
     yamlString = ymlObject
       .map((item) => {
@@ -203,9 +202,6 @@ sidebar: false
           const furtherLinks = item.contents
             .map((content) => {
               if (typeof content === 'string') {
-                // console.log('Item --', item.section);
-                // console.log('Content --', content);
-
                 const fileContent = fs.readFileSync(String(content), 'utf8');
                 const { data: subSectionAttributes } = matter(fileContent);
 
@@ -273,11 +269,8 @@ sidebar: false
       'index.qmd'
     );
     const files = glob.sync(this.searchPattern);
-
     const sidebarStructure: StrYaml[] = this.createYmlObject(files);
-
     this.writeYaml(sidebarPath, sidebarStructure);
-
     this.createChapterFile(chaptersPath, sidebarStructure);
   }
 }
