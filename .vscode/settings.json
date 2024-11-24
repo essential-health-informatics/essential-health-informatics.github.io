@@ -10,5 +10,6 @@
   },
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "jest.runMode": "on-demand",
 }

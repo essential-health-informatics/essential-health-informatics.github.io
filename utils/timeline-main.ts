@@ -1,19 +1,12 @@
 /**
- * @module TimelineMain
- *
  * Provides functions to generate and populate timeline HTML pages based on
  * date containers and metadata. It includes functionality to log TypeScript files in
  * specified directories and to create timeline index pages.
  *
- * Functions:
- * - populateTimeline: Generates HTML content for a timeline and writes it to an output file.
- * - logTsFilesInChapters: Logs and returns TypeScript files in specified chapters.
- * - populateAllTimelines: Creates index pages for all timelines found in the specified directories.
+ * Exports:
+ * - Functions: populateTimeline, logTsFilesInChapters and populateAllTimelines
  *
- * Usage:
- * Can be used to automate the creation of timeline HTML pages for a website.
- * It searches for `timeline.ts` files in specified directories, processes the data, and
- * generates corresponding HTML files.
+ * @module TimelineMain
  */
 
 import * as fs from 'fs';
@@ -51,15 +44,16 @@ export class TimeLineIndexPages {
   /**
    * Populates a timeline with events and writes it to an output file.
    *
+   * @remarks
    * Generates HTML content for a timeline based on the provided date containers,
    * title, and output filename. Writes the generated HTML to the specified output file.
    *
-   * @param {DatesContainer[]} datesContainers - An array of date containers representing timeline events.
-   * @param {string} title - The title of the timeline.
-   * @param {string} outputFilename - The path to the output file where the timeline HTML will be written.
-   * @throws {Error} If datesContainers is empty.
-   * @throws {Error} If title is empty.
-   * @throws {Error} If outputFilename is not a .qmd file.
+   * @param datesContainers - An array of date containers representing timeline events.
+   * @param title - The title of the timeline.
+   * @param outputFilename - The path to the output file where the timeline HTML will be written.
+   * @throws Error - If datesContainers is empty.
+   * @throws Error - If title is empty.
+   * @throws Error - If outputFilename is not a .qmd file.
    */
   populateTimeline(
     datesContainers: DatesContainer[],
@@ -140,10 +134,11 @@ sidebar: false
   /**
    * Logs and returns TypeScript files in chapters.
    *
+   * @remarks
    * Searches for all `timeline.ts` files within the global `directoryPath` directory
    * and returns an array of objects containing the directory and filename of each file.
    *
-   * @returns {FileDescriptor[]} - An array of objects containing the directory and filename of each `timeline.ts` file.
+   * @returns FileDescriptor[] - An array of objects containing the directory and filename of each `timeline.ts` file.
    */
   logTsFilesInChapters(): FileDescriptor[] {
     const tsFiles: FileDescriptor[] = [];
@@ -165,7 +160,7 @@ sidebar: false
    *
    * Creates index pages for all timelines found in the specified directories.
    */
-  populateAllTimelines() {
+  populateAllTimelines(): void {
     console.log('Creating timeline index.qmd pages...');
 
     const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();

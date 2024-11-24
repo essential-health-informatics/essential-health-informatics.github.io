@@ -1,3 +1,12 @@
+/**
+ * Creates sidebar yaml file and chapters index.qmd file.
+ *
+ * Exports:
+ * - Classes: Chapters
+ *
+ * @module Chapters
+ */
+
 import * as fs from 'fs';
 import * as path from 'path';
 import * as yaml from 'yaml';
@@ -30,8 +39,8 @@ class Chapters {
   /**
    * Create sidebar structure from files
    *
-   * @param files
-   * @returns StrYaml[] - Sidebar structure
+   * @param files - The files to create the sidebar structure from.
+   * @returns The sidebar structure.
    */
   createYmlObject = (files: string[]): StrYaml[] => {
     const groupedFiles: { [key: string]: string[] } = {};
@@ -72,7 +81,7 @@ class Chapters {
         }
       }
 
-      // Ensure directories with index.qmd come before subdirectories
+      // Ensures directories with index.qmd come before subdirectories
       if (aDir.startsWith(bDir) && b.endsWith('index.qmd')) return 1;
       if (bDir.startsWith(aDir) && a.endsWith('index.qmd')) return -1;
 
@@ -156,9 +165,9 @@ class Chapters {
   /**
    * Write sidebar structure to file
    *
-   * @param yamlPath
-   * @param yamlObject
-   * @returns StrYaml[] - Sidebar structure
+   * @param yamlPath - The path to write the sidebar yaml file.
+   * @param yamlObject - The sidebar structure in yaml format.
+   * @returns Sidebar structure
    */
   writeYaml(yamlPath: string, yamlObject: StrYaml[]): void {
     const finalSidebar: FinalSidebar = {

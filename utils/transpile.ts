@@ -1,3 +1,12 @@
+/**
+ * Compiles TypeScript files for use in the frontend.
+ *
+ * Exports:
+ * - Functions: checkType
+ *
+ * @module Transpile
+ */
+
 import { transpile } from 'https://deno.land/x/emit/mod.ts';
 import { dirname, fromFileUrl } from 'https://deno.land/std/path/mod.ts';
 

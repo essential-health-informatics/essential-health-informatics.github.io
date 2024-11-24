@@ -6,9 +6,6 @@ project:
   post-render:
     - npm exec ts-node utils/banner.ts
 
-# include-after:
-#     <script type="module" src="/static/js/image-crop.js"></script>
-
 bibliography: references.bib
 
 website:
