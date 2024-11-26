@@ -21,6 +21,80 @@ export class Crop {
   constructor() {}
 
   /**
+   * Find and crop images in HTML files
+   */
+  cropRun() {
+    const files = glob.sync(this.searchPattern);
+
+    if (files.length === 0) {
+      console.log('No files found');
+      return;
+    }
+    console.log('Cropping images for banners...');
+
+    files.forEach((file) => {
+      this.cropAnalyse(file);
+    });
+
+    console.log('Finished cropping images');
+  }
+
+  /**
+   * Analyse the HTML file and crop images.
+   *
+   * @param filePath - The file path of the HTML file.
+   * @throws Error - The file path does not exist.
+   * @throws Error - No content found in file.
+   * @throws Error - Failed to create DOM from content.
+   */
+  private cropAnalyse(filePath: string): void {
+    if (!fs.existsSync(filePath)) {
+      throw new Error(`The file path ${filePath} does not exist`);
+    }
+
+    const content: string = fs.readFileSync(filePath, 'utf-8');
+    if (!content) {
+      throw new Error(`No content found in file: ${filePath}`);
+    }
+
+    const dom = new JSDOM(content);
+    const document: Document = dom.window.document;
+    // Note: Quarto renames 'crop' attributes to 'data-crop'
+    const images: NodeListOf<HTMLImageElement> =
+      document.querySelectorAll('img[data-crop]');
+
+    images.forEach((img: HTMLImageElement) => {
+      let dataCrop: string | null = img.getAttribute('data-crop');
+
+      if (dataCrop) {
+        dataCrop = dataCrop.trim();
+        const dataCropValues: string[] = dataCrop.split(/\s+/);
+
+        if (dataCropValues[0] === '3:1') {
+          const positionStr: number | string = dataCropValues[1].replace(
+            '%',
+            ''
+          );
+
+          if (!isNaN(Number(positionStr))) {
+            this.crop3to1(filePath, img, Number(positionStr));
+            fs.writeFileSync(filePath, dom.serialize());
+            console.log(`  * ${filePath.replace(this.directoryPath, '')}`);
+          } else {
+            throw new TypeError(
+              `${filePath}: The position value of ${positionStr} is not a number`
+            );
+          }
+        } else {
+          throw new RangeError(
+            `${filePath}: Unsupported crop method: ${dataCrop}`
+          );
+        }
+      }
+    });
+  }
+
+  /**
    * Crops to a 3:1 ratio and positions the image.
    *
    * @param filePath - The file path of the HTML file.
@@ -32,7 +106,11 @@ export class Crop {
    * @throws RangeError - The position value is outside the range 0-100.
    * @throws RangeError - The image has no 'src' or 'alt' attribute(s).
    */
-  crop3to1(filePath: string, img: HTMLImageElement, position: number): void {
+  private crop3to1(
+    filePath: string,
+    img: HTMLImageElement,
+    position: number
+  ): void {
     if (!fs.existsSync(filePath)) {
       throw new Error(`The file path ${filePath} does not exist`);
     }
@@ -69,76 +147,6 @@ export class Crop {
         `There was no parent node for image '${src}' in file '${filePath}'`
       );
     }
-  }
-
-  /**
-   * Analyse the HTML file and crop images.
-   *
-   * @param filePath - The file path of the HTML file.
-   * @throws Error - The file path does not exist.
-   * @throws Error - No content found in file.
-   * @throws Error - Failed to create DOM from content.
-   */
-  cropAnalyse(filePath: string): void {
-    if (!fs.existsSync(filePath)) {
-      throw new Error(`The file path ${filePath} does not exist`);
-    }
-
-    const content: string = fs.readFileSync(filePath, 'utf-8');
-    if (!content) {
-      throw new Error(`No content found in file: ${filePath}`);
-    }
-
-    const dom = new JSDOM(content);
-    const document: Document = dom.window.document;
-    // Note: Quarto renames 'crop' attributes to 'data-crop'
-    const images: NodeListOf<HTMLImageElement> =
-      document.querySelectorAll('img[data-crop]');
-
-    images.forEach((img: HTMLImageElement) => {
-      let dataCrop: string | null = img.getAttribute('data-crop');
-
-      if (dataCrop) {
-        dataCrop = dataCrop.trim();
-        const dataCropValues: string[] = dataCrop.split(/\s+/);
-
-        if (dataCropValues[0] === '3:1') {
-          const positionStr: number | string = dataCropValues[1].replace(
-            '%',
-            ''
-          );
-
-          if (!isNaN(Number(positionStr))) {
-            this.crop3to1(filePath, img, Number(positionStr));
-            fs.writeFileSync(filePath, dom.serialize());
-            console.log(`\t* ${filePath}`);
-          } else {
-            throw new TypeError(
-              `\t* ${filePath}: The position value of ${positionStr} is not a number`
-            );
-          }
-        } else {
-          throw new RangeError(
-            `\t* ${filePath}: Unsupported crop method: ${dataCrop}`
-          );
-        }
-      }
-    });
-  }
-
-  /**
-   * Find and crop images in HTML files
-   */
-  cropRun() {
-    const files = glob.sync(this.searchPattern);
-
-    console.log('Cropping images for banners...');
-
-    files.forEach((file) => {
-      this.cropAnalyse(file);
-    });
-
-    console.log('Finished cropping images');
   }
 }
 

@@ -13,14 +13,14 @@ import * as yaml from 'yaml';
 import * as glob from 'glob';
 import matter from 'gray-matter';
 
-type StrYaml = string | Yaml;
+export type StrYaml = string | Yaml;
 
-interface Yaml {
+export interface Yaml {
   section: string;
   contents: StrYaml[];
 }
 
-interface FinalSidebar {
+export interface FinalSidebar {
   website: {
     sidebar: {
       'collapse-level': number;
@@ -29,71 +29,121 @@ interface FinalSidebar {
   };
 }
 
-class Chapters {
-  chaptersFolder = 'chapters';
-  directoryPath = path.join(process.cwd(), this.chaptersFolder);
-  searchPattern = `${this.directoryPath}/**/*.qmd`;
+export class Chapters {
+  chaptersFolder: string = 'chapters';
+  directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
+  searchPattern: string = `${this.directoryPath}/**/*.qmd`;
 
   constructor() {}
 
   /**
-   * Create sidebar structure from files
+   * Run all the methods to create the sidebar and chapters files.
+   */
+  public run(): void {
+    const sidebarPath: string = path.join(process.cwd(), 'sidebar.yml');
+    const chaptersPath: string = path.join(
+      process.cwd(),
+      this.chaptersFolder,
+      'index.qmd'
+    );
+
+    const files: string[] = glob.sync(this.searchPattern);
+    if (files.length === 0) {
+      console.log('No files found');
+      return;
+    }
+
+    const sidebarStructure: StrYaml[] = this.createYmlObject(files);
+    this.writeYaml(sidebarPath, sidebarStructure);
+    this.createChapterFile(chaptersPath, sidebarStructure);
+  }
+
+  /**
+   * Create sidebar structure in yaml format from provided files
+   *
+   * @remarks
+   * Each file is ordered by the number prefix of the folder and then by file name. The 'index.qmd' file is placed before numbered files. Then all files in the same directory are grouped together. This structure is then converted to yaml format. Note, the files' full path is ultimately altered to be relative to the chapters folder.
    *
    * @param files - The files to create the sidebar structure from.
+   * @throws Error - If no files are found or if a directory with files does not contain an index.qmd file.
    * @returns The sidebar structure.
    */
-  createYmlObject = (files: string[]): StrYaml[] => {
-    const groupedFiles: { [key: string]: string[] } = {};
-    let ymlContents: StrYaml[] = [];
+  protected createYmlObject(files: string[]): StrYaml[] {
+    if (files.length === 0) {
+      throw new Error('No files found');
+    }
+
+    files.forEach((file) => {
+      if (!file.endsWith('.qmd')) {
+        throw new Error(`File '${file}' does not end with .qmd`);
+      }
+    });
 
     files = files.map((file) => path.relative(this.directoryPath, file));
 
+    const noIndexFolders: string[] = this.checkIndexFiles(files);
+    if (noIndexFolders.length !== 0) {
+      throw new Error(
+        `'index.qmd' missing from folder(s):\n\n${noIndexFolders}`
+      );
+    }
+
+    let ymlContents: StrYaml[] = [];
+
     files.sort((a, b) => {
-      const getNumericPrefix = (str: string) => {
-        const match = str.match(/^(\d+(-\d+)*)/);
-        return match ? match[0] : '';
-      };
+      // Extract directory paths.
+      const aDir: string = path.dirname(a);
+      const bDir: string = path.dirname(b);
 
-      // Extract directory paths
-      const aDir = path.dirname(a);
-      const bDir = path.dirname(b);
-
+      // Place the chapters/index.qmd file at the top.
       if (a === 'index.qmd') return -1;
       if (b === 'index.qmd') return 1;
 
-      // If both files are in the same directory, prioritize index.qmd
+      // If both files are in the same directory, prioritise index.qmd.
       if (aDir === bDir) {
         if (a.endsWith('index.qmd')) return -1;
         if (b.endsWith('index.qmd')) return 1;
       }
 
-      const aPrefix = getNumericPrefix(a);
-      const bPrefix = getNumericPrefix(b);
+      const getNumericPrefix = (str: string): string => {
+        const match = str.match(/^(\d+(-\d+)*)/);
+        return match ? match[0] : '';
+      };
 
+      const aPrefix: string = getNumericPrefix(a);
+      const bPrefix: string = getNumericPrefix(b);
+
+      // If both files have a numeric prefixes to their parent folder(s), then sort by these numerical prefixes.
       if (aPrefix && bPrefix) {
         const aParts = aPrefix.split('-').map(Number);
         const bParts = bPrefix.split('-').map(Number);
 
-        for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+        for (
+          let i: number = 0;
+          i < Math.max(aParts.length, bParts.length);
+          i++
+        ) {
           if (aParts[i] !== bParts[i]) {
             return (aParts[i] || 0) - (bParts[i] || 0);
           }
         }
       }
 
-      // Ensures directories with index.qmd come before subdirectories
+      // Ensures index.qmd come before subdirectories
       if (aDir.startsWith(bDir) && b.endsWith('index.qmd')) return 1;
       if (bDir.startsWith(aDir) && a.endsWith('index.qmd')) return -1;
 
+      // Else, sort alphabetically.
       return a.localeCompare(b);
     });
 
     files = files.map((file) => path.join(this.chaptersFolder, file));
+    const groupedFiles: { [key: string]: string[] } = {};
 
+    // Put files into groups based on their parent directory.
     files.forEach((file) => {
-      const pathParts = file.split(path.sep);
-      const dir = path.dirname(file);
-      const basePath = pathParts.slice(0, 2).join(path.sep);
+      const pathParts: string[] = file.split(path.sep);
+      const basePath: string = pathParts.slice(0, 2).join(path.sep);
 
       if (!groupedFiles[basePath]) {
         groupedFiles[basePath] = [];
@@ -108,26 +158,19 @@ class Chapters {
     for (const basePath in groupedFiles) {
       if (groupedFiles[basePath].length === 1) {
         ymlContents.push(groupedFiles[basePath][0]);
-      } else if (!groupedFiles[basePath][0].endsWith('index.qmd')) {
-        const firstDir = path.dirname(groupedFiles[basePath][0]);
-        throw new Error(
-          `'${firstDir}' directory doesn't have an index.qmd file!`
-        );
       } else {
         let subDirectoryFiles: string[] = groupedFiles[basePath].slice(1);
-
         const subGroupedFiles: { [key: string]: string[] } = {};
 
         subDirectoryFiles.forEach((file) => {
-          const dir = path.dirname(file);
+          const dir: string = path.dirname(file);
+
           if (!subGroupedFiles[dir]) {
             subGroupedFiles[dir] = [];
           }
+
           subGroupedFiles[dir].push(file);
         });
-
-        const subFiles = Object.values(subGroupedFiles);
-        let contents: StrYaml[] = [];
 
         if (Object.keys(subGroupedFiles).length === 1) {
           ymlContents.push({
@@ -135,13 +178,10 @@ class Chapters {
             contents: subDirectoryFiles
           });
         } else {
+          let contents: StrYaml[] = [];
+
           for (const dir in subGroupedFiles) {
-            if (!subGroupedFiles[dir][0].endsWith('index.qmd')) {
-              const firstDir = path.dirname(dir);
-              throw new Error(
-                `'${firstDir}' directory doesn't have an index.qmd file!`
-              );
-            } else if (subGroupedFiles[dir].length === 1) {
+            if (subGroupedFiles[dir].length === 1) {
               contents.push(subGroupedFiles[dir][0]);
             } else {
               contents.push({
@@ -160,7 +200,33 @@ class Chapters {
       }
     }
     return ymlContents;
-  };
+  }
+
+  /**
+   * Check that each folder containing files has an 'index.qmd' file.
+   *
+   * @param files - The files to check.
+   * @throws Error - If a directory with files does not contain an index.qmd file.
+   */
+  protected checkIndexFiles(files: string[]): string[] {
+    const directories = new Set<string>();
+
+    files.forEach((file) => {
+      const dir = path.dirname(file);
+      directories.add(dir);
+    });
+
+    let failedFolders: string[] = [];
+
+    directories.forEach((dir) => {
+      const indexFile = path.join(dir, 'index.qmd');
+      if (!files.includes(indexFile)) {
+        failedFolders.push(dir);
+      }
+    });
+
+    return failedFolders;
+  }
 
   /**
    * Write sidebar structure to file
@@ -169,7 +235,7 @@ class Chapters {
    * @param yamlObject - The sidebar structure in yaml format.
    * @returns Sidebar structure
    */
-  writeYaml(yamlPath: string, yamlObject: StrYaml[]): void {
+  protected writeYaml(yamlPath: string, yamlObject: StrYaml[]): void {
     const finalSidebar: FinalSidebar = {
       website: {
         sidebar: {
@@ -185,7 +251,10 @@ class Chapters {
     return;
   }
 
-  createChapterFile(chaptersPath: string, ymlObject: StrYaml[]): void {
+  protected createChapterFile(
+    chaptersPath: string,
+    ymlObject: StrYaml[]
+  ): void {
     const frontMatter = `---
 title: Chapters
 sidebar: false
@@ -265,22 +334,6 @@ sidebar: false
     fs.writeFileSync(chaptersPath, frontMatter + yamlString, 'utf8');
 
     return;
-  }
-
-  /**
-   * Run the script
-   */
-  run() {
-    const sidebarPath: string = path.join(process.cwd(), 'sidebar.yml');
-    const chaptersPath: string = path.join(
-      process.cwd(),
-      this.chaptersFolder,
-      'index.qmd'
-    );
-    const files = glob.sync(this.searchPattern);
-    const sidebarStructure: StrYaml[] = this.createYmlObject(files);
-    this.writeYaml(sidebarPath, sidebarStructure);
-    this.createChapterFile(chaptersPath, sidebarStructure);
   }
 }
 

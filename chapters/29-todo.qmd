@@ -16,6 +16,7 @@ image: /media/post-its-on-white-board.jpg
 * Check all titles are in `Title case`.
 * All chapter folders and subfolders must have an `index.qmd` file. Needs uni testing and checking in chapters.ts.
 * Bibliography for each chapter.
+* Format / linter for markdown files.
 
 ### Content
 

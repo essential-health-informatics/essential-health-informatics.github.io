@@ -24,29 +24,6 @@ sidebar: false
 * [What is Health and Disease](/chapters/3-health-and-disease/1-what-is-health.qmd)
 
 
-## Index test 0
-
-* [Index test 0](/chapters/4-healthcare-professionals-facing-systems/index.qmd)
-
-### Index test 1
-
-* [Index test 1](/chapters/4-healthcare-professionals-facing-systems/test-1/index.qmd)
-
-### Index test 2
-
-* [Index test 2](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/index.qmd)
-* [Test 3](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/test-3.qmd)
-
-### Index test 3
-
-* [Index test 3](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/index.qmd)
-
-### Index test 4
-
-* [Index test 4](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/index.qmd)
-* [B test](/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/b-test.qmd)
-
-
 ## History of Digital Health Across the Globe
 
 * [History of Digital Health Across the Globe](/chapters/7-history-of-digital-health-across-the-globe/index.qmd)
@@ -54,13 +31,18 @@ sidebar: false
 ### England NHS Timeline
 
 * [England NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
+
+### Colossus computer
+
 * [Colossus computer](/chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.qmd)
+
+### Computers first used for administrative purposes
+
 * [Computers first used for administrative purposes](/chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.qmd)
+
+### First use of Health Informatics Technology
+
 * [First use of Health Informatics Technology](/chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.qmd)
-
-### Welsh NHS Timeline
-
-* [Welsh NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/2-wales/index.qmd)
 
 
 ## Decision Support
@@ -70,11 +52,6 @@ sidebar: false
 * [Alert Systems](/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd)
 * [Rules Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
 * [Models Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
-
-
-## Governance
-
-* [Governance](/chapters/13-governance/index.qmd)
 
 
 ## Author's guide

@@ -4,7 +4,7 @@ project:
   - "static/*"
   - "media/*"
   post-render:
-    - npm exec ts-node utils/banner.ts
+    - npm exec ts-node utils/banners.ts
 
 bibliography: references.bib
 
