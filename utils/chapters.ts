@@ -206,6 +206,7 @@ export class Chapters {
     });
 
     files = files.map((file) => path.join(this.chaptersFolder, file));
+    console.log(files);
     const groupedFiles: { [key: string]: string[] } = {};
 
     // Put files into groups based on their parent directory.
