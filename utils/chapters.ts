@@ -31,7 +31,17 @@ export interface FinalSidebar {
 
 export class Chapters {
   chaptersFolder: string = 'chapters';
-  directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
+  // directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
+
+  // Get the directory of the current file
+  currentFileDir = __dirname;
+
+  // Get the parent directory of the current file
+  parentDir = path.resolve(this.currentFileDir, '..');
+
+  // Append the 'chapters' folder to the parent directory
+  directoryPath = path.join(this.parentDir, 'chapters');
+
   searchPattern: string = `${this.directoryPath}/**/*.{qmd,ts}`;
 
   constructor() {}
