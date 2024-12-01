@@ -31,9 +31,6 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Test layout
-        run: pwd && ls -al && find . -type d -name "chapters"
-
       - name: run CI CD tasks
         run: bash cicd.sh
       

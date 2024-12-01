@@ -2,4 +2,4 @@
 /.quarto/
 /_site/
 /node_modules/
-/static/js/
+# /static/js/
