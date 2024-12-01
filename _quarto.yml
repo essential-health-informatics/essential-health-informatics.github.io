@@ -3,8 +3,8 @@ project:
   resources:
   - "static/*"
   - "media/*"
-  post-render:
-    - npm exec ts-node utils/banners.ts
+  # post-render:
+  #   - npm exec ts-node utils/banners.ts
 
 bibliography: references.bib
 

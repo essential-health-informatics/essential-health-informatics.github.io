@@ -32,18 +32,6 @@ sidebar: false
 
 * [England NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
 
-### Colossus computer
-
-* [Colossus computer](/chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.qmd)
-
-### Computers first used for administrative purposes
-
-* [Computers first used for administrative purposes](/chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.qmd)
-
-### First use of Health Informatics Technology
-
-* [First use of Health Informatics Technology](/chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.qmd)
-
 
 ## Decision Support
 

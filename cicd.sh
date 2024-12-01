@@ -109,6 +109,19 @@ fi
 print_message " - pass" "Output: $output" "blue"
 
 
+# Create page banners
+print_message "Creating page banners" "" "blue" "" "in-line"
+output=$(npm exec ts-node utils/banners.ts 2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message "Creating page banners - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "Output: $output" "blue"
+
+
 
 # Post-render unit tests
 print_message "Post-render unit tests" "" "blue" "" "in-line"

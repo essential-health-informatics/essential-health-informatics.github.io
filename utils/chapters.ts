@@ -32,7 +32,7 @@ export interface FinalSidebar {
 export class Chapters {
   chaptersFolder: string = 'chapters';
   directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
-  searchPattern: string = `${this.directoryPath}/**/*.qmd`;
+  searchPattern: string = `${this.directoryPath}/**/*.{qmd,ts}`;
 
   constructor() {}
 
@@ -47,15 +47,63 @@ export class Chapters {
       'index.qmd'
     );
 
-    const files: string[] = glob.sync(this.searchPattern);
+    let files: string[] = glob.sync(this.searchPattern);
     if (files.length === 0) {
-      console.log('No files found');
-      return;
+      throw new Error('No files found');
     }
+
+    files = this.removeTimelineChildren(files);
+
+    this.checkForTitles(files);
 
     const sidebarStructure: StrYaml[] = this.createYmlObject(files);
     this.writeYaml(sidebarPath, sidebarStructure);
     this.createChapterFile(chaptersPath, sidebarStructure);
+  }
+
+  /**
+   * Remove timeline children from the files except index.qmd.
+   *
+   * @param files - Files to remove timeline children from.
+   * @returns Files with timeline children removed except index.qmd.
+   */
+  protected removeTimelineChildren(files: string[]): string[] {
+    const timelineFolders = new Set<string>();
+
+    files.forEach((file) => {
+      if (file.endsWith('timeline.ts')) {
+        const dir: string = path.dirname(file);
+        timelineFolders.add(dir);
+      }
+    });
+
+    files = files.filter((file) => {
+      const dir: string = path.dirname(file);
+      if (timelineFolders.has(dir)) {
+        return file.endsWith('index.qmd');
+      }
+      return true;
+    });
+
+    return files;
+  }
+
+  /**
+   * Check that each file has a title in its front matter.
+   *
+   * @param files - The files to check for titles.
+   * @throws Error - If no title found in a file.
+   *
+   */
+  public checkForTitles(files: string[]): void {
+    files.forEach((file) => {
+      const fileContent = fs.readFileSync(file, 'utf8');
+      const { data: attributes } = matter(fileContent);
+
+      if (!attributes.title) {
+        throw new Error(`No title found in '${file}' file`);
+      }
+    });
   }
 
   /**
@@ -70,7 +118,7 @@ export class Chapters {
    */
   protected createYmlObject(files: string[]): StrYaml[] {
     if (files.length === 0) {
-      throw new Error('No files found');
+      throw new Error('No files have been supplied');
     }
 
     files.forEach((file) => {
@@ -80,8 +128,8 @@ export class Chapters {
     });
 
     files = files.map((file) => path.relative(this.directoryPath, file));
-
     const noIndexFolders: string[] = this.checkIndexFiles(files);
+
     if (noIndexFolders.length !== 0) {
       throw new Error(
         `'index.qmd' missing from folder(s):\n\n${noIndexFolders}`
@@ -233,6 +281,7 @@ export class Chapters {
    *
    * @param yamlPath - The path to write the sidebar yaml file.
    * @param yamlObject - The sidebar structure in yaml format.
+   * @throws Error - If failed to write the yaml file.
    * @returns Sidebar structure
    */
   protected writeYaml(yamlPath: string, yamlObject: StrYaml[]): void {
@@ -245,95 +294,117 @@ export class Chapters {
       }
     };
 
-    const yamlString = yaml.stringify(finalSidebar);
-    fs.writeFileSync(yamlPath, yamlString, 'utf8');
+    try {
+      const yamlString = yaml.stringify(finalSidebar);
 
+      // Ensure the directory exists
+      const dir = path.dirname(yamlPath);
+
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+
+      fs.writeFileSync(yamlPath, yamlString, 'utf8');
+    } catch (error) {
+      throw new Error(`Failed to write YAML file: ${error}`);
+    }
     return;
   }
 
+  /**
+   *
+   * Create the chapters index.qmd file.
+   *
+   * @param chaptersPath
+   * @param ymlObject
+   * @throws Error - If no chapters path has been supplied.
+   * @throws Error - If no yaml object has been supplied.
+   * @throws Error - If no title found in a .qmd file.
+   * @returns
+   */
   protected createChapterFile(
     chaptersPath: string,
     ymlObject: StrYaml[]
   ): void {
-    const frontMatter = `---
-title: Chapters
-sidebar: false
----
-`;
-    let yamlString = '';
+    if (chaptersPath.length === 0) {
+      throw new Error('No chapters path has been supplied');
+    }
 
-    yamlString = ymlObject
-      .map((item) => {
+    if (ymlObject.length === 0) {
+      throw new Error('No yaml object has been supplied');
+    }
+
+    let yamlString = ymlObject
+      .map((item: StrYaml) => {
         if (item === 'chapters/index.qmd') {
           return;
         } else if (typeof item === 'string') {
-          const fileContent = fs.readFileSync(item, 'utf8');
-          const { data: attributes } = matter(fileContent);
-          if (attributes.title) {
-            return `\n## ${attributes.title}\n\n* [${attributes.title}](/${item})\n`;
-          } else {
-            return `\n## [${item}](/${item})\n`;
-          }
+          const title: string = this.getTitle(item);
+          return `\n## ${title}\n\n* [${title}](/${item})\n`;
         } else {
-          const fileContent = fs.readFileSync(item.section, 'utf8');
-          const { data: headerAttributes } = matter(fileContent);
-          const furtherLinks = item.contents
-            .map((content) => {
+          const furtherLinks: StrYaml = item.contents
+            .map((content: StrYaml) => {
               if (typeof content === 'string') {
-                const fileContent = fs.readFileSync(String(content), 'utf8');
-                const { data: subSectionAttributes } = matter(fileContent);
+                const childTitle: string = this.getTitle(String(content));
 
                 if (path.dirname(content) !== path.dirname(item.section)) {
-                  if (subSectionAttributes.title) {
-                    return `\n### ${subSectionAttributes.title}\n\n* [${subSectionAttributes.title}](/${content})`;
-                  } else {
-                    return `\n### ${content}\n\n* [${content}](/${content})`;
-                  }
-                } else if (subSectionAttributes.title) {
-                  return `* [${subSectionAttributes.title}](/${content})`;
+                  return `\n### ${childTitle}\n\n* [${childTitle}](/${content})`;
                 } else {
-                  return `* [${content}](/${content})`;
+                  return `* [${childTitle}](/${content})`;
                 }
               } else {
-                let subSectionContent: string = '';
+                const childTitle: string = this.getTitle(
+                  String(content.section)
+                );
+                let subSectionContent: string = `\n### ${childTitle}\n\n* [${childTitle}](/${content.section})`;
 
-                const fileContent = fs.readFileSync(content.section, 'utf8');
-                const { data: subSectionAttributes } = matter(fileContent);
-                if (subSectionAttributes.title) {
-                  subSectionContent = `\n### ${subSectionAttributes.title}\n\n* [${subSectionAttributes.title}](/${content.section})`;
-                } else {
-                  subSectionContent = `\n### ${subSectionAttributes.title}\n\n* [${content.section}](/${content.section})`;
-                }
-
-                content.contents.forEach((subContent) => {
-                  const fileContent = fs.readFileSync(
-                    String(subContent),
-                    'utf8'
+                content.contents.forEach((subContent: StrYaml) => {
+                  const grandChildTitle: string = this.getTitle(
+                    String(subContent)
                   );
-                  const { data: subSectionAttributes } = matter(fileContent);
-                  if (subSectionAttributes.title) {
-                    subSectionContent += `\n* [${subSectionAttributes.title}](/${subContent})`;
-                  } else {
-                    subSectionContent += `\n* [${subContent}](/${subContent})`;
-                  }
+
+                  subSectionContent += `\n* [${grandChildTitle}](/${subContent})`;
                 });
 
                 return subSectionContent;
               }
             })
             .join('\n');
-          if (headerAttributes.title) {
-            return `\n## ${headerAttributes.title}\n\n* [${headerAttributes.title}](/${item.section})\n${furtherLinks}\n`;
-          } else {
-            return `\n## ${item.section}\n\n* [${item.section}](/${item.section})\n${furtherLinks}\n`;
-          }
+
+          const parentTitle: string = this.getTitle(item.section);
+
+          return `\n## ${parentTitle}\n\n* [${parentTitle}](/${item.section})\n${furtherLinks}\n`;
         }
       })
       .join('\n');
 
+    const frontMatter: string = `---
+title: Chapters
+sidebar: false
+---
+`;
+
     fs.writeFileSync(chaptersPath, frontMatter + yamlString, 'utf8');
 
     return;
+  }
+
+  /**
+   * Get the title from the front matter of a file.
+   *
+   * @param file - The file to get the title from.
+   * @throws Error - If no title found in the file.
+   * @returns The title of the file.
+   */
+  protected getTitle(file: string): string {
+    const fileContent: string = fs.readFileSync(file, 'utf8');
+    const { data: attributes } = matter(fileContent);
+
+    if (!attributes.title) {
+      throw new Error(`Title is missing for '${file}'`);
+    }
+
+    return attributes.title;
   }
 }
 

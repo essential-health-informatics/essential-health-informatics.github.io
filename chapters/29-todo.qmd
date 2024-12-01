@@ -8,6 +8,8 @@ image: /media/post-its-on-white-board.jpg
 ## To do
 
 ### Technical
+* Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
+* Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.
 * Automatically build side bar content from actual content in the guide.
 * Check that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).
 * Finish banner testing (pre-render)

@@ -42,6 +42,78 @@ export class TimeLineIndexPages {
   constructor() {}
 
   /**
+   * Populates all timelines.
+   *
+   * Creates index pages for all timelines found in the specified directories.
+   */
+  public populateAllTimelines(): void {
+    console.log('Creating timeline index.qmd pages...');
+
+    const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();
+
+    if (!tsFiles || tsFiles.length === 0) {
+      console.error('No TypeScript files found in chapters directory.');
+      return;
+    }
+
+    tsFiles.forEach(({ directory, filename }) => {
+      const modulePath = path.join(process.cwd(), directory, filename);
+      let module: TimelineModule;
+
+      try {
+        module = require(modulePath);
+      } catch {
+        throw new Error(`Failed to load module at '${modulePath}'`);
+      }
+
+      const datesContainers: DatesContainer[] = module.datesContainer;
+      const metaData: MetaData = module.metaData;
+
+      if (!datesContainers || datesContainers.length === 0) {
+        console.error(`No datesContainers found in module at '${modulePath}'`);
+        return;
+      }
+
+      if (!metaData || !metaData.title || metaData.title.trim() === '') {
+        console.error(`Invalid metaData or title in module at '${modulePath}'`);
+        return;
+      }
+
+      this.populateTimeline(
+        datesContainers,
+        metaData.title,
+        `${directory}/index.qmd`
+      );
+      console.log(`  * ${directory}`);
+    });
+
+    console.log('Finished creating index pages for timeline.');
+  }
+  /**
+   * Logs and returns TypeScript files in chapters.
+   *
+   * @remarks
+   * Searches for all `timeline.ts` files within the global `directoryPath` directory
+   * and returns an array of objects containing the directory and filename of each file.
+   *
+   * @returns FileDescriptor[] - An array of objects containing the directory and filename of each `timeline.ts` file.
+   */
+  logTsFilesInChapters(): FileDescriptor[] {
+    const tsFiles: FileDescriptor[] = [];
+    const pattern = path.join(this.directoryPath, '**/timeline.ts');
+    const files = glob.sync(pattern);
+
+    files.forEach((file: string) => {
+      tsFiles.push({
+        directory: path.dirname(file),
+        filename: path.basename(file)
+      });
+    });
+
+    return tsFiles;
+  }
+
+  /**
    * Populates a timeline with events and writes it to an output file.
    *
    * @remarks
@@ -129,79 +201,6 @@ sidebar: false
     });
 
     fs.appendFileSync(outputFilename, closingHTML);
-  }
-
-  /**
-   * Logs and returns TypeScript files in chapters.
-   *
-   * @remarks
-   * Searches for all `timeline.ts` files within the global `directoryPath` directory
-   * and returns an array of objects containing the directory and filename of each file.
-   *
-   * @returns FileDescriptor[] - An array of objects containing the directory and filename of each `timeline.ts` file.
-   */
-  logTsFilesInChapters(): FileDescriptor[] {
-    const tsFiles: FileDescriptor[] = [];
-    const pattern = path.join(this.directoryPath, '**/timeline.ts');
-    const files = glob.sync(pattern);
-
-    files.forEach((file: string) => {
-      tsFiles.push({
-        directory: path.dirname(file),
-        filename: path.basename(file)
-      });
-    });
-
-    return tsFiles;
-  }
-
-  /**
-   * Populates all timelines.
-   *
-   * Creates index pages for all timelines found in the specified directories.
-   */
-  populateAllTimelines(): void {
-    console.log('Creating timeline index.qmd pages...');
-
-    const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();
-
-    if (!tsFiles || tsFiles.length === 0) {
-      console.error('No TypeScript files found in chapters directory.');
-      return;
-    }
-
-    tsFiles.forEach(({ directory, filename }) => {
-      const modulePath = path.join(process.cwd(), directory, filename);
-      let module: TimelineModule;
-
-      try {
-        module = require(modulePath);
-      } catch {
-        throw new Error(`Failed to load module at '${modulePath}'`);
-      }
-
-      const datesContainers: DatesContainer[] = module.datesContainer;
-      const metaData: MetaData = module.metaData;
-
-      if (!datesContainers || datesContainers.length === 0) {
-        console.error(`No datesContainers found in module at '${modulePath}'`);
-        return;
-      }
-
-      if (!metaData || !metaData.title || metaData.title.trim() === '') {
-        console.error(`Invalid metaData or title in module at '${modulePath}'`);
-        return;
-      }
-
-      this.populateTimeline(
-        datesContainers,
-        metaData.title,
-        `${directory}/index.qmd`
-      );
-      console.log(`  * ${directory}`);
-    });
-
-    console.log('Finished creating index pages for timeline.');
   }
 }
 

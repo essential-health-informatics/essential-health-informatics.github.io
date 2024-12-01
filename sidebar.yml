@@ -16,9 +16,6 @@ website:
       - section: chapters/7-history-of-digital-health-across-the-globe/index.qmd
         contents:
           - chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd
-          - chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.qmd
-          - chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.qmd
-          - chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.qmd
       - section: chapters/9-clinical-decision-support-systems/index.qmd
         contents:
           - chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd
