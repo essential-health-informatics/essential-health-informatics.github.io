@@ -100,7 +100,7 @@ print_message " - pass" "" "blue"
 
 
 # Transpile browser scripts
-print_message "Transpile browser scripts" "" "blue" "" "in-line"
+print_message "Transpiling browser scripts" "" "blue" "" "in-line"
 output=$(npm exec tsc  2>&1)
 exit_code=$?
 
