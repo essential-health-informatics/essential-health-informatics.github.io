@@ -31,16 +31,16 @@ export interface FinalSidebar {
 
 export class Chapters {
   chaptersFolder: string = 'chapters';
-  // directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
+  directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
 
-  // Get the directory of the current file
-  currentFileDir = __dirname;
+  // // Get the directory of the current file
+  // currentFileDir = __dirname;
 
-  // Get the parent directory of the current file
-  parentDir = path.resolve(this.currentFileDir, '..');
+  // // Get the parent directory of the current file
+  // parentDir = path.resolve(this.currentFileDir, '..');
 
-  // Append the 'chapters' folder to the parent directory
-  directoryPath = path.join(this.parentDir, 'chapters');
+  // // Append the 'chapters' folder to the parent directory
+  // directoryPath = path.join(this.parentDir, 'chapters');
 
   searchPattern: string = `${this.directoryPath}/**/*.{qmd,ts}`;
 
@@ -137,7 +137,13 @@ export class Chapters {
       }
     });
 
-    files = files.map((file) => path.relative(this.directoryPath, file));
+    files = files.map((file) => {
+      let filePath = path.relative(this.directoryPath, file);
+      if (filePath.startsWith('../')) {
+        filePath = filePath.replace('../', '');
+      }
+      return filePath;
+    });
     const noIndexFolders: string[] = this.checkIndexFiles(files);
 
     if (noIndexFolders.length !== 0) {
