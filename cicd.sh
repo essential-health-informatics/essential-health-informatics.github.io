@@ -99,6 +99,20 @@ fi
 print_message " - pass" "" "blue"
 
 
+# Transpile browser scripts
+print_message "Transpile browser scripts" "" "blue" "" "in-line"
+output=$(npm exec tsc  2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message " - fail\n" "" "red"
+  print_message "Transpile browser scripts - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "" "blue"
+
+
 
 # Create static site
 print_message "Creating Quarto static pages" "" "blue" "" "in-line"
@@ -137,21 +151,6 @@ exit_code=$?
 if [ $exit_code -ne 0 ]; then
   print_message " - fail\n" "" "red"
   print_message "Post-render unit tests - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-
-
-
-# Transpile browser scripts
-print_message "Transpile browser scripts" "" "blue" "" "in-line"
-output=$(npm exec tsc  2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Transpile browser scripts - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
