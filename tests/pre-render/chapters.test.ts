@@ -198,7 +198,11 @@ describe('createYmlObject', () => {
       return [];
     });
 
+    chapters.directoryPath = '/root/chapters';
+
     const yamlObject = chapters.createYmlObject(d.qmdFiles);
+
+    console.log(yaml.stringify(yamlObject).trim());
 
     expect(yaml.stringify(yamlObject).trim()).toStrictEqual(d.yamlObjectStr);
   });

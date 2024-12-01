@@ -67,38 +67,38 @@ export const qmdFiles = [
   '/root/chapters/1-introduction/index.qmd'
 ];
 
-export const yamlObjectStr = `- section: ../../../../root/chapters/index.qmd
+export const yamlObjectStr = `- chapters/index.qmd
+- chapters/1-introduction/index.qmd
+- section: chapters/2-what-is-digital/index.qmd
   contents:
-    - ../../../../root/chapters/1-introduction/index.qmd
-    - ../../../../root/chapters/13-governance/index.qmd
-    - section: ../../../../root/chapters/2-what-is-digital/index.qmd
+    - chapters/2-what-is-digital/1-digital.qmd
+    - chapters/2-what-is-digital/2-hardware.qmd
+    - chapters/2-what-is-digital/3-software.qmd
+    - chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd
+- section: chapters/3-health-and-disease/index.qmd
+  contents:
+    - chapters/3-health-and-disease/1-what-is-health.qmd
+- section: chapters/4-healthcare-professionals-facing-systems/index.qmd
+  contents:
+    - chapters/4-healthcare-professionals-facing-systems/test-1/index.qmd
+    - section: chapters/4-healthcare-professionals-facing-systems/test-1/test-2/index.qmd
       contents:
-        - ../../../../root/chapters/2-what-is-digital/1-digital.qmd
-        - ../../../../root/chapters/2-what-is-digital/2-hardware.qmd
-        - ../../../../root/chapters/2-what-is-digital/3-software.qmd
-        - ../../../../root/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd
-    - section: ../../../../root/chapters/28-authors-guide/index.qmd
+        - chapters/4-healthcare-professionals-facing-systems/test-1/test-2/test-3.qmd
+    - chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/index.qmd
+    - section: chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/index.qmd
       contents:
-        - ../../../../root/chapters/28-authors-guide/1-technical-guide.qmd
-    - ../../../../root/chapters/29-todo.qmd
-    - section: ../../../../root/chapters/3-health-and-disease/index.qmd
-      contents:
-        - ../../../../root/chapters/3-health-and-disease/1-what-is-health.qmd
-    - ../../../../root/chapters/4-healthcare-professionals-facing-systems/index.qmd
-    - ../../../../root/chapters/4-healthcare-professionals-facing-systems/test-1/index.qmd
-    - section: ../../../../root/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/index.qmd
-      contents:
-        - ../../../../root/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/test-3.qmd
-    - ../../../../root/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/index.qmd
-    - section: ../../../../root/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/index.qmd
-      contents:
-        - ../../../../root/chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/b-test.qmd
-    - section: ../../../../root/chapters/9-clinical-decision-support-systems/index.qmd
-      contents:
-        - ../../../../root/chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd
-        - ../../../../root/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd
-        - ../../../../root/chapters/9-clinical-decision-support-systems/3-rules-based.qmd
-        - ../../../../root/chapters/9-clinical-decision-support-systems/4-models-based.qmd`;
+        - chapters/4-healthcare-professionals-facing-systems/test-1/test-2/a-test-3/test-4/b-test.qmd
+- section: chapters/9-clinical-decision-support-systems/index.qmd
+  contents:
+    - chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd
+    - chapters/9-clinical-decision-support-systems/2-alert-systems.qmd
+    - chapters/9-clinical-decision-support-systems/3-rules-based.qmd
+    - chapters/9-clinical-decision-support-systems/4-models-based.qmd
+- chapters/13-governance/index.qmd
+- section: chapters/28-authors-guide/index.qmd
+  contents:
+    - chapters/28-authors-guide/1-technical-guide.qmd
+- chapters/29-todo.qmd`;
 
 export const aFolder = '/root/chapters/a-folder';
 

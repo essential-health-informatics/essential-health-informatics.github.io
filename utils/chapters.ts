@@ -32,16 +32,6 @@ export interface FinalSidebar {
 export class Chapters {
   chaptersFolder: string = 'chapters';
   directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
-
-  // // Get the directory of the current file
-  // currentFileDir = __dirname;
-
-  // // Get the parent directory of the current file
-  // parentDir = path.resolve(this.currentFileDir, '..');
-
-  // // Append the 'chapters' folder to the parent directory
-  // directoryPath = path.join(this.parentDir, 'chapters');
-
   searchPattern: string = `${this.directoryPath}/**/*.{qmd,ts}`;
 
   constructor() {}
@@ -137,15 +127,8 @@ export class Chapters {
       }
     });
 
-    console.log('&&&&&&&&&&&&');
-    console.log(this.directoryPath);
-    console.log('&&&&&&&&&&&&');
-
     files = files.map((file) => {
       let filePath = path.relative(this.directoryPath, file);
-      // if (filePath.startsWith('../')) {
-      //   filePath = filePath.replace('../', '');
-      // }
       return filePath;
     });
 
@@ -206,7 +189,6 @@ export class Chapters {
     });
 
     files = files.map((file) => path.join(this.chaptersFolder, file));
-    console.log(files);
     const groupedFiles: { [key: string]: string[] } = {};
 
     // Put files into groups based on their parent directory.
