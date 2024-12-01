@@ -1,9 +1,13 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: main
+name: cicd_non_main_master
 
-name: Quarto Publish
+on:
+  push:
+    branches-ignore:
+      - master 
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   cicd_pipeline:
@@ -37,3 +41,11 @@ jobs:
         run: quarto publish gh-pages --no-render
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push to main branch
+        env:
+          github_token: ${{ secrets.PAT }}
+        run: |
+          git checkout main
+          git merge --no-ff "${GITHUB_REF#refs/heads/}"
+          git push origin main
