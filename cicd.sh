@@ -142,4 +142,20 @@ fi
 
 print_message " - pass" "" "blue"
 
+
+
+# Transpile browser scripts
+print_message "Transpile browser scripts" "" "blue" "" "in-line"
+output=$(npm exec tsc  2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message " - fail\n" "" "red"
+  print_message "Transpile browser scripts - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "" "blue"
+
+
 print_message "All tasks completed successfully" "" "blue"

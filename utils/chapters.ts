@@ -137,15 +137,19 @@ export class Chapters {
       }
     });
 
+    console.log('&&&&&&&&&&&&');
+    console.log(this.directoryPath);
+    console.log('&&&&&&&&&&&&');
+
     files = files.map((file) => {
       let filePath = path.relative(this.directoryPath, file);
-      if (filePath.startsWith('../')) {
-        filePath = filePath.replace('../', '');
-      }
+      // if (filePath.startsWith('../')) {
+      //   filePath = filePath.replace('../', '');
+      // }
       return filePath;
     });
-    const noIndexFolders: string[] = this.checkIndexFiles(files);
 
+    const noIndexFolders: string[] = this.checkIndexFiles(files);
     if (noIndexFolders.length !== 0) {
       throw new Error(
         `'index.qmd' missing from folder(s):\n\n${noIndexFolders}`
