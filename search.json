@@ -234,12 +234,7 @@
     "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.html",
     "title": "First use of Health Informatics Technology",
     "section": "",
-    "text": "Dr Artrhur Rappoport. 1952 Porth A.J.",
-    "crumbs": [
-      "Chapters",
-      "History of Digital Health Across the Globe",
-      "First use of Health Informatics Technology"
-    ]
+    "text": "Dr Artrhur Rappoport. 1952 Porth A.J."
   },
   {
     "objectID": "chapters/28-authors-guide/index.html",
@@ -470,7 +465,7 @@
     "href": "chapters/29-todo.html#to-do",
     "title": "Todo list for the EOHI guide",
     "section": "To do",
-    "text": "To do\n\nTechnical\n\nAutomatically build side bar content from actual content in the guide.\nCheck that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).\nFinish banner testing (pre-render)\nFinish non-200 link testing (post-render)\nTest all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.\nCheck all titles are in Title case.\nAll chapter folders and subfolders must have an index.qmd file. Needs uni testing and checking in chapters.ts.\nBibliography for each chapter.\nFormat / linter for markdown files.\n\n\n\nContent\n\nMost major content.\nCase studies under each major chapter.\nLarger case studies at the end of the guide.\n\n\n\nCreators\n\nCreators for remaining topics.",
+    "text": "To do\n\nTechnical\n\nConvert banner.ts privates to protected and change tests to mimic chapters.test.ts.\nAdd protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.\nAutomatically build side bar content from actual content in the guide.\nCheck that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).\nFinish banner testing (pre-render)\nFinish non-200 link testing (post-render)\nTest all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.\nCheck all titles are in Title case.\nAll chapter folders and subfolders must have an index.qmd file. Needs uni testing and checking in chapters.ts.\nBibliography for each chapter.\nFormat / linter for markdown files.\n\n\n\nContent\n\nMost major content.\nCase studies under each major chapter.\nLarger case studies at the end of the guide.\n\n\n\nCreators\n\nCreators for remaining topics.",
     "crumbs": [
       "Chapters",
       "Todo list for the EOHI guide"
@@ -556,7 +551,7 @@
     "href": "chapters/index.html#history-of-digital-health-across-the-globe",
     "title": "Chapters",
     "section": "History of Digital Health Across the Globe",
-    "text": "History of Digital Health Across the Globe\n\nHistory of Digital Health Across the Globe\n\n\nEngland NHS Timeline\n\nEngland NHS Timeline\n\n\n\nColossus computer\n\nColossus computer\n\n\n\nComputers first used for administrative purposes\n\nComputers first used for administrative purposes\n\n\n\nFirst use of Health Informatics Technology\n\nFirst use of Health Informatics Technology",
+    "text": "History of Digital Health Across the Globe\n\nHistory of Digital Health Across the Globe\n\n\nEngland NHS Timeline\n\nEngland NHS Timeline",
     "crumbs": [
       "Chapters"
     ]
@@ -596,24 +591,14 @@
     "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.html",
     "title": "Colossus computer",
     "section": "",
-    "text": "Some material",
-    "crumbs": [
-      "Chapters",
-      "History of Digital Health Across the Globe",
-      "Colossus computer"
-    ]
+    "text": "Some material"
   },
   {
     "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.html",
     "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.html",
     "title": "Computers first used for administrative purposes",
     "section": "",
-    "text": "Some material",
-    "crumbs": [
-      "Chapters",
-      "History of Digital Health Across the Globe",
-      "Computers first used for administrative purposes"
-    ]
+    "text": "Some material"
   },
   {
     "objectID": "chapters/9-clinical-decision-support-systems/index.html#overview",
