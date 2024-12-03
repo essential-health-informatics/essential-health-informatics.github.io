@@ -111,10 +111,18 @@ body {
 
 .collapsible-content {
   padding: 0 18px;
-  display: none; /* Hidden by default */
+  display: none;
   overflow: hidden;
   background-color: #f1f1f1;
   font-size: 18px;
+}
+
+.collapsible-content.visible {
+  display: block;
+}
+
+.collapsible-content.hidden {
+  display: none;
 }
 
 .container-header {
@@ -189,3 +197,5 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+
