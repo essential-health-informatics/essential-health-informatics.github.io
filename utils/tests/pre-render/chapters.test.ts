@@ -3,12 +3,9 @@ import * as path from 'path';
 import * as yaml from 'yaml';
 import * as glob from 'glob';
 import matter from 'gray-matter';
-import { StrYaml, Yaml, Chapters } from '../../utils/chapters';
+import { StrYaml, Yaml, Chapters } from '../../chapters';
 import * as d from './chapters.data';
-import { after } from 'node:test';
 import { cloneDeep } from 'lodash';
-import { dir } from 'console';
-import exp from 'constants';
 
 jest.mock('fs');
 jest.mock('glob');
@@ -338,7 +335,6 @@ describe('writeYaml', () => {
   });
 
   it('should throw an error as writeFileSync fails', () => {
-    const errorMessage = 'writeFileSync';
     const directory = path.dirname(d.sidebarYamlPath);
     const existsSyncMock = jest
       .spyOn(fs, 'existsSync')

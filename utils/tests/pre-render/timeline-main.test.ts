@@ -1,31 +1,31 @@
-import * as fs from "fs";
-import * as glob from "glob";
-import { TimeLineIndexPages } from "../../utils/timeline-main";
-import * as d from "./timeline-main.data";
+import * as fs from 'fs';
+import * as glob from 'glob';
+import { TimeLineIndexPages } from '../../timeline-main';
+import * as d from './timeline-main.data';
 
-jest.mock("fs");
-jest.mock("glob");
+jest.mock('fs');
+jest.mock('glob');
 
-describe("populateTimeline", () => {
+describe('populateTimeline', () => {
   beforeEach(() => {
     jest.resetAllMocks();
   });
 
-  it("throws an error when datesContainers is empty", () => {
+  it('throws an error when datesContainers is empty', () => {
     const timeLineClass = new TimeLineIndexPages();
     expect(() =>
       timeLineClass.populateTimeline([], d.title, d.outputFilename)
-    ).toThrow("DatesContainers can not be empty");
+    ).toThrow('DatesContainers can not be empty');
   });
 
-  it("throws an error when title is empty", () => {
+  it('throws an error when title is empty', () => {
     const timeLineClass = new TimeLineIndexPages();
     expect(() =>
-      timeLineClass.populateTimeline(d.datesContainers, "", d.outputFilename)
-    ).toThrow("Title can not be empty");
+      timeLineClass.populateTimeline(d.datesContainers, '', d.outputFilename)
+    ).toThrow('Title can not be empty');
   });
 
-  it("throws an error when outputFilename is not a .qmd file", () => {
+  it('throws an error when outputFilename is not a .qmd file', () => {
     const timeLineClass = new TimeLineIndexPages();
     expect(() =>
       timeLineClass.populateTimeline(
@@ -33,10 +33,10 @@ describe("populateTimeline", () => {
         d.title,
         d.outputFilenameBad
       )
-    ).toThrow("OutputFilename must be a .qmd file");
+    ).toThrow('OutputFilename must be a .qmd file');
   });
 
-  it("writes accurately to file", () => {
+  it('writes accurately to file', () => {
     const timeLineClass = new TimeLineIndexPages();
     const writeFileSyncMock = fs.writeFileSync as jest.Mock;
     const appendFileSyncMock = fs.appendFileSync as jest.Mock;
@@ -65,7 +65,7 @@ describe("populateTimeline", () => {
   });
 });
 
-describe("logTsFilesInChapters", () => {
+describe('logTsFilesInChapters', () => {
   beforeEach(() => {
     jest.resetAllMocks();
   });
@@ -78,13 +78,13 @@ describe("logTsFilesInChapters", () => {
     const result = timeLineClass.logTsFilesInChapters();
 
     expect(result).toEqual([
-      { directory: "chapters/timeline/england-test", filename: "timeline.ts" },
-      { directory: "chapters/timeline/wales-test", filename: "timeline.ts" },
+      { directory: 'chapters/timeline/england-test', filename: 'timeline.ts' },
+      { directory: 'chapters/timeline/wales-test', filename: 'timeline.ts' }
     ]);
     expect(globSyncMock).toHaveBeenCalledTimes(1);
   });
 
-  it("no valid paths returns empty array", () => {
+  it('no valid paths returns empty array', () => {
     const timeLineClass = new TimeLineIndexPages();
     const globSyncMock = glob.sync as unknown as jest.Mock;
     globSyncMock.mockReturnValue([]);
@@ -96,44 +96,44 @@ describe("logTsFilesInChapters", () => {
   });
 });
 
-describe("populateAllTimelines", () => {
+describe('populateAllTimelines', () => {
   const fullMockPath = `${d.path.basePath}/${d.path.directory}/${d.path.filename}`;
 
   beforeEach(() => {
     jest.resetAllMocks();
-    const mockCwd = jest.spyOn(process, "cwd");
+    const mockCwd = jest.spyOn(process, 'cwd');
     mockCwd.mockReturnValue(d.path.basePath);
   });
 
-  it("console error when no TypeScript files are found", () => {
+  it('console error when no TypeScript files are found', () => {
     const timeLineClass = new TimeLineIndexPages();
-    jest.spyOn(timeLineClass, "logTsFilesInChapters").mockReturnValue([]);
+    jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([]);
 
     const consoleErrorSpy = jest
-      .spyOn(console, "error")
+      .spyOn(console, 'error')
       .mockImplementation(() => {});
 
     timeLineClass.populateAllTimelines();
 
     expect(consoleErrorSpy).toHaveBeenCalledWith(
-      "No TypeScript files found in chapters directory."
+      'No TypeScript files found in chapters directory.'
     );
 
     consoleErrorSpy.mockRestore();
   });
 
-  it("console error when a module fails to load", () => {
+  it('console error when a module fails to load', () => {
     const timeLineClass = new TimeLineIndexPages();
     jest
-      .spyOn(timeLineClass, "logTsFilesInChapters")
+      .spyOn(timeLineClass, 'logTsFilesInChapters')
       .mockReturnValue([
-        { directory: d.path.directory, filename: d.path.filename },
+        { directory: d.path.directory, filename: d.path.filename }
       ]);
-    const mockCwd = jest.spyOn(process, "cwd");
+    const mockCwd = jest.spyOn(process, 'cwd');
     mockCwd.mockReturnValue(d.path.basePath);
 
     const consoleErrorSpy = jest
-      .spyOn(console, "error")
+      .spyOn(console, 'error')
       .mockImplementation(() => {});
 
     expect(() => timeLineClass.populateAllTimelines()).toThrow(
@@ -143,14 +143,14 @@ describe("populateAllTimelines", () => {
     consoleErrorSpy.mockRestore();
   });
 
-  it("exception when no datesContainers module fail", () => {
+  it('exception when no datesContainers module fail', () => {
     const timeLineClass = new TimeLineIndexPages();
     jest
-      .spyOn(timeLineClass, "logTsFilesInChapters")
+      .spyOn(timeLineClass, 'logTsFilesInChapters')
       .mockReturnValue([
-        { directory: d.path.directory, filename: d.path.filename },
+        { directory: d.path.directory, filename: d.path.filename }
       ]);
-    const mockCwd = jest.spyOn(process, "cwd");
+    const mockCwd = jest.spyOn(process, 'cwd');
     mockCwd.mockReturnValue(d.path.basePath);
 
     expect(() => timeLineClass.populateAllTimelines()).toThrow(
@@ -160,23 +160,23 @@ describe("populateAllTimelines", () => {
 
   it("console error when no datesContainers content in 'timeline.ts' module", () => {
     const timeLineClass = new TimeLineIndexPages();
-    jest.spyOn(timeLineClass, "logTsFilesInChapters").mockReturnValue([
+    jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([
       {
         directory: d.path.directory,
-        filename: d.path.filename,
-      },
+        filename: d.path.filename
+      }
     ]);
 
     jest.doMock(
       fullMockPath,
       () => ({
-        datesContainer: [],
+        datesContainer: []
       }),
       { virtual: true }
     );
 
     const consoleErrorSpy = jest
-      .spyOn(console, "error")
+      .spyOn(console, 'error')
       .mockImplementation(() => {});
 
     timeLineClass.populateAllTimelines();
@@ -190,23 +190,23 @@ describe("populateAllTimelines", () => {
 
   it("console error when no MetaData in 'timeline.ts' module", () => {
     const timeLineClass = new TimeLineIndexPages();
-    jest.spyOn(timeLineClass, "logTsFilesInChapters").mockReturnValue([
+    jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([
       {
         directory: d.path.directory,
-        filename: d.path.filename,
-      },
+        filename: d.path.filename
+      }
     ]);
 
     jest.doMock(
       fullMockPath,
       () => ({
-        datesContainer: d.datesContainers[0],
+        datesContainer: d.datesContainers[0]
       }),
       { virtual: true }
     );
 
     const consoleErrorSpy = jest
-      .spyOn(console, "error")
+      .spyOn(console, 'error')
       .mockImplementation(() => {});
 
     timeLineClass.populateAllTimelines();
@@ -218,21 +218,21 @@ describe("populateAllTimelines", () => {
     consoleErrorSpy.mockRestore();
   });
 
-  it("runs normally with good data", () => {
+  it('runs normally with good data', () => {
     const timeLineClass = new TimeLineIndexPages();
-    jest.spyOn(timeLineClass, "logTsFilesInChapters").mockReturnValue([
+    jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([
       {
         directory: d.path.directory,
-        filename: d.path.filename,
-      },
+        filename: d.path.filename
+      }
     ]);
-    jest.spyOn(timeLineClass, "populateTimeline").mockImplementation(() => {});
+    jest.spyOn(timeLineClass, 'populateTimeline').mockImplementation(() => {});
 
     jest.doMock(
       fullMockPath,
       () => ({
         datesContainer: d.datesContainers[0],
-        metaData: d.metaData,
+        metaData: d.metaData
       }),
       { virtual: true }
     );

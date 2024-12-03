@@ -8,6 +8,8 @@ image: /media/post-its-on-white-board.jpg
 ## To do
 
 ### Technical
+
+* Format / linter for markdown files.
 * Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
 * Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.
 * Automatically build side bar content from actual content in the guide.
@@ -16,9 +18,10 @@ image: /media/post-its-on-white-board.jpg
 * Finish non-200 link testing (post-render)
 * Test all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.
 * Check all titles are in `Title case`.
-* All chapter folders and subfolders must have an `index.qmd` file. Needs uni testing and checking in chapters.ts.
+* All chapter folders and subfolders must have an `index.qmd` file. Needs unit testing and checking in chapters.ts.
 * Bibliography for each chapter.
-* Format / linter for markdown files.
+* Each chapter/subchapter needs a page picture (in the front matter)
+
 
 ### Content
 
