@@ -42,7 +42,7 @@ print_message() {
 # Formatting / linting TypeScript files
 print_message "Formatting/linting of TypeScript" "" "blue" "" "in-line"
 
-output=$(npx prettier --config .prettierrc  --check './utils/**/*.ts' --color 2>&1)
+output=$(npx prettier --config .prettierrc --check './utils/**/*.ts' './src/**/*.ts' --color 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
@@ -57,6 +57,7 @@ print_message " - pass" "" "blue"
 
 # Pre-render unit tests
 print_message "Pre-render unit testing" "" "blue" "" "in-line"
+cd utils || return
 output=$(npm exec npx jest tests/pre-render/*.ts 2>&1)
 exit_code=$?
 
@@ -67,6 +68,7 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message " - pass" "" "blue"
+cd ..
 
 
 
@@ -99,8 +101,9 @@ fi
 print_message " - pass" "" "blue"
 
 
-# Transpile browser scripts
+# Transpiling browser scripts
 print_message "Transpiling browser scripts" "" "blue" "" "in-line"
+cd src || return
 output=$(npm exec tsc  2>&1)
 exit_code=$?
 
@@ -111,7 +114,7 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message " - pass" "" "blue"
-
+cd ..
 
 
 # Create static site
@@ -130,7 +133,8 @@ print_message " - pass" "" "blue"
 
 # Create page banners
 print_message "Creating page banners" "" "blue" "" "in-line"
-output=$(npm exec ts-node utils/banners.ts 2>&1)
+cd utils || return
+output=$(npm exec ts-node banners.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
@@ -140,11 +144,28 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message " - pass" "" "blue"
+cd ..
 
+
+# Create code documents
+print_message "Creating code documentation" "" "blue" "" "in-line"
+cd utils || return
+output=$(npx typedoc --entryPoints ./*.ts --entryPoints ../src/*ts --out ../_site/chapters/code-documentation 2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message " - fail\n" "" "red"
+  print_message "Creating code documentation - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "" "blue"
+cd ..
 
 
 # Post-render unit tests
 print_message "Post-render unit tests" "" "blue" "" "in-line"
+cd utils || return
 output=$(npm exec npx jest tests/post-render/*.ts 2>&1)
 exit_code=$?
 
@@ -155,6 +176,7 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message " - pass" "" "blue"
+cd ..
 
 
 print_message "All tasks completed successfully" "" "blue"

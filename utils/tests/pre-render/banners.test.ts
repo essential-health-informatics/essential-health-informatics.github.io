@@ -1,4 +1,4 @@
-import { Crop } from '../../utils/banners';
+import { Crop } from '../../banners';
 import * as d from './banners.data';
 import * as glob from 'glob';
 import * as fs from 'fs';

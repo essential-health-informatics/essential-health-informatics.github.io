@@ -190,7 +190,7 @@ sidebar: false
         <p class="container-header">${container.year}</p>
         <img class="observed-image" src="${container.image_src}" alt="${container.alt_text}" style="width: 100%;">
         <button class="collapsible">${container.header}</button>
-        <div class="collapsible-content">
+        <div class="collapsible-content hidden">
           <p>${container.content}</p>${further_details}
         </div>
       </div>
