@@ -89,7 +89,8 @@ print_message " - pass" "" "blue"
 
 # Create chapter page and sidebar
 print_message "Creating chapter page and side bar" "" "blue" "" "in-line"
-output=$(npm exec ts-node ./utils/chapters.ts 2>&1)
+cd utils || return
+output=$(npm exec ts-node chapters.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
@@ -99,6 +100,7 @@ if [ $exit_code -ne 0 ]; then
 fi
 
 print_message " - pass" "" "blue"
+cd ..
 
 
 # Transpiling browser scripts
@@ -149,8 +151,8 @@ cd ..
 
 # Create code documents
 print_message "Creating code documentation" "" "blue" "" "in-line"
-cd utils || return
-output=$(npx typedoc --entryPoints ./*.ts --entryPoints ../src/*ts --out ../_site/chapters/code-documentation 2>&1)
+cd docs || return
+output=$(npx typedoc --entryPoints ../utils/*.ts --entryPoints ../src/*ts --out ../_site/chapters/code-documentation 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then

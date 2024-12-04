@@ -172,63 +172,70 @@ export const yamlObjectStringified = `website:
         contents:
           - chapters/28-authors-guide/1-technical-guide.qmd
       - chapters/29-todo.qmd
-`;
-export const finalChapterFileName = '/root/chapters/a-folder/index.qmd';
+      - text: Code Documentation
+        href: chapters/code-documentation/index.html`;
 
-export const finalChapterFileContents =
-  '---\n' +
-  'title: Chapters\n' +
-  'sidebar: false\n' +
-  '---\n' +
-  '\n' +
-  '\n' +
-  '## Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/1-introduction/index.qmd)\n' +
-  '\n' +
-  '\n' +
-  '## Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/2-what-is-digital/index.qmd)\n' +
-  '* [Digital (makeshift)](/chapters/2-what-is-digital/1-digital.qmd)\n' +
-  '* [Hardware (makeshift)](/chapters/2-what-is-digital/2-hardware.qmd)\n' +
-  '* [Software (makeshift)](/chapters/2-what-is-digital/3-software.qmd)\n' +
-  '* [Key Digital Concepts In Health Informatics (makeshift)](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)\n' +
-  '\n' +
-  '\n' +
-  '## Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/3-health-and-disease/index.qmd)\n' +
-  '* [What Is Health (makeshift)](/chapters/3-health-and-disease/1-what-is-health.qmd)\n' +
-  '\n' +
-  '\n' +
-  '## Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/7-history-of-digital-health-across-the-globe/index.qmd)\n' +
-  '\n' +
-  '### Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)\n' +
-  '\n' +
-  '\n' +
-  '## Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/9-clinical-decision-support-systems/index.qmd)\n' +
-  '* [Medical Calculators (makeshift)](/chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd)\n' +
-  '* [Alert Systems (makeshift)](/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd)\n' +
-  '* [Rules Based (makeshift)](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)\n' +
-  '* [Models Based (makeshift)](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)\n' +
-  '\n' +
-  '\n' +
-  '## Index (makeshift)\n' +
-  '\n' +
-  '* [Index (makeshift)](/chapters/28-authors-guide/index.qmd)\n' +
-  '* [Technical Guide (makeshift)](/chapters/28-authors-guide/1-technical-guide.qmd)\n' +
-  '\n' +
-  '\n' +
-  '## Todo (makeshift)\n' +
-  '\n' +
-  '* [Todo (makeshift)](/chapters/29-todo.qmd)\n';
+export const finalChapterFileName = '/chapters/a-folder/index.qmd';
+
+export const finalChapterFileNameUsed = '../chapters/a-folder/index.qmd';
+
+export const finalChapterFileContents = `---
+title: Chapters
+sidebar: false
+---
+
+
+## Index (makeshift)
+
+* [Index (makeshift)](/chapters/1-introduction/index.qmd)
+
+
+## Index (makeshift)
+
+* [Index (makeshift)](/chapters/2-what-is-digital/index.qmd)
+* [Digital (makeshift)](/chapters/2-what-is-digital/1-digital.qmd)
+* [Hardware (makeshift)](/chapters/2-what-is-digital/2-hardware.qmd)
+* [Software (makeshift)](/chapters/2-what-is-digital/3-software.qmd)
+* [Key Digital Concepts In Health Informatics (makeshift)](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)
+
+
+## Index (makeshift)
+
+* [Index (makeshift)](/chapters/3-health-and-disease/index.qmd)
+* [What Is Health (makeshift)](/chapters/3-health-and-disease/1-what-is-health.qmd)
+
+
+## Index (makeshift)
+
+* [Index (makeshift)](/chapters/7-history-of-digital-health-across-the-globe/index.qmd)
+
+### Index (makeshift)
+
+* [Index (makeshift)](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
+
+
+## Index (makeshift)
+
+* [Index (makeshift)](/chapters/9-clinical-decision-support-systems/index.qmd)
+* [Medical Calculators (makeshift)](/chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd)
+* [Alert Systems (makeshift)](/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd)
+* [Rules Based (makeshift)](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
+* [Models Based (makeshift)](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
+
+
+## Index (makeshift)
+
+* [Index (makeshift)](/chapters/28-authors-guide/index.qmd)
+* [Technical Guide (makeshift)](/chapters/28-authors-guide/1-technical-guide.qmd)
+
+
+## Todo (makeshift)
+
+* [Todo (makeshift)](/chapters/29-todo.qmd)
+
+## Code Documentation
+
+* [Code Documentation](/chapters/code-documentation/index.html)`;
 
 export const missingFrontMatter = `---
 ---

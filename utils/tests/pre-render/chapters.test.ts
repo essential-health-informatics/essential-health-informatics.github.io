@@ -199,8 +199,6 @@ describe('createYmlObject', () => {
 
     const yamlObject = chapters.createYmlObject(d.qmdFiles);
 
-    console.log(yaml.stringify(yamlObject).trim());
-
     expect(yaml.stringify(yamlObject).trim()).toStrictEqual(d.yamlObjectStr);
   });
 });
@@ -370,6 +368,7 @@ const makeshiftTitle = (str: string): string => {
 describe('createChapterFile', () => {
   beforeEach(() => {
     jest.resetModules();
+    jest.clearAllMocks();
   });
 
   afterEach(() => {
@@ -411,8 +410,6 @@ describe('createChapterFile', () => {
 
     expect(getTitleMock).toHaveBeenCalledTimes(18);
 
-    // console.log(writeFileSyncMock.mock.calls);
-
     expect(writeFileSyncMock).toHaveBeenCalledWith(
       d.finalChapterFileName,
       d.finalChapterFileContents,
@@ -445,7 +442,7 @@ describe('getTitle', () => {
     );
 
     expect(readFileSyncMock).toHaveBeenCalledWith(
-      d.finalChapterFileName,
+      d.finalChapterFileNameUsed,
       'utf8'
     );
     expect(matterMock).toHaveBeenCalledTimes(1);
@@ -462,7 +459,7 @@ describe('getTitle', () => {
     const title = chapters.getTitle(d.finalChapterFileName);
     expect(title).toBe('A title');
     expect(readFileSyncMock).toHaveBeenCalledWith(
-      d.finalChapterFileName,
+      d.finalChapterFileNameUsed,
       'utf8'
     );
   });
