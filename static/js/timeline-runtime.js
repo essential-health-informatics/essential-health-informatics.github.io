@@ -2,7 +2,7 @@
 /**
  * initialises and runs the timeline functionality when the DOM content is loaded.
  *
- * @module Timeline
+ * @module TimelineRuntime
  */
 /**
  * Initialises and reacts to timeline events
@@ -21,6 +21,9 @@ class Timeline {
             this.initialiseObserver();
         });
     }
+    /**
+     * Initialises the observer for the timeline elements.
+     */
     initialiseObserver() {
         const elements = document.querySelectorAll('.observed-image');
         const options = {
@@ -38,6 +41,9 @@ class Timeline {
             observer.observe(element);
         });
     }
+    /**
+     * Initialises the image observers for the timeline elements.
+     */
     initialiseImageObserver() {
         const images = document.querySelectorAll('.observed-image.hidden');
         const viewportHeight = window.innerHeight;
@@ -53,6 +59,9 @@ class Timeline {
             observer.observe(image);
         });
     }
+    /**
+     * Initialises the collapsible elements within the date bubbles.
+     */
     initialiseCollapsibles() {
         const coll = document.getElementsByClassName('collapsible');
         for (let i = 0; i < coll.length; i++) {
@@ -64,6 +73,9 @@ class Timeline {
             });
         }
     }
+    /**
+     * Adjusts the container classes based on the window width.
+     */
     adjustContainerClasses() {
         const containers = document.querySelectorAll('.bubble');
         if (window.innerWidth < 600) {
@@ -78,6 +90,13 @@ class Timeline {
             });
         }
     }
+    /**
+     * Debounces a function to prevent it from being called too frequently.
+     *
+     * @param {Function} func The function to debounce.
+     * @param {number} wait The time to wait before calling the function.
+     * @returns {Function} The debounced function.
+     */
     debounce(func, wait) {
         let timeout;
         return function (...args) {
