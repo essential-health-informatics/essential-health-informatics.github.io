@@ -89,6 +89,7 @@ export class TimeLineIndexPages {
 
     console.log('Finished creating index pages for timeline.');
   }
+
   /**
    * Logs and returns TypeScript files in chapters.
    *

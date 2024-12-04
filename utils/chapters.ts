@@ -30,8 +30,13 @@ export interface FinalSidebar {
 }
 
 export class Chapters {
+  relativePath: string = '..';
   chaptersFolder: string = 'chapters';
-  directoryPath: string = path.join(process.cwd(), this.chaptersFolder);
+  directoryPath: string = path.join(
+    process.cwd(),
+    this.relativePath,
+    this.chaptersFolder
+  );
   searchPattern: string = `${this.directoryPath}/**/*.{qmd,ts}`;
 
   constructor() {}
@@ -40,9 +45,14 @@ export class Chapters {
    * Run all the methods to create the sidebar and chapters files.
    */
   public run(): void {
-    const sidebarPath: string = path.join(process.cwd(), 'sidebar.yml');
+    const sidebarPath: string = path.join(
+      process.cwd(),
+      this.relativePath,
+      'sidebar.yml'
+    );
     const chaptersPath: string = path.join(
       process.cwd(),
+      this.relativePath,
       this.chaptersFolder,
       'index.qmd'
     );
@@ -53,9 +63,7 @@ export class Chapters {
     }
 
     files = this.removeTimelineChildren(files);
-
     this.checkForTitles(files);
-
     const sidebarStructure: StrYaml[] = this.createYmlObject(files);
     this.writeYaml(sidebarPath, sidebarStructure);
     this.createChapterFile(chaptersPath, sidebarStructure);
@@ -146,7 +154,7 @@ export class Chapters {
       const aDir: string = path.dirname(a);
       const bDir: string = path.dirname(b);
 
-      // Place the chapters/index.qmd file at the top.
+      // Place the 'chapters/index.qmd' file at the top.
       if (a === 'index.qmd') return -1;
       if (b === 'index.qmd') return 1;
 
@@ -280,7 +288,7 @@ export class Chapters {
   }
 
   /**
-   * Write sidebar structure to file
+   * Write sidebar structure to yaml file
    *
    * @param yamlPath - The path to write the sidebar yaml file.
    * @param yamlObject - The sidebar structure in yaml format.
@@ -298,7 +306,10 @@ export class Chapters {
     };
 
     try {
-      const yamlString = yaml.stringify(finalSidebar);
+      const yamlString =
+        yaml.stringify(finalSidebar) +
+        `      - text: Code Documentation
+        href: chapters/code-documentation/index.html`;
 
       // Ensure the directory exists
       const dir = path.dirname(yamlPath);
@@ -386,8 +397,9 @@ title: Chapters
 sidebar: false
 ---
 `;
+    const codeDoc: string = `\n## Code Documentation\n\n* [Code Documentation](/chapters/code-documentation/index.html)`;
 
-    fs.writeFileSync(chaptersPath, frontMatter + yamlString, 'utf8');
+    fs.writeFileSync(chaptersPath, frontMatter + yamlString + codeDoc, 'utf8');
 
     return;
   }
@@ -400,7 +412,10 @@ sidebar: false
    * @returns The title of the file.
    */
   protected getTitle(file: string): string {
-    const fileContent: string = fs.readFileSync(file, 'utf8');
+    const fileContent: string = fs.readFileSync(
+      path.join(this.relativePath, file),
+      'utf8'
+    );
     const { data: attributes } = matter(fileContent);
 
     if (!attributes.title) {

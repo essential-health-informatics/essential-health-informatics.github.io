@@ -51,3 +51,7 @@ sidebar: false
 ## Todo list for the EOHI guide
 
 * [Todo list for the EOHI guide](/chapters/29-todo.qmd)
+
+## Code Documentation
+
+* [Code Documentation](/chapters/code-documentation/index.html)

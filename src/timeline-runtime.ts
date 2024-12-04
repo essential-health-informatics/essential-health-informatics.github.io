@@ -1,7 +1,7 @@
 /**
  * initialises and runs the timeline functionality when the DOM content is loaded.
  *
- * @module Timeline
+ * @module TimelineRuntime
  */
 
 /**
@@ -25,6 +25,9 @@ class Timeline {
     });
   }
 
+  /**
+   * Initialises the observer for the timeline elements.
+   */
   protected initialiseObserver(): void {
     const elements: NodeListOf<HTMLImageElement> =
       document.querySelectorAll('.observed-image');
@@ -50,6 +53,9 @@ class Timeline {
     });
   }
 
+  /**
+   * Initialises the image observers for the timeline elements.
+   */
   protected initialiseImageObserver(): void {
     const images: NodeListOf<HTMLImageElement> = document.querySelectorAll(
       '.observed-image.hidden'
@@ -74,6 +80,9 @@ class Timeline {
     });
   }
 
+  /**
+   * Initialises the collapsible elements within the date bubbles.
+   */
   protected initialiseCollapsibles(): void {
     const coll: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName(
       'collapsible'
@@ -88,6 +97,9 @@ class Timeline {
     }
   }
 
+  /**
+   * Adjusts the container classes based on the window width.
+   */
   protected adjustContainerClasses(): void {
     const containers: NodeListOf<HTMLElement> =
       document.querySelectorAll('.bubble');
@@ -103,6 +115,13 @@ class Timeline {
     }
   }
 
+  /**
+   * Debounces a function to prevent it from being called too frequently.
+   *
+   * @param {Function} func The function to debounce.
+   * @param {number} wait The time to wait before calling the function.
+   * @returns {Function} The debounced function.
+   */
   protected debounce(
     func: (...args: any[]) => void,
     wait: number
