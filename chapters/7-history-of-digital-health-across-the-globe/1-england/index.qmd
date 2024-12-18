@@ -16,7 +16,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1952</p>
@@ -27,7 +27,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">1950s</p>
@@ -38,7 +38,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1969</p>
@@ -49,7 +49,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">1970s</p>
@@ -60,7 +60,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1980s</p>
@@ -71,18 +71,18 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">...</p>
         <img class="observed-image" src="/media/snomed-ct-logo.jpg" alt="Another description" style="width: 100%;">
         <button class="collapsible">SNOMED-CT</button>
         <div class="collapsible-content hidden">
-          <p>Systematized Nomenclature of Medicine Clinical Terms (SNOWMED CT)</p>
+          <p>Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1991</p>
@@ -93,7 +93,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">1992</p>
@@ -104,7 +104,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1997</p>
@@ -121,7 +121,7 @@ Principle 6: comply with the law.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2001</p>
@@ -132,7 +132,7 @@ Principle 6: comply with the law.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2002</p>
@@ -140,14 +140,14 @@ Principle 6: comply with the law.</p>
         <button class="collapsible">Protti</button>
         <div class="collapsible-content hidden">
           <p>UK - 59% of primary care physicians
-New Zealand - 52% 
+New Zealand - 52%
 USA - 17%
-The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking. 
+The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking.
 A true patient-centric model is needed.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2002-2012</p>
@@ -162,7 +162,7 @@ Very little in terms of deliveries - mainly PACS (picture archiving and communic
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2016</p>
@@ -177,7 +177,7 @@ Health IT is about both technical and adaptive change</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2017</p>
@@ -186,13 +186,13 @@ Health IT is about both technical and adaptive change</p>
         <div class="collapsible-content hidden">
           <p>A Microsoft Windows Operation System exploit.
 Largest hit service was England and Scotland. Wales and Northern Ireland were not affected.
-Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
+Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
 Some NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[
 In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2019</p>
@@ -205,7 +205,7 @@ Extensive education and training of the clinician workforce and the public, with
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2019</p>
@@ -221,7 +221,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">...</p>
@@ -232,7 +232,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">...</p>
@@ -243,7 +243,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2020</p>
@@ -255,7 +255,7 @@ Principle 8: inform patients and services users about how their confidential inf
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2022-23</p>
@@ -266,14 +266,14 @@ Principle 8: inform patients and services users about how their confidential inf
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2023</p>
         <img class="observed-image" src="/media/microchip-placeholder.png" alt="Another description" style="width: 100%;">
         <button class="collapsible">Federated Data Platform</button>
         <div class="collapsible-content hidden">
-          <p>Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.” 
+          <p>Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.”
 Mixture of use cases such as:
 Direct care
 Public health
@@ -282,7 +282,7 @@ This mixed use case has complications in English law.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2024</p>
@@ -293,7 +293,7 @@ This mixed use case has complications in English law.</p>
         </div>
       </div>
     </div>
-    
+
 </div>
 
 <script type="module" src="/static/js/timeline-runtime.js"></script>

@@ -13,10 +13,9 @@ While CDSSs have shown promise in reducing errors, improving adherence to clinic
 
 As CDSS becomes more integrated with electronic patient records (EPRs), there is growing interest in refining these tools to maximise their benefits while addressing potential limitations. Ensuring that CDSS is used in a thoughtful and appropriate manner remains essential for optimising its role in modern healthcare.
 
-
 ## Chapters
 
-* [Medical calculators](1-medical-calculators.qmd)
-* [Alert systems](2-alert-systems.qmd)
-* [Rules based](3-rules-based.qmd)
-* [Models based](4-models-based.qmd)
+- [Medical calculators](1-medical-calculators.qmd)
+- [Alert systems](2-alert-systems.qmd)
+- [Rules based](3-rules-based.qmd)
+- [Models based](4-models-based.qmd)

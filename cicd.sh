@@ -37,148 +37,54 @@ print_message() {
 
 }
 
+# Run a command and print the result
+run_command() {
+  local description=$1
+  local command=$2
+  local directory=$3
 
+  print_message "$description" "" "blue" "" "in-line"
 
-# Formatting / linting TypeScript files
-print_message "Formatting/linting of TypeScript" "" "blue" "" "in-line"
+  if [ -n "$directory" ]; then
+    cd "$directory" || return
+  fi
 
-output=$(npx prettier --config .prettierrc --check './utils/**/*.ts' './src/**/*.ts' --color 2>&1)
-exit_code=$?
+  output=$(eval "$command" 2>&1)
+  exit_code=$?
 
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Formatting/linting of TypeScript - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
+  if [ $exit_code -ne 0 ]; then
+    print_message " - failed\n" "" "red"
+    print_message "$description - failed!" "Error: $output" "red" "verbose"
+    exit $exit_code
+  fi
 
-print_message " - pass" "" "blue"
+  if [ -n "$directory" ]; then
+    cd ..
+  fi
 
+  print_message " - pass" "" "blue"
+}
 
+run_command "Formatting of TypeScript" "npx prettier --config .prettierrc --check './utils/**/*.ts' './src/**/*.ts' --color"
 
-# Pre-render unit tests
-print_message "Pre-render unit testing" "" "blue" "" "in-line"
-cd utils || return
-output=$(npm exec npx jest tests/pre-render/*.ts 2>&1)
-exit_code=$?
+run_command "Linting of TypeScript" "npx eslint '**/*.ts' --color"
 
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Pre-render unit testing - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
+run_command "Pre-render unit testing" "npm exec npx jest tests/pre-render/*.ts" "utils"
 
-print_message " - pass" "" "blue"
-cd ..
+run_command "Creating timeline pages" "npm exec ts-node utils/timeline-main.ts"
 
+run_command "Creating chapter page and side bar" "npm exec ts-node chapters.ts" "utils"
 
+run_command "Transpile browser scripts" "npm exec tsc" "src"
 
-# Create timeline pages
-print_message "Creating timeline pages" "" "blue" "" "in-line"
-output=$(npm exec ts-node utils/timeline-main.ts 2>&1)
-exit_code=$?
+run_command "Creating Quarto static pages" "quarto render"
 
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Creating timeline pages - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
+run_command "Creating page banners" "npm exec ts-node banners.ts" "utils"
 
-print_message " - pass" "" "blue"
+run_command "Creating code documentation" "npx typedoc --entryPoints ../utils/*.ts --entryPoints ../src/*ts --out ../_site/chapters/code-documentation" "docs"
 
+run_command "Post-render unit tests" "npm exec npx jest tests/post-render/*.ts" "utils"
 
-
-# Create chapter page and sidebar
-print_message "Creating chapter page and side bar" "" "blue" "" "in-line"
-cd utils || return
-output=$(npm exec ts-node chapters.ts 2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Creating chapter page and side bar - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-cd ..
-
-
-# Transpiling browser scripts
-print_message "Transpiling browser scripts" "" "blue" "" "in-line"
-cd src || return
-output=$(npm exec tsc  2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Transpile browser scripts - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-cd ..
-
-
-# Create static site
-print_message "Creating Quarto static pages" "" "blue" "" "in-line"
-output=$(quarto render 2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Creating Quarto static pages - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-
-
-# Create page banners
-print_message "Creating page banners" "" "blue" "" "in-line"
-cd utils || return
-output=$(npm exec ts-node banners.ts 2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Creating page banners - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-cd ..
-
-
-# Create code documents
-print_message "Creating code documentation" "" "blue" "" "in-line"
-cd docs || return
-output=$(npx typedoc --entryPoints ../utils/*.ts --entryPoints ../src/*ts --out ../_site/chapters/code-documentation 2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Creating code documentation - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-cd ..
-
-
-# Post-render unit tests
-print_message "Post-render unit tests" "" "blue" "" "in-line"
-cd utils || return
-output=$(npm exec npx jest tests/post-render/*.ts 2>&1)
-exit_code=$?
-
-if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Post-render unit tests - failed!" "Error: $output" "red" "verbose"
-  exit $exit_code
-fi
-
-print_message " - pass" "" "blue"
-cd ..
-
+run_command "Formatting of Quarto files" "npx prettier --check '**/*.qmd' --color"
 
 print_message "All tasks completed successfully" "" "blue"

@@ -105,7 +105,7 @@ describe('populateAllTimelines', () => {
     mockCwd.mockReturnValue(d.path.basePath);
   });
 
-  it('console error when no TypeScript files are found', () => {
+  it('console error when no TypeScript files are found', async () => {
     const timeLineClass = new TimeLineIndexPages();
     jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([]);
 
@@ -113,7 +113,7 @@ describe('populateAllTimelines', () => {
       .spyOn(console, 'error')
       .mockImplementation(() => {});
 
-    timeLineClass.populateAllTimelines();
+    await timeLineClass.populateAllTimelines();
 
     expect(consoleErrorSpy).toHaveBeenCalledWith(
       'No TypeScript files found in chapters directory.'
@@ -122,7 +122,7 @@ describe('populateAllTimelines', () => {
     consoleErrorSpy.mockRestore();
   });
 
-  it('console error when a module fails to load', () => {
+  it('console error when a module fails to load', async () => {
     const timeLineClass = new TimeLineIndexPages();
     jest
       .spyOn(timeLineClass, 'logTsFilesInChapters')
@@ -136,14 +136,14 @@ describe('populateAllTimelines', () => {
       .spyOn(console, 'error')
       .mockImplementation(() => {});
 
-    expect(() => timeLineClass.populateAllTimelines()).toThrow(
+    await expect(timeLineClass.populateAllTimelines()).rejects.toThrow(
       `Failed to load module at '${fullMockPath}'`
     );
 
     consoleErrorSpy.mockRestore();
   });
 
-  it('exception when no datesContainers module fail', () => {
+  it('exception when no datesContainers module fail', async () => {
     const timeLineClass = new TimeLineIndexPages();
     jest
       .spyOn(timeLineClass, 'logTsFilesInChapters')
@@ -153,12 +153,12 @@ describe('populateAllTimelines', () => {
     const mockCwd = jest.spyOn(process, 'cwd');
     mockCwd.mockReturnValue(d.path.basePath);
 
-    expect(() => timeLineClass.populateAllTimelines()).toThrow(
+    await expect(() => timeLineClass.populateAllTimelines()).rejects.toThrow(
       `Failed to load module at '${fullMockPath}'`
     );
   });
 
-  it("console error when no datesContainers content in 'timeline.ts' module", () => {
+  it("console error when no datesContainers content in 'timeline.ts' module", async () => {
     const timeLineClass = new TimeLineIndexPages();
     jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([
       {
@@ -179,7 +179,7 @@ describe('populateAllTimelines', () => {
       .spyOn(console, 'error')
       .mockImplementation(() => {});
 
-    timeLineClass.populateAllTimelines();
+    await timeLineClass.populateAllTimelines();
 
     expect(consoleErrorSpy).toHaveBeenCalledWith(
       `No datesContainers found in module at '${fullMockPath}'`
@@ -188,7 +188,7 @@ describe('populateAllTimelines', () => {
     consoleErrorSpy.mockRestore();
   });
 
-  it("console error when no MetaData in 'timeline.ts' module", () => {
+  it("console error when no MetaData in 'timeline.ts' module", async () => {
     const timeLineClass = new TimeLineIndexPages();
     jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([
       {
@@ -209,7 +209,7 @@ describe('populateAllTimelines', () => {
       .spyOn(console, 'error')
       .mockImplementation(() => {});
 
-    timeLineClass.populateAllTimelines();
+    await timeLineClass.populateAllTimelines();
 
     expect(consoleErrorSpy).toHaveBeenCalledWith(
       `Invalid metaData or title in module at '${fullMockPath}'`
@@ -218,7 +218,7 @@ describe('populateAllTimelines', () => {
     consoleErrorSpy.mockRestore();
   });
 
-  it('runs normally with good data', () => {
+  it('runs normally with good data', async () => {
     const timeLineClass = new TimeLineIndexPages();
     jest.spyOn(timeLineClass, 'logTsFilesInChapters').mockReturnValue([
       {
@@ -237,7 +237,7 @@ describe('populateAllTimelines', () => {
       { virtual: true }
     );
 
-    timeLineClass.populateAllTimelines();
+    await timeLineClass.populateAllTimelines();
 
     expect(timeLineClass.populateTimeline).toHaveBeenCalledTimes(1);
     expect(timeLineClass.populateTimeline).toHaveBeenCalledWith(

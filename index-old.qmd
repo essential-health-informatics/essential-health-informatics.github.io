@@ -2,183 +2,152 @@
 title: "Chapters"
 ---
 
-
 ## Introduction
-
 
 ## What is Digital?
 
-* Digital
-* Hardware
-* Software
-* key-digital-concepts-in-health-informatics
-
+- Digital
+- Hardware
+- Software
+- key-digital-concepts-in-health-informatics
 
 ## Health and Disease
 
-* What is Health?
-* What is Disease?
-* Population Health
-
+- What is Health?
+- What is Disease?
+- Population Health
 
 ## Healthcare Professionals Facing Systems
 
-* Electronic Patient Record (EPR)
-* Patient administration system (PAS)
-* Picture Archiving and Communication System (PACS)
-* Laboratory Information Management Systems (LIMS)
-* Trust integration system (TIE)
-* Speciality specific systems
-
+- Electronic Patient Record (EPR)
+- Patient administration system (PAS)
+- Picture Archiving and Communication System (PACS)
+- Laboratory Information Management Systems (LIMS)
+- Trust integration system (TIE)
+- Speciality specific systems
 
 ## Patient Facing Systems
 
-* Patient portals
-* Digital Therapeutics
-* Telemedicine and Telehealth
-* Wearables
-
+- Patient portals
+- Digital Therapeutics
+- Telemedicine and Telehealth
+- Wearables
 
 ## Infrastructure
 
-* Network Infrastructure
-* Health Information Exchange (HIE)
-* Cloud Computing versus On-Premise
-
+- Network Infrastructure
+- Health Information Exchange (HIE)
+- Cloud Computing versus On-Premise
 
 ## History of Digital Health Across the Globe
 
-* NHS England
-* ...
-
+- NHS England
+- ...
 
 ## Clinical safety
 
-* Clinical safety standards (UK)
-* Risk Management
-
+- Clinical safety standards (UK)
+- Risk Management
 
 ## Clinical Decision Support Systems (CDSS)
 
-* Medical calculators
-* Alert systems
-* Rules based
-* Models based (eg AI)
-
+- Medical calculators
+- Alert systems
+- Rules based
+- Models based (eg AI)
 
 ## Interoperability
 
-* Data standards
-* HL7/FHIR
-* OpenEHR
+- Data standards
+- HL7/FHIR
+- OpenEHR
 
- 
 ## Terminologies
 
-* SNOMED-CT
-* Read Codes
-* ICD-10
-
+- SNOMED-CT
+- Read Codes
+- ICD-10
 
 ## Privacy, Security, and Ethics
 
-* Privacy and Security
-* Cybersecurity
-* GDPR
-* Ethics
-* Diversity
-
+- Privacy and Security
+- Cybersecurity
+- GDPR
+- Ethics
+- Diversity
 
 ## Governance
 
-* Regulatory and Policy Issues
-* System Standards and Regulatory Compliance
-* Medicolegal Aspects
-
+- Regulatory and Policy Issues
+- System Standards and Regulatory Compliance
+- Medicolegal Aspects
 
 ## Leadership, Collaboration, and Strategy
 
-* Health Economics and Informatics
-* Leadership and Management
-* The Interprofessional Team
-* Communication Skills
-* Change Management
-
+- Health Economics and Informatics
+- Leadership and Management
+- The Interprofessional Team
+- Communication Skills
+- Change Management
 
 ## Workflow Optimisation
 
-* Process Mapping
-* Clinical Workflow and Process Improvement
-* Business Process
-
+- Process Mapping
+- Clinical Workflow and Process Improvement
+- Business Process
 
 ## Quality Improvement and Evaluation
 
-* Audit
-* Quality Improvement
-* Evaluation and Impact Assessment
-
+- Audit
+- Quality Improvement
+- Evaluation and Impact Assessment
 
 ## Usability and User Experience
 
-* User-centred Design
-* A/B testing
-
+- User-centred Design
+- A/B testing
 
 ## Patient Focused Informatics
 
-* Social Determinants of Health
-* Behavioural Change Methodologies
-* Patient Engagement and Empowerment
-
+- Social Determinants of Health
+- Behavioural Change Methodologies
+- Patient Engagement and Empowerment
 
 ## Building Digital Systems
 
-* The Machine / Human Interface
-* Programming in Clinical Informatics
-* Open Source versus Closed Source
-* Agile / DevOps Methodologies
-* Quality Assurance via Testing
-
+- The Machine / Human Interface
+- Programming in Clinical Informatics
+- Open Source versus Closed Source
+- Agile / DevOps Methodologies
+- Quality Assurance via Testing
 
 ## Innovation and Future Directions
 
-* Digital Health Innovation and Entrepreneurship
-* Digital Twins and Simulation in Healthcare
-* Artificial Intelligence and Machine Learning
-* Genomic Informatics and Precision Medicine
-* Blockchain Technology in Healthcare
-
+- Digital Health Innovation and Entrepreneurship
+- Digital Twins and Simulation in Healthcare
+- Artificial Intelligence and Machine Learning
+- Genomic Informatics and Precision Medicine
+- Blockchain Technology in Healthcare
 
 ## Research and Development
 
-* Clinical Trials
-* OpenSafely
-
+- Clinical Trials
+- OpenSafely
 
 ## Education and Training
 
-* Undergraduate level
-* Postgraduate level
-* Continuous Professional Development
-
+- Undergraduate level
+- Postgraduate level
+- Continuous Professional Development
 
 ## In Depth Case Studies
 
-
 ## Further reading
-
 
 ## Glossary
 
-
 ## Bibliography
-
 
 ## Author's guide
 
-
 ## Todo list
-
-
-

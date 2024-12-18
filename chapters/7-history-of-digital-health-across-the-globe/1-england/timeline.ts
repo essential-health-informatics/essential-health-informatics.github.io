@@ -60,7 +60,7 @@ export const datesContainer: DatesContainer[] = [
     image_src: '/media/snomed-ct-logo.jpg',
     alt_text: 'Another description',
     header: 'SNOMED-CT',
-    content: 'Systematized Nomenclature of Medicine Clinical Terms (SNOWMED CT)'
+    content: 'Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)'
   },
   {
     year: '1991',
@@ -105,9 +105,9 @@ Principle 6: comply with the law.`
     alt_text: 'Another description',
     header: 'Protti',
     content: `UK - 59% of primary care physicians
-New Zealand - 52% 
+New Zealand - 52%
 USA - 17%
-The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking. 
+The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking.
 A true patient-centric model is needed.`
   },
   {
@@ -140,7 +140,7 @@ Health IT is about both technical and adaptive change`
     header: 'WannaCry NHS attack',
     content: `A Microsoft Windows Operation System exploit.
 Largest hit service was England and Scotland. Wales and Northern Ireland were not affected.
-Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
+Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
 Some NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[
 In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.`
   },

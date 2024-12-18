@@ -12,6 +12,7 @@
 import * as fs from 'fs';
 import * as glob from 'glob';
 import * as path from 'path';
+import { exec } from 'child_process';
 
 interface TimelineModule {
   datesContainer: DatesContainer[];
@@ -46,7 +47,7 @@ export class TimeLineIndexPages {
    *
    * Creates index pages for all timelines found in the specified directories.
    */
-  public populateAllTimelines(): void {
+  public async populateAllTimelines(): Promise<void> {
     console.log('Creating timeline index.qmd pages...');
 
     const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();
@@ -56,12 +57,12 @@ export class TimeLineIndexPages {
       return;
     }
 
-    tsFiles.forEach(({ directory, filename }) => {
+    for (const { directory, filename } of tsFiles) {
       const modulePath = path.join(process.cwd(), directory, filename);
       let module: TimelineModule;
 
       try {
-        module = require(modulePath);
+        module = await import(modulePath);
       } catch {
         throw new Error(`Failed to load module at '${modulePath}'`);
       }
@@ -84,8 +85,24 @@ export class TimeLineIndexPages {
         metaData.title,
         `${directory}/index.qmd`
       );
+
+      exec(
+        `npx prettier --write ${directory}/index.qmd`,
+        (error, stdout, stderr) => {
+          if (error) {
+            console.error(`Error formatting file: ${error.message}`);
+            return;
+          }
+          if (stderr) {
+            console.error(`Prettier stderr: ${stderr}`);
+            return;
+          }
+          console.log(`Prettier stdout: ${stdout}`);
+        }
+      );
+
       console.log(`  * ${directory}`);
-    });
+    }
 
     console.log('Finished creating index pages for timeline.');
   }
@@ -196,7 +213,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    `;
+`;
 
       fs.appendFileSync(outputFilename, timelineEvent);
     });

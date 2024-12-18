@@ -222,7 +222,7 @@ describe('checkIndexFiles', () => {
 
   it('return the issue folder if folder has files, but no index.qmd file', () => {
     const chapters = new ChaptersTestable();
-    let qmdFilesBadFolder = cloneDeep(d.qmdFiles);
+    const qmdFilesBadFolder = cloneDeep(d.qmdFiles);
     qmdFilesBadFolder.push(d.notAnIndexFile);
 
     const returnedFolders = chapters.checkIndexFiles(qmdFilesBadFolder);

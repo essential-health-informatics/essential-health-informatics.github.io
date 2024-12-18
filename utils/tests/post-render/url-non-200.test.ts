@@ -57,7 +57,9 @@ async function checkUrlsInSiteFolder() {
             console.log(`URL ${fullUrl} returned status ${status}`);
             errorMessage += `In file \x1b[2m${fileShort}\x1b[0m, url \x1b[2m${cleanUrl}\x1b[0m returned status \x1b[2m${status}\x1b[0m\n`;
           } else {
-            verbose && console.log(`URL ${fullUrl} is OK`);
+            if (verbose) {
+              console.log(`URL ${fullUrl} is OK`);
+            }
             continue;
           }
         } else if (
@@ -69,8 +71,9 @@ async function checkUrlsInSiteFolder() {
           fullUrl = path.resolve(process.cwd(), cleanUrl);
           try {
             await fs.promises.access(render_folder, fs.constants.F_OK);
-            verbose &&
+            if (verbose) {
               console.log(`\x1b[34mLocal file ${fullUrl} exists\x1b[0m`);
+            }
           } catch {
             errorMessage += `In file \x1b[2m${fileShort}\x1b[0m, the local url \x1b[2m${cleanUrl}\x1b[0m did not exist\n`;
           }

@@ -19,7 +19,7 @@ describe('cropRun', () => {
   it('should exit when no files found', () => {
     const globSyncMock = glob.sync as unknown as jest.Mock;
     globSyncMock.mockReturnValue([]);
-    let consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
+    const consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
     const cropProto = Object.getPrototypeOf(new Crop());
     const cropAnalyseSpy = jest
       .spyOn(cropProto, 'cropAnalyse')

@@ -9,41 +9,40 @@ image: /media/post-its-on-white-board.jpg
 
 ### Technical
 
-* Format / linter for markdown files.
-* Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
-* Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.
-* Automatically build side bar content from actual content in the guide.
-* Check that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).
-* Finish banner testing (pre-render)
-* Finish non-200 link testing (post-render)
-* Test all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.
-* Check all titles are in `Title case`.
-* All chapter folders and subfolders must have an `index.qmd` file. Needs unit testing and checking in chapters.ts.
-* Bibliography for each chapter.
-* Each chapter/subchapter needs a page picture (in the front matter)
-
+- Format / linter for markdown files.
+- Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
+- Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.
+- Automatically build side bar content from actual content in the guide.
+- Check that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).
+- Finish banner testing (pre-render)
+- Finish non-200 link testing (post-render)
+- Test all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.
+- Check all titles are in `Title case`.
+- All chapter folders and subfolders must have an `index.qmd` file. Needs unit testing and checking in chapters.ts.
+- Bibliography for each chapter.
+- Each chapter/subchapter needs a page picture (in the front matter)
 
 ### Content
 
-* Most major content.
-* Case studies under each major chapter.
-* Larger case studies at the end of the guide.
+- Most major content.
+- Case studies under each major chapter.
+- Larger case studies at the end of the guide.
 
 ### Creators
 
-* Creators for remaining topics.
+- Creators for remaining topics.
 
 ## Done
 
 ### Technical
 
-* Obtained a domain name.
-* Set up a GitHub repository.
-* GitHub pages.
-* Github actions.
+- Obtained a domain name.
+- Set up a GitHub repository.
+- GitHub pages.
+- Github actions.
 
 ### Content
 
 ### Creators
 
-* First creators set for first 10 webinars and chapters.
+- First creators set for first 10 webinars and chapters.
