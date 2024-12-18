@@ -5,9 +5,6 @@
       "changeProcessCWD": true
     }
   ],
-  // "eslint.options": {
-  //   "overrideConfigFile": ".eslintrc"
-  // },
   "files.associations": {
     "*.qmd": "markdown"
   },
