@@ -4,6 +4,8 @@
  *
  * @module TimelineRuntime
  */
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Timeline = void 0;
 /**
  * Initialises and reacts to timeline events
  *
@@ -105,5 +107,6 @@ class Timeline {
         };
     }
 }
+exports.Timeline = Timeline;
 // Instantiate the Timeline class to run the functionality
 new Timeline();
