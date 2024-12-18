@@ -140,9 +140,9 @@ Principle 6: comply with the law.</p>
         <button class="collapsible">Protti</button>
         <div class="collapsible-content hidden">
           <p>UK - 59% of primary care physicians
-New Zealand - 52% 
+New Zealand - 52%
 USA - 17%
-The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking. 
+The original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking.
 A true patient-centric model is needed.</p>
         </div>
       </div>
@@ -273,7 +273,7 @@ Principle 8: inform patients and services users about how their confidential inf
         <img class="observed-image" src="/media/microchip-placeholder.png" alt="Another description" style="width: 100%;">
         <button class="collapsible">Federated Data Platform</button>
         <div class="collapsible-content hidden">
-          <p>Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.” 
+          <p>Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.”
 Mixture of use cases such as:
 Direct care
 Public health
