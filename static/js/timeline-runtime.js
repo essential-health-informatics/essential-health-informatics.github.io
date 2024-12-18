@@ -1,16 +1,13 @@
-"use strict";
 /**
  * initialises and runs the timeline functionality when the DOM content is loaded.
  *
  * @module TimelineRuntime
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Timeline = void 0;
 /**
  * Initialises and reacts to timeline events
  *
  */
-class Timeline {
+export class Timeline {
     /**
      * Initialises elements and starts event listeners.
      */
@@ -107,6 +104,5 @@ class Timeline {
         };
     }
 }
-exports.Timeline = Timeline;
 // Instantiate the Timeline class to run the functionality
 new Timeline();
