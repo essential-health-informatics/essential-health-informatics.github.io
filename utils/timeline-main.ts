@@ -12,6 +12,7 @@
 import * as fs from 'fs';
 import * as glob from 'glob';
 import * as path from 'path';
+import { exec } from 'child_process';
 
 interface TimelineModule {
   datesContainer: DatesContainer[];
@@ -84,6 +85,22 @@ export class TimeLineIndexPages {
         metaData.title,
         `${directory}/index.qmd`
       );
+
+      exec(
+        `npx prettier --write ${directory}/index.qmd`,
+        (error, stdout, stderr) => {
+          if (error) {
+            console.error(`Error formatting file: ${error.message}`);
+            return;
+          }
+          if (stderr) {
+            console.error(`Prettier stderr: ${stderr}`);
+            return;
+          }
+          console.log(`Prettier stdout: ${stdout}`);
+        }
+      );
+
       console.log(`  * ${directory}`);
     }
 
