@@ -5,46 +5,46 @@ sidebar: false
 
 ## Introduction to Health Informatics
 
-* [Introduction to Health Informatics](/chapters/1-introduction/index.qmd)
+- [Introduction to Health Informatics](/chapters/1-introduction/index.qmd)
 
 ## What is digital?
 
-* [What is digital?](/chapters/2-what-is-digital/index.qmd)
-* [Digital](/chapters/2-what-is-digital/1-digital.qmd)
-* [Hardware](/chapters/2-what-is-digital/2-hardware.qmd)
-* [Software](/chapters/2-what-is-digital/3-software.qmd)
-* [Key Digital Concepts in Health Informatics](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)
+- [What is digital?](/chapters/2-what-is-digital/index.qmd)
+- [Digital](/chapters/2-what-is-digital/1-digital.qmd)
+- [Hardware](/chapters/2-what-is-digital/2-hardware.qmd)
+- [Software](/chapters/2-what-is-digital/3-software.qmd)
+- [Key Digital Concepts in Health Informatics](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)
 
 ## Health and Disease
 
-* [Health and Disease](/chapters/3-health-and-disease/index.qmd)
-* [What is Health and Disease](/chapters/3-health-and-disease/1-what-is-health.qmd)
+- [Health and Disease](/chapters/3-health-and-disease/index.qmd)
+- [What is Health and Disease](/chapters/3-health-and-disease/1-what-is-health.qmd)
 
 ## History of Digital Health Across the Globe
 
-* [History of Digital Health Across the Globe](/chapters/7-history-of-digital-health-across-the-globe/index.qmd)
+- [History of Digital Health Across the Globe](/chapters/7-history-of-digital-health-across-the-globe/index.qmd)
 
 ### England NHS Timeline
 
-* [England NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
+- [England NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
 
 ## Decision Support
 
-* [Decision Support](/chapters/9-clinical-decision-support-systems/index.qmd)
-* [Medical Calculators](/chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd)
-* [Alert Systems](/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd)
-* [Rules Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
-* [Models Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
+- [Decision Support](/chapters/9-clinical-decision-support-systems/index.qmd)
+- [Medical Calculators](/chapters/9-clinical-decision-support-systems/1-medical-calculators.qmd)
+- [Alert Systems](/chapters/9-clinical-decision-support-systems/2-alert-systems.qmd)
+- [Rules Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
+- [Models Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
 
 ## Author's guide
 
-* [Author's guide](/chapters/28-authors-guide/index.qmd)
-* [Technical guide](/chapters/28-authors-guide/1-technical-guide.qmd)
+- [Author's guide](/chapters/28-authors-guide/index.qmd)
+- [Technical guide](/chapters/28-authors-guide/1-technical-guide.qmd)
 
 ## Todo list for the EOHI guide
 
-* [Todo list for the EOHI guide](/chapters/29-todo.qmd)
+- [Todo list for the EOHI guide](/chapters/29-todo.qmd)
 
 ## Code Documentation
 
-* [Code Documentation](/chapters/code-documentation/index.html)
+- [Code Documentation](/chapters/code-documentation/index.html)

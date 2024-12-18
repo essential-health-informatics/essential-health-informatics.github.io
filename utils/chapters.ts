@@ -334,7 +334,6 @@ export class Chapters {
    * @throws Error - If no chapters path has been supplied.
    * @throws Error - If no yaml object has been supplied.
    * @throws Error - If no title found in a .qmd file.
-   * @returns
    */
   protected createChapterFile(
     chaptersPath: string,
@@ -354,7 +353,7 @@ export class Chapters {
           return;
         } else if (typeof item === 'string') {
           const title: string = this.getTitle(item);
-          return `## ${title}\n\n* [${title}](/${item})\n`;
+          return `## ${title}\n\n- [${title}](/${item})\n`;
         } else {
           const furtherLinks: StrYaml = item.contents
             .map((content: StrYaml) => {
@@ -362,22 +361,22 @@ export class Chapters {
                 const childTitle: string = this.getTitle(String(content));
 
                 if (path.dirname(content) !== path.dirname(item.section)) {
-                  return `\n### ${childTitle}\n\n* [${childTitle}](/${content})`;
+                  return `\n### ${childTitle}\n\n- [${childTitle}](/${content})`;
                 } else {
-                  return `* [${childTitle}](/${content})`;
+                  return `- [${childTitle}](/${content})`;
                 }
               } else {
                 const childTitle: string = this.getTitle(
                   String(content.section)
                 );
-                let subSectionContent: string = `\n### ${childTitle}\n\n* [${childTitle}](/${content.section})`;
+                let subSectionContent: string = `\n### ${childTitle}\n\n- [${childTitle}](/${content.section})`;
 
                 content.contents.forEach((subContent: StrYaml) => {
                   const grandChildTitle: string = this.getTitle(
                     String(subContent)
                   );
 
-                  subSectionContent += `\n* [${grandChildTitle}](/${subContent})`;
+                  subSectionContent += `\n- [${grandChildTitle}](/${subContent})`;
                 });
 
                 return subSectionContent;
@@ -387,7 +386,7 @@ export class Chapters {
 
           const parentTitle: string = this.getTitle(item.section);
 
-          return `## ${parentTitle}\n\n* [${parentTitle}](/${item.section})\n${furtherLinks}\n`;
+          return `## ${parentTitle}\n\n- [${parentTitle}](/${item.section})\n${furtherLinks}\n`;
         }
       })
       .join('\n');
@@ -397,7 +396,7 @@ title: Chapters
 sidebar: false
 ---
 `;
-    const codeDoc: string = `\n## Code Documentation\n\n* [Code Documentation](/chapters/code-documentation/index.html)`;
+    const codeDoc: string = `\n## Code Documentation\n\n- [Code Documentation](/chapters/code-documentation/index.html)`;
 
     fs.writeFileSync(chaptersPath, frontMatter + yamlString + codeDoc, 'utf8');
 
