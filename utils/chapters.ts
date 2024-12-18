@@ -396,7 +396,7 @@ title: Chapters
 sidebar: false
 ---
 `;
-    const codeDoc: string = `\n## Code Documentation\n\n- [Code Documentation](/chapters/code-documentation/index.html)`;
+    const codeDoc: string = `\n## Code Documentation\n\n- [Code Documentation](/chapters/code-documentation/index.html)\n`;
 
     fs.writeFileSync(chaptersPath, frontMatter + yamlString + codeDoc, 'utf8');
 

@@ -86,7 +86,7 @@ export const expectedAppendFileSync = [
         </div>
       </div>
     </div>
-    `,
+`,
   `
     <div class="date-container">
       <div class="bubble right">
@@ -98,7 +98,7 @@ export const expectedAppendFileSync = [
         </div>
       </div>
     </div>
-    `,
+`,
   `
     <div class="date-container">
       <div class="bubble left">
@@ -110,7 +110,7 @@ export const expectedAppendFileSync = [
         </div>
       </div>
     </div>
-    `,
+`,
   `
 </div>
 

@@ -196,7 +196,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    `;
+`;
 
       fs.appendFileSync(outputFilename, timelineEvent);
     });

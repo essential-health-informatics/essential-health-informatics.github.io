@@ -16,7 +16,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1952</p>
@@ -27,7 +27,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">1950s</p>
@@ -38,7 +38,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1969</p>
@@ -49,7 +49,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">1970s</p>
@@ -60,7 +60,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1980s</p>
@@ -71,7 +71,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">...</p>
@@ -82,7 +82,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1991</p>
@@ -93,7 +93,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">1992</p>
@@ -104,7 +104,7 @@ sidebar: false
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">1997</p>
@@ -121,7 +121,7 @@ Principle 6: comply with the law.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2001</p>
@@ -132,7 +132,7 @@ Principle 6: comply with the law.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2002</p>
@@ -147,7 +147,7 @@ A true patient-centric model is needed.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2002-2012</p>
@@ -162,7 +162,7 @@ Very little in terms of deliveries - mainly PACS (picture archiving and communic
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2016</p>
@@ -177,7 +177,7 @@ Health IT is about both technical and adaptive change</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2017</p>
@@ -192,7 +192,7 @@ In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals o
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2019</p>
@@ -205,7 +205,7 @@ Extensive education and training of the clinician workforce and the public, with
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2019</p>
@@ -221,7 +221,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">...</p>
@@ -232,7 +232,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">...</p>
@@ -243,7 +243,7 @@ FCI is now an independent Charitable Incorporated Organisation - September 2019<
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2020</p>
@@ -255,7 +255,7 @@ Principle 8: inform patients and services users about how their confidential inf
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2022-23</p>
@@ -266,7 +266,7 @@ Principle 8: inform patients and services users about how their confidential inf
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble right">
         <p class="container-header">2023</p>
@@ -282,7 +282,7 @@ This mixed use case has complications in English law.</p>
         </div>
       </div>
     </div>
-    
+
     <div class="date-container">
       <div class="bubble left">
         <p class="container-header">2024</p>
@@ -293,7 +293,7 @@ This mixed use case has complications in English law.</p>
         </div>
       </div>
     </div>
-    
+
 </div>
 
 <script type="module" src="/static/js/timeline-runtime.js"></script>

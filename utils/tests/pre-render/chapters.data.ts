@@ -228,7 +228,8 @@ sidebar: false
 
 ## Code Documentation
 
-- [Code Documentation](/chapters/code-documentation/index.html)`;
+- [Code Documentation](/chapters/code-documentation/index.html)
+`;
 
 export const missingFrontMatter = `---
 ---
