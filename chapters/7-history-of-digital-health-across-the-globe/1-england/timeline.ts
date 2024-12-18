@@ -60,7 +60,7 @@ export const datesContainer: DatesContainer[] = [
     image_src: '/media/snomed-ct-logo.jpg',
     alt_text: 'Another description',
     header: 'SNOMED-CT',
-    content: 'Systematized Nomenclature of Medicine Clinical Terms (SNOWMED CT)'
+    content: 'Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)'
   },
   {
     year: '1991',
