@@ -46,7 +46,7 @@ export class TimeLineIndexPages {
    *
    * Creates index pages for all timelines found in the specified directories.
    */
-  public populateAllTimelines(): void {
+  public async populateAllTimelines(): Promise<void> {
     console.log('Creating timeline index.qmd pages...');
 
     const tsFiles: FileDescriptor[] = this.logTsFilesInChapters();
@@ -56,12 +56,12 @@ export class TimeLineIndexPages {
       return;
     }
 
-    tsFiles.forEach(({ directory, filename }) => {
+    for (const { directory, filename } of tsFiles) {
       const modulePath = path.join(process.cwd(), directory, filename);
       let module: TimelineModule;
 
       try {
-        module = require(modulePath);
+        module = await import(modulePath);
       } catch {
         throw new Error(`Failed to load module at '${modulePath}'`);
       }
@@ -85,7 +85,7 @@ export class TimeLineIndexPages {
         `${directory}/index.qmd`
       );
       console.log(`  * ${directory}`);
-    });
+    }
 
     console.log('Finished creating index pages for timeline.');
   }

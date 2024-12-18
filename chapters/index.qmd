@@ -3,11 +3,9 @@ title: Chapters
 sidebar: false
 ---
 
-
 ## Introduction to Health Informatics
 
 * [Introduction to Health Informatics](/chapters/1-introduction/index.qmd)
-
 
 ## What is digital?
 
@@ -17,12 +15,10 @@ sidebar: false
 * [Software](/chapters/2-what-is-digital/3-software.qmd)
 * [Key Digital Concepts in Health Informatics](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)
 
-
 ## Health and Disease
 
 * [Health and Disease](/chapters/3-health-and-disease/index.qmd)
 * [What is Health and Disease](/chapters/3-health-and-disease/1-what-is-health.qmd)
-
 
 ## History of Digital Health Across the Globe
 
@@ -32,7 +28,6 @@ sidebar: false
 
 * [England NHS Timeline](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
 
-
 ## Decision Support
 
 * [Decision Support](/chapters/9-clinical-decision-support-systems/index.qmd)
@@ -41,12 +36,10 @@ sidebar: false
 * [Rules Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
 * [Models Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
 
-
 ## Author's guide
 
 * [Author's guide](/chapters/28-authors-guide/index.qmd)
 * [Technical guide](/chapters/28-authors-guide/1-technical-guide.qmd)
-
 
 ## Todo list for the EOHI guide
 

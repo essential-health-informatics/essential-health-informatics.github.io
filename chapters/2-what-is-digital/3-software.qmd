@@ -5,7 +5,6 @@ image: /media/soft-focus-code-block.jpg
 
 ![](/media/soft-focus-code-block.jpg){alt="Several lines of colourful code with a soft camera focus"}
 
-
 Software refers to the programs, applications, and instructions that run on a computer or digital system, telling the hardware what tasks to perform. While hardware is the physical component of a system, software is the non-physical element that drives functionality, enabling users to interact with the system, run applications, and process data. Without software, hardware would be a collection of inert parts, incapable of performing meaningful tasks. Software can range from simple applications, like word processors and calculators, to complex systems, such as operating systems and databases that handle large-scale processing and data management.
 
 Software is what gives a system its purpose. Whether it’s a laptop, smartphone, or any digital device, software controls the way users interact with it. From sending an email to streaming a video, it’s the software that manages how these actions are carried out behind the scenes, providing a seamless user experience.
@@ -13,7 +12,6 @@ Software is what gives a system its purpose. Whether it’s a laptop, smartphone
 ## Types of Software
 
 Software is generally divided into three broad categories: system software, application software, and utility software. Each plays a unique role in enabling a computer system to function effectively.
-
 
 ### System Software
 
@@ -23,7 +21,6 @@ System software manages the basic functions of a computer or device and allows t
 
 **Functionality**: The OS provides a platform for application software to run. It manages the computer's resources, including memory, processor time, and storage space, and ensures that these resources are used effectively. Without system software, users wouldn’t be able to install or use application software or interact with the hardware in a meaningful way. The OS also acts as a bridge between the user and the machine, translating user commands into actions that the hardware can execute.
 
-
 ### Application Software
 
 Application software is designed to perform specific tasks for the user, such as creating documents, browsing the internet, or editing images. Applications sit on top of the system software and depend on it to function, but their focus is on helping the user accomplish a particular goal. Application software is varied and covers everything from basic productivity tools to advanced design and analysis software.
@@ -32,7 +29,6 @@ Application software is designed to perform specific tasks for the user, such as
 
 **Functionality**: Applications allow users to complete specific tasks. These tasks can be as simple as typing a document or as complex as editing a high-definition video. Application software is what most people interact with directly on a daily basis, as it provides the tools needed for activities such as communication, entertainment, and productivity. Applications are often designed with user-friendly interfaces, making it easy for people to use them without needing to understand the technical details of how they work.
 
-
 ### Utility Software
 
 Utility software is designed to help maintain and optimise a system’s performance. While system software provides the basic environment for running applications, utility software focuses on enhancing that environment by providing specialised tools for managing, securing, and optimising the system. It operates in the background, ensuring that the system runs smoothly by performing tasks like cleaning up disk space, organising files, or protecting the system from security threats.
@@ -40,7 +36,6 @@ Utility software is designed to help maintain and optimise a system’s performa
 **Examples**: Antivirus programs, file compression tools, disk clean-up utilities.
 
 **Functionality**: Utility software focuses on improving system performance and keeping it running efficiently. These tools often come bundled with the operating system, but many are also available as standalone applications. Utility software can scan for malware, defragment a hard drive, back up important files, or recover deleted data. It plays a crucial role in extending the life and efficiency of a digital system by ensuring that everything is running as smoothly and securely as possible.
-
 
 ### Others
 

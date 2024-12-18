@@ -136,7 +136,7 @@ export class Chapters {
     });
 
     files = files.map((file) => {
-      let filePath = path.relative(this.directoryPath, file);
+      const filePath = path.relative(this.directoryPath, file);
       return filePath;
     });
 
@@ -147,7 +147,7 @@ export class Chapters {
       );
     }
 
-    let ymlContents: StrYaml[] = [];
+    const ymlContents: StrYaml[] = [];
 
     files.sort((a, b) => {
       // Extract directory paths.
@@ -218,7 +218,7 @@ export class Chapters {
       if (groupedFiles[basePath].length === 1) {
         ymlContents.push(groupedFiles[basePath][0]);
       } else {
-        let subDirectoryFiles: string[] = groupedFiles[basePath].slice(1);
+        const subDirectoryFiles: string[] = groupedFiles[basePath].slice(1);
         const subGroupedFiles: { [key: string]: string[] } = {};
 
         subDirectoryFiles.forEach((file) => {
@@ -237,7 +237,7 @@ export class Chapters {
             contents: subDirectoryFiles
           });
         } else {
-          let contents: StrYaml[] = [];
+          const contents: StrYaml[] = [];
 
           for (const dir in subGroupedFiles) {
             if (subGroupedFiles[dir].length === 1) {
@@ -275,7 +275,7 @@ export class Chapters {
       directories.add(dir);
     });
 
-    let failedFolders: string[] = [];
+    const failedFolders: string[] = [];
 
     directories.forEach((dir) => {
       const indexFile = path.join(dir, 'index.qmd');
@@ -348,13 +348,13 @@ export class Chapters {
       throw new Error('No yaml object has been supplied');
     }
 
-    let yamlString = ymlObject
+    const yamlString = ymlObject
       .map((item: StrYaml) => {
         if (item === 'chapters/index.qmd') {
           return;
         } else if (typeof item === 'string') {
           const title: string = this.getTitle(item);
-          return `\n## ${title}\n\n* [${title}](/${item})\n`;
+          return `## ${title}\n\n* [${title}](/${item})\n`;
         } else {
           const furtherLinks: StrYaml = item.contents
             .map((content: StrYaml) => {
@@ -387,7 +387,7 @@ export class Chapters {
 
           const parentTitle: string = this.getTitle(item.section);
 
-          return `\n## ${parentTitle}\n\n* [${parentTitle}](/${item.section})\n${furtherLinks}\n`;
+          return `## ${parentTitle}\n\n* [${parentTitle}](/${item.section})\n${furtherLinks}\n`;
         }
       })
       .join('\n');

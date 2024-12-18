@@ -17,13 +17,12 @@ However, while analogue systems capture more detail due to this continuity, they
 
 In contrast, digital systems break information down into discrete steps. Rather than storing or transmitting a continuous wave, digital systems sample the data at regular intervals and convert these samples into binary numbers (0s and 1s). For example, instead of recording every point on a smooth wave of sound, a digital system takes many small snapshots of the wave. These snapshots are stored as discrete whole numbers, which makes digital systems more resistant to noise and interference.
 
-
 ## Examples of Digital Technology
 
-* **Computers**: Digital technology forms the basis of modern computers, allowing them to process huge amounts of data quickly and accurately.
-* **Telecommunications**: Digital systems have changed the way we communicate, from mobile phones to the internet, allowing us to connect instantly across the globe.
-* **Multimedia**: Whether it’s images, music, or video, digital technology makes it easy to create, edit, and share media with others.
-* **Automation**: Digital systems control everything from home appliances to industrial machines, making our lives more efficient and automated.
+- **Computers**: Digital technology forms the basis of modern computers, allowing them to process huge amounts of data quickly and accurately.
+- **Telecommunications**: Digital systems have changed the way we communicate, from mobile phones to the internet, allowing us to connect instantly across the globe.
+- **Multimedia**: Whether it’s images, music, or video, digital technology makes it easy to create, edit, and share media with others.
+- **Automation**: Digital systems control everything from home appliances to industrial machines, making our lives more efficient and automated.
 
 ## Encoding Information
 
@@ -37,11 +36,10 @@ Let’s take the letter **"A"** as an example. In the ASCII encoding system, the
 
 Similarly, every letter and symbol has its own unique binary code. For example:
 
-* The lowercase **"a"** is represented by **97** in ASCII, which translates to **01100001** in binary.
-* The space character is represented by **32** in ASCII, which is **00100000** in binary.
+- The lowercase **"a"** is represented by **97** in ASCII, which translates to **01100001** in binary.
+- The space character is represented by **32** in ASCII, which is **00100000** in binary.
 
 This process allows computers to handle and store text as a series of 0s and 1s, making it possible for digital systems to manipulate and display information.
-
 
 ## Encoding Images and Sound
 
@@ -49,26 +47,23 @@ This process allows computers to handle and store text as a series of 0s and 1s,
 
 Similarly, for images or audio, there are specific encoding systems like JPEG for pictures or MP3 for sound files. These systems break down visual or auditory data into binary form, allowing computers to store, manipulate, and share them efficiently. Without encoding, digital devices wouldn't be able to process the information that we interact with daily.
 
-
 ## How Digital Technology Evolved
 
 Digital technology has come a long way, starting with simple machines and growing into the powerful systems we use today. Some key developments include:
 
-* **The First Digital Computers**: Early computers used binary logic to perform basic calculations, setting the stage for modern computing.
-* **Microprocessors**: The invention of the microprocessor made it possible to shrink computers, leading to personal computers and portable devices like smartphones.
-* **The Internet**: The development of digital communication networks, such as the internet, connected the world and made it easier to share information.
-* **Data Storage**: Digital storage systems have improved, making it possible to store massive amounts of data, which is essential for applications like cloud computing and big data.
-
+- **The First Digital Computers**: Early computers used binary logic to perform basic calculations, setting the stage for modern computing.
+- **Microprocessors**: The invention of the microprocessor made it possible to shrink computers, leading to personal computers and portable devices like smartphones.
+- **The Internet**: The development of digital communication networks, such as the internet, connected the world and made it easier to share information.
+- **Data Storage**: Digital storage systems have improved, making it possible to store massive amounts of data, which is essential for applications like cloud computing and big data.
 
 ## The Impact of Digital Technology on Society
 
 Digital technology has transformed many areas of life, making processes faster, more reliable, and more accessible. Some key impacts include:
 
-* **Processing Information**: Digital systems can process data quickly and accurately, helping us solve problems and analyse information in fields like science and business.
-* **Connecting People**: Digital communication tools, such as the internet and mobile phones, have brought people together, allowing us to share ideas and information instantly.
-* **Storing Data**: The ability to store large amounts of data digitally has led to innovations like big data and cloud computing, which are essential for modern industries.
-* **Automation**: Digital systems have automated many tasks, making everything from manufacturing to household chores more efficient and reliable.
-
+- **Processing Information**: Digital systems can process data quickly and accurately, helping us solve problems and analyse information in fields like science and business.
+- **Connecting People**: Digital communication tools, such as the internet and mobile phones, have brought people together, allowing us to share ideas and information instantly.
+- **Storing Data**: The ability to store large amounts of data digitally has led to innovations like big data and cloud computing, which are essential for modern industries.
+- **Automation**: Digital systems have automated many tasks, making everything from manufacturing to household chores more efficient and reliable.
 
 ## Conclusion
 

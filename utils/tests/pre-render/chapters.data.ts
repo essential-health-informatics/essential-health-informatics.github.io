@@ -184,11 +184,9 @@ title: Chapters
 sidebar: false
 ---
 
-
 ## Index (makeshift)
 
 * [Index (makeshift)](/chapters/1-introduction/index.qmd)
-
 
 ## Index (makeshift)
 
@@ -198,12 +196,10 @@ sidebar: false
 * [Software (makeshift)](/chapters/2-what-is-digital/3-software.qmd)
 * [Key Digital Concepts In Health Informatics (makeshift)](/chapters/2-what-is-digital/4-key-digital-concepts-in-health-informatics.qmd)
 
-
 ## Index (makeshift)
 
 * [Index (makeshift)](/chapters/3-health-and-disease/index.qmd)
 * [What Is Health (makeshift)](/chapters/3-health-and-disease/1-what-is-health.qmd)
-
 
 ## Index (makeshift)
 
@@ -213,7 +209,6 @@ sidebar: false
 
 * [Index (makeshift)](/chapters/7-history-of-digital-health-across-the-globe/1-england/index.qmd)
 
-
 ## Index (makeshift)
 
 * [Index (makeshift)](/chapters/9-clinical-decision-support-systems/index.qmd)
@@ -222,12 +217,10 @@ sidebar: false
 * [Rules Based (makeshift)](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
 * [Models Based (makeshift)](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
 
-
 ## Index (makeshift)
 
 * [Index (makeshift)](/chapters/28-authors-guide/index.qmd)
 * [Technical Guide (makeshift)](/chapters/28-authors-guide/1-technical-guide.qmd)
-
 
 ## Todo (makeshift)
 

@@ -6,15 +6,15 @@ Our aim with this guide is to ensure that the concepts of health informatics are
 
 When writing or reviewing sections of the guide, please keep the following in mind:
 
-* **Simplify complex ideas**: Break down technical terms and concepts into easy-to-understand explanations without oversimplifying or losing key details.
-* **Use familiar language**: Avoid highly technical or academic language where possible, and explain any necessary terms clearly.
-* **Balance depth and clarity**: While we want the guide to be informative, it should not overwhelm the reader with excessive details or complex language. Focus on explaining the core concepts and their relevance.
-* **Relatable examples**: Use relatable examples when possible to help illustrate points. Drawing on everyday technology or scenarios that a general audience would recognise can help demystify abstract ideas.
-* **Explain abbreviations**: All abbreviations or acronyms should be fully explained the first time they are used in each subchapter. This ensures clarity for readers who may not be familiar with specialised terms.
-* **Use illustration**: Where appropriate, use illustrations to help demonstrate your key points. Consider 0-5 illustrations per subchapter, although more may be needed for more complicated or visual topics.
-* **Reference key points**: Wherever possible, provide references to support key points, especially for facts, figures, or widely accepted practices. This adds credibility and allows readers to explore topics further if they wish.
-* **No plagiarism**: Do not copy and paste text from other people's work unless you specifically state you are quoting this work. In all other cases, write out the concept you are explaining in your own words.
+- **Simplify complex ideas**: Break down technical terms and concepts into easy-to-understand explanations without oversimplifying or losing key details.
+- **Use familiar language**: Avoid highly technical or academic language where possible, and explain any necessary terms clearly.
+- **Balance depth and clarity**: While we want the guide to be informative, it should not overwhelm the reader with excessive details or complex language. Focus on explaining the core concepts and their relevance.
+- **Relatable examples**: Use relatable examples when possible to help illustrate points. Drawing on everyday technology or scenarios that a general audience would recognise can help demystify abstract ideas.
+- **Explain abbreviations**: All abbreviations or acronyms should be fully explained the first time they are used in each subchapter. This ensures clarity for readers who may not be familiar with specialised terms.
+- **Use illustration**: Where appropriate, use illustrations to help demonstrate your key points. Consider 0-5 illustrations per subchapter, although more may be needed for more complicated or visual topics.
+- **Reference key points**: Wherever possible, provide references to support key points, especially for facts, figures, or widely accepted practices. This adds credibility and allows readers to explore topics further if they wish.
+- **No plagiarism**: Do not copy and paste text from other people's work unless you specifically state you are quoting this work. In all other cases, write out the concept you are explaining in your own words.
 
 By adopting this approach, we aim to make the guide not only a useful resource for beginners in health informatics but also an engaging and approachable one for those coming from various educational backgrounds.
 
-* Title case for titles (expand)
+- Title case for titles (expand)

@@ -4,7 +4,6 @@ description: "A guide"
 image: /media/single-rj45.jpg
 ---
 
-
 ![](/media/single-rj45.jpg){alt="A single RJ45 connector in a large network switch"}
 
 Digital technology has become an integral part of our daily lives, driving remarkable progress across countless fields. However, while it holds immense potential, its use must be approached with care, especially in healthcare, where the impact can be profound.

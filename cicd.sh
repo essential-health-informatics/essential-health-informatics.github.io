@@ -38,22 +38,49 @@ print_message() {
 }
 
 
+# Formatting of Quarto files
+print_message "Formatting of Quarto files" "" "blue" "" "in-line"
 
-# Formatting / linting TypeScript files
-print_message "Formatting/linting of TypeScript" "" "blue" "" "in-line"
-
-output=$(npx prettier --config .prettierrc --check './utils/**/*.ts' './src/**/*.ts' --color 2>&1)
+output=$(npx prettier --check "**/*.qmd" --color 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
-  print_message "Formatting/linting of TypeScript - failed!" "Error: $output" "red" "verbose"
+  print_message " - failed\n" "" "red"
+  print_message "Formatting of Quarto files - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
 
 print_message " - pass" "" "blue"
 
 
+# Formatting of TypeScript files
+print_message "Formatting of TypeScript" "" "blue" "" "in-line"
+
+output=$(npx prettier --config .prettierrc --check './utils/**/*.ts' './src/**/*.ts' --color 2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message " - failed\n" "" "red"
+  print_message "Formatting of TypeScript - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "" "blue"
+
+
+# Linting of TypeScript files
+print_message "Linting of TypeScript" "" "blue" "" "in-line"
+
+output=$(npx eslint '**/*.ts' --color 2>&1)
+exit_code=$?
+
+if [ $exit_code -ne 0 ]; then
+  print_message " - failed\n" "" "red"
+  print_message "Linting of TypeScript - failed!" "Error: $output" "red" "verbose"
+  exit $exit_code
+fi
+
+print_message " - pass" "" "blue"
 
 # Pre-render unit tests
 print_message "Pre-render unit testing" "" "blue" "" "in-line"
@@ -62,7 +89,7 @@ output=$(npm exec npx jest tests/pre-render/*.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Pre-render unit testing - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -78,7 +105,7 @@ output=$(npm exec ts-node utils/timeline-main.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Creating timeline pages - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -94,7 +121,7 @@ output=$(npm exec ts-node chapters.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Creating chapter page and side bar - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -110,7 +137,7 @@ output=$(npm exec tsc  2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Transpile browser scripts - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -125,7 +152,7 @@ output=$(quarto render 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Creating Quarto static pages - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -140,7 +167,7 @@ output=$(npm exec ts-node banners.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Creating page banners - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -156,7 +183,7 @@ output=$(npx typedoc --entryPoints ../utils/*.ts --entryPoints ../src/*ts --out 
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Creating code documentation - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi
@@ -172,7 +199,7 @@ output=$(npm exec npx jest tests/post-render/*.ts 2>&1)
 exit_code=$?
 
 if [ $exit_code -ne 0 ]; then
-  print_message " - fail\n" "" "red"
+  print_message " - failed\n" "" "red"
   print_message "Post-render unit tests - failed!" "Error: $output" "red" "verbose"
   exit $exit_code
 fi

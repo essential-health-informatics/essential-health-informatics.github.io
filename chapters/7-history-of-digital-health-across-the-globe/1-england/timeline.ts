@@ -140,7 +140,7 @@ Health IT is about both technical and adaptive change`
     header: 'WannaCry NHS attack',
     content: `A Microsoft Windows Operation System exploit.
 Largest hit service was England and Scotland. Wales and Northern Ireland were not affected.
-Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
+Up to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.
 Some NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[
 In 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.`
   },

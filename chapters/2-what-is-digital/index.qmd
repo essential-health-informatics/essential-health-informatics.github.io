@@ -13,10 +13,9 @@ In the context of health informatics, digital tools are indispensable. They enab
 
 Understanding the fundamentals of digital systems is crucial to navigating the landscape of health informatics. This section will explore the core components of digital technology, from the basics of hardware and software to the specific digital concepts that power health informatics.
 
-
 ## Chapters
 
-* [Digital](1-digital.qmd)
-* [Hardware](2-hardware.qmd)
-* [Software](3-software.qmd)
-* [Key Digital Concepts in Health Informatics](4-key-digital-concepts-in-health-informatics.qmd)
+- [Digital](1-digital.qmd)
+- [Hardware](2-hardware.qmd)
+- [Software](3-software.qmd)
+- [Key Digital Concepts in Health Informatics](4-key-digital-concepts-in-health-informatics.qmd)

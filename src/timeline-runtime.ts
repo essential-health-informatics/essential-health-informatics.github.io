@@ -8,7 +8,7 @@
  * Initialises and reacts to timeline events
  *
  */
-class Timeline {
+export class Timeline {
   /**
    * Initialises elements and starts event listeners.
    */
