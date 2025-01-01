@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Root code - minimal code for unit testing in VS Code files directly and also linting.",
   "workspaces": [
+    "docs",
     "src",
     "utils"
   ],

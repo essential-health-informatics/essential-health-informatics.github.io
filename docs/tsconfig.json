@@ -19,5 +19,5 @@
     "noUnusedParameters": true
   },
   "include": ["../utils/*.ts", "../src/*.ts"],
-  "exclude": ["../node_modules"]
+  "exclude": ["../src/tests", "../utils/tests"]
 }

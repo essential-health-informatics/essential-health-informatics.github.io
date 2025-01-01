@@ -1,0 +1,15 @@
+{
+  "name": "typedocs-essential-health-informatics.github.io",
+  "version": "1.0.0",
+  "description": "Typedocs code",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typhonjs-typedoc/typedoc-theme-dmt": "^0.3.1"
+  }
+}

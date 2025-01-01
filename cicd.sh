@@ -83,7 +83,7 @@ run_command "Creating Quarto static pages" "quarto render"
 
 run_command "Creating page banners" "npm exec ts-node banners.ts" "utils"
 
-run_command "Creating code documentation" "npx typedoc --entryPoints ../utils/*.ts --entryPoints ../src/*ts --out ../_site/chapters/code-documentation" "docs"
+run_command "Creating code documentation" "npx typedoc" "docs"
 
 run_command "Post-render unit tests" "npm exec npx jest tests/post-render/*.ts" "utils"
 

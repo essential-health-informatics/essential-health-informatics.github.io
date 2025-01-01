@@ -1,0 +1,12 @@
+{
+  "name": "Essentials of Health Informatics Code Documentation",
+  "entryPoints": ["../utils/*.ts", "../src/*ts"],
+  "out": "../_site/chapters/code-documentation",
+  "plugin": ["@typhonjs-typedoc/typedoc-theme-dmt"],
+  "theme": "default-modern",
+  "favicon": "../media/eohi-logo.png",
+  "sidebarLinks": {
+    "Open Guide": "https://essential-health-informatics.com/"
+  },
+  "readme": "README.md"
+}
