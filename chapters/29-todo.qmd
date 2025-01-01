@@ -9,6 +9,8 @@ image: /media/post-its-on-white-board.jpg
 
 ### Technical
 
+- Document page link back to normal pages.
+- Jest in VS Code is not working.
 - Format / linter for markdown files.
 - Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
 - Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.

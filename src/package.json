@@ -1,0 +1,22 @@
+{
+  "name": "browser-essential-health-informatics.github.io",
+  "version": "1.0.0",
+  "description": "Browser code",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "timelines": "ts-node utils/timeline-main.ts",
+    "prettier-check": "prettier --config .prettierrc  --check './utils/**/*.ts'",
+    "prettier-format": "prettier --config .prettierrc 'utils/**/*.ts' --write",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^25.0.1"
+  }
+}

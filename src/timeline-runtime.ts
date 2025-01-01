@@ -14,93 +14,47 @@ export class Timeline {
    */
   constructor() {
     document.addEventListener('DOMContentLoaded', () => {
-      this.initialiseCollapsibles();
-      this.adjustContainerClasses();
+      this.collapseText();
+      this.changeBubblePosition();
       window.addEventListener(
         'resize',
-        this.debounce(this.adjustContainerClasses.bind(this), 100)
+        this.debounce(this.changeBubblePosition.bind(this), 100)
       );
-      this.initialiseImageObserver();
-      this.initialiseObserver();
+      this.changeImageVisibility();
     });
   }
 
   /**
-   * Initialises the observer for the timeline elements.
+   * Change of visibility of content on title press
+   *
+   * Initialises the collapsible text elements within the date bubbles with
+   * event listeners to show and hide the content when the title is pressed.
    */
-  protected initialiseObserver(): void {
-    const elements: NodeListOf<HTMLImageElement> =
-      document.querySelectorAll('.observed-image');
-
-    const options: IntersectionObserverInit = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5
-    };
-
-    const observer: IntersectionObserver = new IntersectionObserver(
-      (entries: IntersectionObserverEntry[]) => {
-        entries.forEach((entry: IntersectionObserverEntry) => {
-          const target: HTMLElement = entry.target as HTMLElement;
-          target.classList.toggle('show', entry.isIntersecting);
-        });
-      },
-      options
-    );
-
-    elements.forEach((element: HTMLImageElement) => {
-      observer.observe(element);
-    });
-  }
-
-  /**
-   * Initialises the image observers for the timeline elements.
-   */
-  protected initialiseImageObserver(): void {
-    const images: NodeListOf<HTMLImageElement> = document.querySelectorAll(
-      '.observed-image.hidden'
-    );
-
-    const viewportHeight: number = window.innerHeight;
-    const thirdHeight: number = viewportHeight / 3;
-    const rootMargin: string = `-${thirdHeight}px 0px -${thirdHeight}px 0px`;
-
-    const observer: IntersectionObserver = new IntersectionObserver(
-      (entries: IntersectionObserverEntry[]) => {
-        entries.forEach((entry: IntersectionObserverEntry) => {
-          const target: HTMLElement = entry.target as HTMLElement;
-          target.classList.toggle('hidden', !entry.isIntersecting);
-        });
-      },
-      { rootMargin: rootMargin, threshold: 0 }
-    );
-
-    images.forEach((image: HTMLImageElement) => {
-      observer.observe(image);
-    });
-  }
-
-  /**
-   * Initialises the collapsible elements within the date bubbles.
-   */
-  protected initialiseCollapsibles(): void {
-    const coll: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName(
-      'collapsible'
-    ) as HTMLCollectionOf<HTMLElement>;
-    for (let i: number = 0; i < coll.length; i++) {
-      coll[i].addEventListener('click', function (this: HTMLElement) {
+  protected collapseText(): void {
+    const collapsibles: HTMLCollectionOf<HTMLElement> =
+      document.getElementsByClassName(
+        'collapsible'
+      ) as HTMLCollectionOf<HTMLElement>;
+    for (let i: number = 0; i < collapsibles.length; i++) {
+      collapsibles[i].addEventListener('click', function (this: HTMLElement) {
         this.classList.toggle('active');
         const content: HTMLElement = this.nextElementSibling as HTMLElement;
-        content.classList.toggle('visible');
-        content.classList.toggle('hidden');
+        if (content && content.classList.contains('collapsible-content')) {
+          content.classList.toggle('hidden');
+        } else {
+          console.error('No collapsible content found on button click!');
+        }
       });
     }
   }
 
   /**
-   * Adjusts the container classes based on the window width.
+   * Left and right alignment of bubbles
+   *
+   * Alternates bubbles to left and right alignment if window is above 600 px
+   * width. If below 600 px width, left and right alignment is removed.
    */
-  protected adjustContainerClasses(): void {
+  protected changeBubblePosition(): void {
     const containers: NodeListOf<HTMLElement> =
       document.querySelectorAll('.bubble');
     if (window.innerWidth < 600) {
@@ -119,7 +73,7 @@ export class Timeline {
    * Debounces a function to prevent it from being called too frequently.
    *
    * @param {Function} func The function to debounce.
-   * @param {number} wait The time to wait before calling the function.
+   * @param {number} wait The time to wait before calling the function in milliseconds.
    * @returns {Function} The debounced function.
    */
   protected debounce(
@@ -132,7 +86,39 @@ export class Timeline {
       timeout = window.setTimeout(() => func.apply(this, args), wait);
     };
   }
+
+  /**
+   * Show and hide images when they are in viewport.
+   *
+   * Initialises the observer for the images and then shows them when they enter
+   * the middle third of the viewport. Also hides them when they leave the middle
+   * third of the viewport.
+   */
+  protected changeImageVisibility(): void {
+    const images: NodeListOf<HTMLImageElement> =
+      document.querySelectorAll('.observed-image');
+
+    const thirdHeight: number = window.innerHeight / 3;
+    const rootMargin: string = `-${thirdHeight}px 0px -${thirdHeight}px 0px`;
+
+    const observer: IntersectionObserver = new IntersectionObserver(
+      (entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+          const target: HTMLElement = entry.target as HTMLElement;
+          target.classList.toggle('show', entry.isIntersecting);
+        });
+      },
+      { rootMargin: rootMargin }
+    );
+
+    images.forEach((image: HTMLImageElement) => {
+      observer.observe(image);
+    });
+  }
 }
 
-// Instantiate the Timeline class to run the functionality
-new Timeline();
+// Instantiate the Timeline class if running in a real browser.
+// Process is only defined in Node.js environments.
+if (typeof process === 'undefined') {
+  new Timeline();
+}

@@ -2,9 +2,14 @@ import * as fs from 'fs';
 import * as glob from 'glob';
 import { TimeLineIndexPages } from '../../timeline-main';
 import * as d from './timeline-main.data';
+import { execSync } from 'child_process';
 
 jest.mock('fs');
 jest.mock('glob');
+
+jest.mock('child_process', () => ({
+  execSync: jest.fn()
+}));
 
 describe('populateTimeline', () => {
   beforeEach(() => {
@@ -103,6 +108,10 @@ describe('populateAllTimelines', () => {
     jest.resetAllMocks();
     const mockCwd = jest.spyOn(process, 'cwd');
     mockCwd.mockReturnValue(d.path.basePath);
+  });
+
+  afterEach(() => {
+    jest.resetModules();
   });
 
   it('console error when no TypeScript files are found', async () => {
@@ -245,9 +254,6 @@ describe('populateAllTimelines', () => {
       d.metaData.title,
       `${d.path.directory}/index.qmd`
     );
-  });
-
-  afterEach(() => {
-    jest.resetModules();
+    expect(execSync).toHaveBeenCalledTimes(1);
   });
 });
