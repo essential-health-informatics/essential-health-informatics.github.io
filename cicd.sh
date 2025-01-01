@@ -69,7 +69,9 @@ run_command "Formatting of TypeScript" "npx prettier --config .prettierrc --chec
 
 run_command "Linting of TypeScript" "npx eslint '**/*.ts' --color"
 
-run_command "Pre-render unit testing" "npm exec npx jest tests/pre-render/*.ts" "utils"
+run_command "Unit testing backend pre-render code" "npm exec npx jest tests/pre-render/*.ts" "utils"
+
+run_command "Unit testing frontend code" "npm exec npx jest tests/*.ts" "src"
 
 run_command "Creating timeline pages" "npm exec ts-node utils/timeline-main.ts"
 

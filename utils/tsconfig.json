@@ -2,8 +2,6 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    // "rootDir": "./",
-    // "outDir": "../static/js",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -21,5 +19,5 @@
     "noUnusedParameters": true
   },
   "include": ["./*.ts"],
-  "exclude": ["../node_modules"]
+  "exclude": ["node_modules"]
 }
