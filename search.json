@@ -7,6 +7,189 @@
     "text": "Digital technology has become an integral part of our daily lives, driving remarkable progress across countless fields. However, while it holds immense potential, its use must be approached with care, especially in healthcare, where the impact can be profound.\nIn the realm of health and care, the stakes are higher than ever. Health Informatics, also known as Clinical Informatics or Medical Informatics, explores how digital systems can transform health management for the better. This guide, The Essentials of Health Informatics, is a comprehensive, open-source resource designed to support everyone—from newcomers to seasoned professionals. Whether you’re just stepping into the field or seeking a go-to reference as an advanced practitioner, this guide covers the full spectrum of health informatics and will be continuously updated to reflect the rapid changes in this evolving discipline.\nComplementing the guide, we offer a series of webinars that delve into core topics in Health Informatics. These will soon be available for viewing.\nReady to dive into the Essentials of Health Informatics? Access the guide here."
   },
   {
+    "objectID": "chapters/28-authors-guide/index.html",
+    "href": "chapters/28-authors-guide/index.html",
+    "title": "Author’s guide",
+    "section": "",
+    "text": "Our aim with this guide is to ensure that the concepts of health informatics are accessible to a broad audience. To aid you in setting the tone of your writings, we ask you to aim the level of your writing at those who have recently completed A-level education or have an equivalent understanding. This means writing in a way that is clear, straightforward, and avoids overly technical jargon. We want to present the material in a way that someone of average intelligence, without a specialised background in technology or healthcare, can understand and engage with the subject.\nWhen writing or reviewing sections of the guide, please keep the following in mind:\n\nSimplify complex ideas: Break down technical terms and concepts into easy-to-understand explanations without oversimplifying or losing key details.\nUse familiar language: Avoid highly technical or academic language where possible, and explain any necessary terms clearly.\nBalance depth and clarity: While we want the guide to be informative, it should not overwhelm the reader with excessive details or complex language. Focus on explaining the core concepts and their relevance.\nRelatable examples: Use relatable examples when possible to help illustrate points. Drawing on everyday technology or scenarios that a general audience would recognise can help demystify abstract ideas.\nExplain abbreviations: All abbreviations or acronyms should be fully explained the first time they are used in each subchapter. This ensures clarity for readers who may not be familiar with specialised terms.\nUse illustration: Where appropriate, use illustrations to help demonstrate your key points. Consider 0-5 illustrations per subchapter, although more may be needed for more complicated or visual topics.\nReference key points: Wherever possible, provide references to support key points, especially for facts, figures, or widely accepted practices. This adds credibility and allows readers to explore topics further if they wish.\nNo plagiarism: Do not copy and paste text from other people’s work unless you specifically state you are quoting this work. In all other cases, write out the concept you are explaining in your own words.\n\nBy adopting this approach, we aim to make the guide not only a useful resource for beginners in health informatics but also an engaging and approachable one for those coming from various educational backgrounds.\n\nTitle case for titles (expand)",
+    "crumbs": [
+      "Chapters",
+      "Author's guide"
+    ]
+  },
+  {
+    "objectID": "chapters/7-history-of-digital-health-across-the-globe/index.html",
+    "href": "chapters/7-history-of-digital-health-across-the-globe/index.html",
+    "title": "History of Digital Health Across the Globe",
+    "section": "",
+    "text": "Please click here to see the England NHS digital health timeline.",
+    "crumbs": [
+      "Chapters",
+      "History of Digital Health Across the Globe"
+    ]
+  },
+  {
+    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.html",
+    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.html",
+    "title": "Computers first used for administrative purposes",
+    "section": "",
+    "text": "Some material"
+  },
+  {
+    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.html",
+    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.html",
+    "title": "Colossus computer",
+    "section": "",
+    "text": "Some material"
+  },
+  {
+    "objectID": "chapters/30-settings.html",
+    "href": "chapters/30-settings.html",
+    "title": "User settings",
+    "section": "",
+    "text": "These settings are saved in the browser’s local storage. Hence, if you change browser type or devices, you will need to reconfigure them.\n\n Advanced material\n\n\n  This content is toggled by the switch.",
+    "crumbs": [
+      "Chapters",
+      "User settings"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html",
+    "href": "chapters/index.html",
+    "title": "Chapters",
+    "section": "",
+    "text": "Introduction to Health Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#introduction-to-health-informatics",
+    "href": "chapters/index.html#introduction-to-health-informatics",
+    "title": "Chapters",
+    "section": "",
+    "text": "Introduction to Health Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#what-is-digital",
+    "href": "chapters/index.html#what-is-digital",
+    "title": "Chapters",
+    "section": "What is digital?",
+    "text": "What is digital?\n\nWhat is digital?\nDigital\nHardware\nSoftware\nKey Digital Concepts in Health Informatics",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#health-and-disease",
+    "href": "chapters/index.html#health-and-disease",
+    "title": "Chapters",
+    "section": "Health and Disease",
+    "text": "Health and Disease\n\nHealth and Disease\nWhat is Health and Disease",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#history-of-digital-health-across-the-globe",
+    "href": "chapters/index.html#history-of-digital-health-across-the-globe",
+    "title": "Chapters",
+    "section": "History of Digital Health Across the Globe",
+    "text": "History of Digital Health Across the Globe\n\nHistory of Digital Health Across the Globe\n\n\nEngland NHS Timeline\n\nEngland NHS Timeline",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#decision-support",
+    "href": "chapters/index.html#decision-support",
+    "title": "Chapters",
+    "section": "Decision Support",
+    "text": "Decision Support\n\nDecision Support\nMedical Calculators\nAlert Systems\nRules Based Clinical Decision Support System\nModels Based Clinical Decision Support System",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#authors-guide",
+    "href": "chapters/index.html#authors-guide",
+    "title": "Chapters",
+    "section": "Author’s guide",
+    "text": "Author’s guide\n\nAuthor’s guide\nTechnical guide",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#todo-list-for-the-eohi-guide",
+    "href": "chapters/index.html#todo-list-for-the-eohi-guide",
+    "title": "Chapters",
+    "section": "Todo list for the EOHI guide",
+    "text": "Todo list for the EOHI guide\n\nTodo list for the EOHI guide",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#user-settings",
+    "href": "chapters/index.html#user-settings",
+    "title": "Chapters",
+    "section": "User settings",
+    "text": "User settings\n\nUser settings",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/index.html#code-documentation",
+    "href": "chapters/index.html#code-documentation",
+    "title": "Chapters",
+    "section": "Code Documentation",
+    "text": "Code Documentation\n\nCode Documentation",
+    "crumbs": [
+      "Chapters"
+    ]
+  },
+  {
+    "objectID": "chapters/2-what-is-digital/3-software.html",
+    "href": "chapters/2-what-is-digital/3-software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Software refers to the programs, applications, and instructions that run on a computer or digital system, telling the hardware what tasks to perform. While hardware is the physical component of a system, software is the non-physical element that drives functionality, enabling users to interact with the system, run applications, and process data. Without software, hardware would be a collection of inert parts, incapable of performing meaningful tasks. Software can range from simple applications, like word processors and calculators, to complex systems, such as operating systems and databases that handle large-scale processing and data management.\nSoftware is what gives a system its purpose. Whether it’s a laptop, smartphone, or any digital device, software controls the way users interact with it. From sending an email to streaming a video, it’s the software that manages how these actions are carried out behind the scenes, providing a seamless user experience.",
+    "crumbs": [
+      "Chapters",
+      "What is digital?",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "chapters/2-what-is-digital/3-software.html#types-of-software",
+    "href": "chapters/2-what-is-digital/3-software.html#types-of-software",
+    "title": "Software",
+    "section": "Types of Software",
+    "text": "Types of Software\nSoftware is generally divided into three broad categories: system software, application software, and utility software. Each plays a unique role in enabling a computer system to function effectively.\n\nSystem Software\nSystem software manages the basic functions of a computer or device and allows the hardware to communicate with other software. It acts as the interface between the hardware and the user, ensuring that resources like memory and processing power are allocated efficiently. The most common type of system software is the Operating System (OS), which serves as the foundation for all other software on a device. The OS handles fundamental tasks such as file management, memory management, and controlling peripheral devices like printers or external drives.\nExamples: Windows, macOS, Linux, Android.\nFunctionality: The OS provides a platform for application software to run. It manages the computer’s resources, including memory, processor time, and storage space, and ensures that these resources are used effectively. Without system software, users wouldn’t be able to install or use application software or interact with the hardware in a meaningful way. The OS also acts as a bridge between the user and the machine, translating user commands into actions that the hardware can execute.\n\n\nApplication Software\nApplication software is designed to perform specific tasks for the user, such as creating documents, browsing the internet, or editing images. Applications sit on top of the system software and depend on it to function, but their focus is on helping the user accomplish a particular goal. Application software is varied and covers everything from basic productivity tools to advanced design and analysis software.\nExamples: Microsoft Word, Google Chrome, Adobe Photoshop.\nFunctionality: Applications allow users to complete specific tasks. These tasks can be as simple as typing a document or as complex as editing a high-definition video. Application software is what most people interact with directly on a daily basis, as it provides the tools needed for activities such as communication, entertainment, and productivity. Applications are often designed with user-friendly interfaces, making it easy for people to use them without needing to understand the technical details of how they work.\n\n\nUtility Software\nUtility software is designed to help maintain and optimise a system’s performance. While system software provides the basic environment for running applications, utility software focuses on enhancing that environment by providing specialised tools for managing, securing, and optimising the system. It operates in the background, ensuring that the system runs smoothly by performing tasks like cleaning up disk space, organising files, or protecting the system from security threats.\nExamples: Antivirus programs, file compression tools, disk clean-up utilities.\nFunctionality: Utility software focuses on improving system performance and keeping it running efficiently. These tools often come bundled with the operating system, but many are also available as standalone applications. Utility software can scan for malware, defragment a hard drive, back up important files, or recover deleted data. It plays a crucial role in extending the life and efficiency of a digital system by ensuring that everything is running as smoothly and securely as possible.\n\n\nOthers\nIn addition to system, application, and utility software, other specialised types include embedded software for specific devices like medical equipment, and real-time software for processing data instantly in time-sensitive environments. Firmware manages low-level hardware functions, while virtualization and containerization software enable multiple systems or applications to run on a single machine. Enterprise software supports large-scale business operations, and cloud-based applications provide scalable services accessed remotely. Mobile applications are designed for use on smartphones and tablets. These software types serve unique roles, enhancing the functionality and efficiency of digital systems.",
+    "crumbs": [
+      "Chapters",
+      "What is digital?",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "chapters/2-what-is-digital/3-software.html#conclusion",
+    "href": "chapters/2-what-is-digital/3-software.html#conclusion",
+    "title": "Software",
+    "section": "Conclusion",
+    "text": "Conclusion\nSoftware is an essential part of any digital system, acting as the interface between hardware and users, and enabling the performance of a wide range of tasks, from basic user interactions to large-scale data processing. It comes in various forms—system software, application software, and utilities—all working together to create functional and efficient digital systems. Each type of software plays a unique role in ensuring that a system operates effectively and reliably.\nAs technology evolves, software continues to adapt and expand, shaping how we work, learn, and connect in nearly every aspect of life. From simplifying daily tasks to handling complex processes, software has become the driving force behind modern digital experiences, making it indispensable to both individuals and organisations.",
+    "crumbs": [
+      "Chapters",
+      "What is digital?",
+      "Software"
+    ]
+  },
+  {
     "objectID": "index-old.html#what-is-digital",
     "href": "index-old.html#what-is-digital",
     "title": "Chapters",
@@ -196,66 +379,25 @@
     "text": "Todo list"
   },
   {
-    "objectID": "chapters/3-health-and-disease/index.html",
-    "href": "chapters/3-health-and-disease/index.html",
-    "title": "Health and Disease",
-    "section": "",
-    "text": "test",
+    "objectID": "chapters/2-what-is-digital/index.html#overview",
+    "href": "chapters/2-what-is-digital/index.html#overview",
+    "title": "What is digital?",
+    "section": "Overview",
+    "text": "Overview\nDigital technology refers to the use of electronic tools, systems, devices, and resources that generate, store, or process data. In its simplest form, it involves encoding information as binary—combinations of zeros and ones—which underpin everything from the internet to smartphones, complex health systems, and artificial intelligence.\nIn the context of health informatics, digital tools are indispensable. They enable the management and analysis of vast amounts of health data, streamline communication between healthcare professionals, and improve patient care through technologies like electronic health records (EHRs), telemedicine, and clinical decision support systems.\nUnderstanding the fundamentals of digital systems is crucial to navigating the landscape of health informatics. This section will explore the core components of digital technology, from the basics of hardware and software to the specific digital concepts that power health informatics.",
     "crumbs": [
       "Chapters",
-      "Health and Disease"
+      "What is digital?"
     ]
   },
   {
-    "objectID": "chapters/7-history-of-digital-health-across-the-globe/index.html",
-    "href": "chapters/7-history-of-digital-health-across-the-globe/index.html",
-    "title": "History of Digital Health Across the Globe",
-    "section": "",
-    "text": "Please click here to see the England NHS digital health timeline.",
+    "objectID": "chapters/2-what-is-digital/index.html#chapters",
+    "href": "chapters/2-what-is-digital/index.html#chapters",
+    "title": "What is digital?",
+    "section": "Chapters",
+    "text": "Chapters\n\nDigital\nHardware\nSoftware\nKey Digital Concepts in Health Informatics",
     "crumbs": [
       "Chapters",
-      "History of Digital Health Across the Globe"
-    ]
-  },
-  {
-    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/index.html",
-    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/index.html",
-    "title": "England NHS Timeline",
-    "section": "",
-    "text": "1943\n        \n        Colossus computer\n        \n          The first electronic computer. Used as a codebreaker in World War II.Further details...\n        \n      \n    \n\n    \n      \n        1952\n        \n        First use of HIT\n        \n          Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.\n        \n      \n    \n\n    \n      \n        1950s\n        \n        Computers first used for administrative purposes\n        \n          ...Further details...\n        \n      \n    \n\n    \n      \n        1969\n        \n        Dr John Preece and the Ottery St Mary project\n        \n          ...\n        \n      \n    \n\n    \n      \n        1970s\n        \n        EMIS\n        \n          A GP in the village of Egton in Yorkshire, persuaded IBM to give him a computer and a suitable programme, built a room onto his surgery to house it and created Egton Medical Information Systems (EMIS)Further details...\n        \n      \n    \n\n    \n      \n        1980s\n        \n        Read codes\n        \n          Dr Read, a GP in Leicestershire, realised a dictionary of medical diagnoses was needed for his computer system and set out to create it, initially using the death certification lists described above and started with a few thousand codes.\n        \n      \n    \n\n    \n      \n        ...\n        \n        SNOMED-CT\n        \n          Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)\n        \n      \n    \n\n    \n      \n        1991\n        \n        World Wide Web launched\n        \n          In 1989, British scientist Tim Berners-Lee created the World Wide Web (WWW) while working at CERN. His intention was to develop a system that would enable automated sharing of information among scientists across universities and research institutions globally.\n        \n      \n    \n\n    \n      \n        1992\n        \n        Drury - Getting Better with Information\n        \n          Information will be person-based. Information should focus on health. Systems should be integrated. Information will be derived from operational systems. Information will be secure and confidential. Information will be shared across the NHS\n        \n      \n    \n\n    \n      \n        1997\n        \n        Caldicott Principles of data sharing\n        \n          The first 6 (2 more came later)\nPrinciple 1: justify the purpose(s) for using confidential information.\nPrinciple 2: use confidential information only when it is necessary.\nPrinciple 3: use the minimum necessary confidential information.\nPrinciple 4: access to confidential information should be on a strict need-to-know basis.\nPrinciple 5: everyone with access to confidential information should be aware of their responsibilities.\nPrinciple 6: comply with the law.\n        \n      \n    \n\n    \n      \n        2001\n        \n        Wanless\n        \n          We have achieved less because we have spent very much less and not spent it well.\n        \n      \n    \n\n    \n      \n        2002\n        \n        Protti\n        \n          UK - 59% of primary care physicians\nNew Zealand - 52%\nUSA - 17%\nThe original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking.\nA true patient-centric model is needed.\n        \n      \n    \n\n    \n      \n        2002-2012\n        \n        National Program for IT (NPfIT)\n        \n          Delivering 21st Century IT Support for the NHS - paper\nNational Program for IT (NPfIT) starts 2002\nNPfIT closes down in 2012\n£12.5 billion spent (167.56 billion SEK)\nVery little in terms of deliveries - mainly PACS (picture archiving and communication system)\n        \n      \n    \n\n    \n      \n        2016\n        \n        Wachter Review, Making IT work\n        \n          10 findings, the most important:\nInteroperability should be built in from the start\nHealth IT systems must embrace user-centred design\nA successful digital strategy must be multifaceted, and requires workforce development (more to come in this afternoon’s session)\nHealth IT is about both technical and adaptive change\n        \n      \n    \n\n    \n      \n        2017\n        \n        WannaCry NHS attack\n        \n          A Microsoft Windows Operation System exploit.\nLargest hit service was England and Scotland. Wales and Northern Ireland were not affected.\nUp to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.\nSome NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[\nIn 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.\n        \n      \n    \n\n    \n      \n        2019\n        \n        Topol Review\n        \n          Talks about digital and genomics are the future.\nThe patient must be considered to be at the centre when assessing and implementing any new technologies. (I would argue staff as well)\nExtensive education and training of the clinician workforce and the public, with cultivation of a cross-disciplinary approach that includes data scientists, computer scientists, engineers, bioinformaticians, in addition to the traditional mix of pharmacists, nurses and doctors.\n        \n      \n    \n\n    \n      \n        2019\n        \n        Formation of the Faculty of Clinical Informatics\n        \n          The Idea of the FCI started in the 1990s inside the Royal College of GPs Health Informatics Group (RCGP HIG)\nRCGP HIG gave joint representation to the Computer Group within the British Medical Association (BMA)\nAcademy of Colleges Information Group (ACIG, from AoMRC) tried an initial attempt to create an FCI, but National Program for IT (NPfIT) waylay this.\nProf Maureen Baker as chair of RCGP HIG set up a steering group that gave final push to start positive steps to form the FCI – April 2017\nFCI formed by founding fellows November 2017 as a “spin off” faculty from the RCGP\nFCI is now an independent Charitable Incorporated Organisation - September 2019\n        \n      \n    \n\n    \n      \n        ...\n        \n        Care.data\n        \n          ...\n        \n      \n    \n\n    \n      \n        ...\n        \n        GP Data for Planning and Research (GPDPR)\n        \n          ...\n        \n      \n    \n\n    \n      \n        2020\n        \n        Caldicott Principles 7 & 8\n        \n          Principle 7: the duty to share information for individual care is as important as the duty to protect patient confidentiality.\nPrinciple 8: inform patients and services users about how their confidential information is used and what choice they have. There should be no surprises.)\n        \n      \n    \n\n    \n      \n        2022-23\n        \n        England's NHS bodies become a single organisation\n        \n          The mergence of NHS Health Education England, NHS Improvement, NHS X and the NHS Digital into NHS England.\n        \n      \n    \n\n    \n      \n        2023\n        \n        Federated Data Platform\n        \n          Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.”\nMixture of use cases such as:\nDirect care\nPublic health\nHealthcare planning and research\nThis mixed use case has complications in English law.\n        \n      \n    \n\n    \n      \n        2024\n        \n        Faculty of Clinical Informatics absorbed into British Computer Society\n        \n          The Faculty of Clinical Informatics (FCI) has been absorbed into the British Computer Society (BCS). The FCI will continue to operate as a special interest group within the BCS.",
-    "crumbs": [
-      "Chapters",
-      "History of Digital Health Across the Globe",
-      "England NHS Timeline"
-    ]
-  },
-  {
-    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.html",
-    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.html",
-    "title": "First use of Health Informatics Technology",
-    "section": "",
-    "text": "Dr Artrhur Rappoport. 1952 Porth A.J."
-  },
-  {
-    "objectID": "chapters/28-authors-guide/index.html",
-    "href": "chapters/28-authors-guide/index.html",
-    "title": "Author’s guide",
-    "section": "",
-    "text": "Our aim with this guide is to ensure that the concepts of health informatics are accessible to a broad audience. To aid you in setting the tone of your writings, we ask you to aim the level of your writing at those who have recently completed A-level education or have an equivalent understanding. This means writing in a way that is clear, straightforward, and avoids overly technical jargon. We want to present the material in a way that someone of average intelligence, without a specialised background in technology or healthcare, can understand and engage with the subject.\nWhen writing or reviewing sections of the guide, please keep the following in mind:\n\nSimplify complex ideas: Break down technical terms and concepts into easy-to-understand explanations without oversimplifying or losing key details.\nUse familiar language: Avoid highly technical or academic language where possible, and explain any necessary terms clearly.\nBalance depth and clarity: While we want the guide to be informative, it should not overwhelm the reader with excessive details or complex language. Focus on explaining the core concepts and their relevance.\nRelatable examples: Use relatable examples when possible to help illustrate points. Drawing on everyday technology or scenarios that a general audience would recognise can help demystify abstract ideas.\nExplain abbreviations: All abbreviations or acronyms should be fully explained the first time they are used in each subchapter. This ensures clarity for readers who may not be familiar with specialised terms.\nUse illustration: Where appropriate, use illustrations to help demonstrate your key points. Consider 0-5 illustrations per subchapter, although more may be needed for more complicated or visual topics.\nReference key points: Wherever possible, provide references to support key points, especially for facts, figures, or widely accepted practices. This adds credibility and allows readers to explore topics further if they wish.\nNo plagiarism: Do not copy and paste text from other people’s work unless you specifically state you are quoting this work. In all other cases, write out the concept you are explaining in your own words.\n\nBy adopting this approach, we aim to make the guide not only a useful resource for beginners in health informatics but also an engaging and approachable one for those coming from various educational backgrounds.\n\nTitle case for titles (expand)",
-    "crumbs": [
-      "Chapters",
-      "Author's guide"
-    ]
-  },
-  {
-    "objectID": "chapters/1-introduction/index.html",
-    "href": "chapters/1-introduction/index.html",
-    "title": "Introduction to Health Informatics",
-    "section": "",
-    "text": "Many thanks for joining us on this incredible journey of health, disease, human emotions, human reasoning and digital health. Health Informatics is a very broad and very complicated discipline, so much so than the underlying digital architecture of the systems it involves.",
-    "crumbs": [
-      "Chapters",
-      "Introduction to Health Informatics"
+      "What is digital?"
     ]
   },
   {
@@ -403,61 +545,14 @@
     ]
   },
   {
-    "objectID": "chapters/2-what-is-digital/3-software.html",
-    "href": "chapters/2-what-is-digital/3-software.html",
-    "title": "Software",
+    "objectID": "chapters/1-introduction/index.html",
+    "href": "chapters/1-introduction/index.html",
+    "title": "Introduction to Health Informatics",
     "section": "",
-    "text": "Software refers to the programs, applications, and instructions that run on a computer or digital system, telling the hardware what tasks to perform. While hardware is the physical component of a system, software is the non-physical element that drives functionality, enabling users to interact with the system, run applications, and process data. Without software, hardware would be a collection of inert parts, incapable of performing meaningful tasks. Software can range from simple applications, like word processors and calculators, to complex systems, such as operating systems and databases that handle large-scale processing and data management.\nSoftware is what gives a system its purpose. Whether it’s a laptop, smartphone, or any digital device, software controls the way users interact with it. From sending an email to streaming a video, it’s the software that manages how these actions are carried out behind the scenes, providing a seamless user experience.",
+    "text": "Many thanks for joining us on this incredible journey of health, disease, human emotions, human reasoning and digital health. Health Informatics is a very broad and very complicated discipline, so much so than the underlying digital architecture of the systems it involves.",
     "crumbs": [
       "Chapters",
-      "What is digital?",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "chapters/2-what-is-digital/3-software.html#types-of-software",
-    "href": "chapters/2-what-is-digital/3-software.html#types-of-software",
-    "title": "Software",
-    "section": "Types of Software",
-    "text": "Types of Software\nSoftware is generally divided into three broad categories: system software, application software, and utility software. Each plays a unique role in enabling a computer system to function effectively.\n\nSystem Software\nSystem software manages the basic functions of a computer or device and allows the hardware to communicate with other software. It acts as the interface between the hardware and the user, ensuring that resources like memory and processing power are allocated efficiently. The most common type of system software is the Operating System (OS), which serves as the foundation for all other software on a device. The OS handles fundamental tasks such as file management, memory management, and controlling peripheral devices like printers or external drives.\nExamples: Windows, macOS, Linux, Android.\nFunctionality: The OS provides a platform for application software to run. It manages the computer’s resources, including memory, processor time, and storage space, and ensures that these resources are used effectively. Without system software, users wouldn’t be able to install or use application software or interact with the hardware in a meaningful way. The OS also acts as a bridge between the user and the machine, translating user commands into actions that the hardware can execute.\n\n\nApplication Software\nApplication software is designed to perform specific tasks for the user, such as creating documents, browsing the internet, or editing images. Applications sit on top of the system software and depend on it to function, but their focus is on helping the user accomplish a particular goal. Application software is varied and covers everything from basic productivity tools to advanced design and analysis software.\nExamples: Microsoft Word, Google Chrome, Adobe Photoshop.\nFunctionality: Applications allow users to complete specific tasks. These tasks can be as simple as typing a document or as complex as editing a high-definition video. Application software is what most people interact with directly on a daily basis, as it provides the tools needed for activities such as communication, entertainment, and productivity. Applications are often designed with user-friendly interfaces, making it easy for people to use them without needing to understand the technical details of how they work.\n\n\nUtility Software\nUtility software is designed to help maintain and optimise a system’s performance. While system software provides the basic environment for running applications, utility software focuses on enhancing that environment by providing specialised tools for managing, securing, and optimising the system. It operates in the background, ensuring that the system runs smoothly by performing tasks like cleaning up disk space, organising files, or protecting the system from security threats.\nExamples: Antivirus programs, file compression tools, disk clean-up utilities.\nFunctionality: Utility software focuses on improving system performance and keeping it running efficiently. These tools often come bundled with the operating system, but many are also available as standalone applications. Utility software can scan for malware, defragment a hard drive, back up important files, or recover deleted data. It plays a crucial role in extending the life and efficiency of a digital system by ensuring that everything is running as smoothly and securely as possible.\n\n\nOthers\nIn addition to system, application, and utility software, other specialised types include embedded software for specific devices like medical equipment, and real-time software for processing data instantly in time-sensitive environments. Firmware manages low-level hardware functions, while virtualization and containerization software enable multiple systems or applications to run on a single machine. Enterprise software supports large-scale business operations, and cloud-based applications provide scalable services accessed remotely. Mobile applications are designed for use on smartphones and tablets. These software types serve unique roles, enhancing the functionality and efficiency of digital systems.",
-    "crumbs": [
-      "Chapters",
-      "What is digital?",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "chapters/2-what-is-digital/3-software.html#conclusion",
-    "href": "chapters/2-what-is-digital/3-software.html#conclusion",
-    "title": "Software",
-    "section": "Conclusion",
-    "text": "Conclusion\nSoftware is an essential part of any digital system, acting as the interface between hardware and users, and enabling the performance of a wide range of tasks, from basic user interactions to large-scale data processing. It comes in various forms—system software, application software, and utilities—all working together to create functional and efficient digital systems. Each type of software plays a unique role in ensuring that a system operates effectively and reliably.\nAs technology evolves, software continues to adapt and expand, shaping how we work, learn, and connect in nearly every aspect of life. From simplifying daily tasks to handling complex processes, software has become the driving force behind modern digital experiences, making it indispensable to both individuals and organisations.",
-    "crumbs": [
-      "Chapters",
-      "What is digital?",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "chapters/2-what-is-digital/index.html#overview",
-    "href": "chapters/2-what-is-digital/index.html#overview",
-    "title": "What is digital?",
-    "section": "Overview",
-    "text": "Overview\nDigital technology refers to the use of electronic tools, systems, devices, and resources that generate, store, or process data. In its simplest form, it involves encoding information as binary—combinations of zeros and ones—which underpin everything from the internet to smartphones, complex health systems, and artificial intelligence.\nIn the context of health informatics, digital tools are indispensable. They enable the management and analysis of vast amounts of health data, streamline communication between healthcare professionals, and improve patient care through technologies like electronic health records (EHRs), telemedicine, and clinical decision support systems.\nUnderstanding the fundamentals of digital systems is crucial to navigating the landscape of health informatics. This section will explore the core components of digital technology, from the basics of hardware and software to the specific digital concepts that power health informatics.",
-    "crumbs": [
-      "Chapters",
-      "What is digital?"
-    ]
-  },
-  {
-    "objectID": "chapters/2-what-is-digital/index.html#chapters",
-    "href": "chapters/2-what-is-digital/index.html#chapters",
-    "title": "What is digital?",
-    "section": "Chapters",
-    "text": "Chapters\n\nDigital\nHardware\nSoftware\nKey Digital Concepts in Health Informatics",
-    "crumbs": [
-      "Chapters",
-      "What is digital?"
+      "Introduction to Health Informatics"
     ]
   },
   {
@@ -465,7 +560,7 @@
     "href": "chapters/29-todo.html#to-do",
     "title": "Todo list for the EOHI guide",
     "section": "To do",
-    "text": "To do\n\nTechnical\n\nDocument page link back to normal pages.\nJest in VS Code is not working.\nFormat / linter for markdown files.\nConvert banner.ts privates to protected and change tests to mimic chapters.test.ts.\nAdd protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.\nAutomatically build side bar content from actual content in the guide.\nCheck that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).\nFinish banner testing (pre-render)\nFinish non-200 link testing (post-render)\nTest all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.\nCheck all titles are in Title case.\nAll chapter folders and subfolders must have an index.qmd file. Needs unit testing and checking in chapters.ts.\nBibliography for each chapter.\nEach chapter/subchapter needs a page picture (in the front matter)\n\n\n\nContent\n\nMost major content.\nCase studies under each major chapter.\nLarger case studies at the end of the guide.\n\n\n\nCreators\n\nCreators for remaining topics.",
+    "text": "To do\n\nTechnical\n\nStudent and seasoned professional content access/switch.\nSingle image added to the front matter of each chapter with alt and verticalPosition. This then is used to create the banner in a 3:1 ratio.\nConvert banner.ts privates to protected and change tests to mimic chapters.test.ts.\nAdd protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.\nFinish banner testing (pre-render)\nFinish non-200 link testing (post-render)\nTest all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.\nCheck all titles are in Title case. How to handle acronyms and words that are capitalized in the middle of a sentence?\nAll chapter folders and subfolders must have an index.qmd file. Needs unit testing and checking in chapters.ts.\nBibliography for each chapter???\n\n\n\nContent\n\nMost major content.\nCase studies under each major chapter.\nLarger case studies at the end of the guide.\n\n\n\nCreators\n\nCreators for remaining topics.",
     "crumbs": [
       "Chapters",
       "Todo list for the EOHI guide"
@@ -476,11 +571,30 @@
     "href": "chapters/29-todo.html#done",
     "title": "Todo list for the EOHI guide",
     "section": "Done",
-    "text": "Done\n\nTechnical\n\nObtained a domain name.\nSet up a GitHub repository.\nGitHub pages.\nGithub actions.\n\n\n\nContent\n\n\nCreators\n\nFirst creators set for first 10 webinars and chapters.",
+    "text": "Done\n\nTechnical Done\n\nObtained a domain name.\nSet up a GitHub repository.\nGitHub pages.\nGithub actions.\nDocument page link back to normal pages.\nJest in VS Code is not working - fixed.\nFormat / linter for markdown files.\nAutomatically build side bar content from actual content in the guide.\n\n\n\nContent Done\n\n\nCreators Done\n\nFirst creators set for first 10 webinars and chapters.",
     "crumbs": [
       "Chapters",
       "Todo list for the EOHI guide"
     ]
+  },
+  {
+    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/index.html",
+    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/index.html",
+    "title": "England NHS Timeline",
+    "section": "",
+    "text": "1943\n        \n        Colossus computer\n        \n          The first electronic computer. Used as a codebreaker in World War II.Further details...\n        \n      \n    \n\n    \n      \n        1952\n        \n        First use of HIT\n        \n          Dr Arthur Rappoport uses the McBee Manual Punch Card in pathology labs.\n        \n      \n    \n\n    \n      \n        1950s\n        \n        Computers first used for administrative purposes\n        \n          ...Further details...\n        \n      \n    \n\n    \n      \n        1969\n        \n        Dr John Preece and the Ottery St Mary project\n        \n          ...\n        \n      \n    \n\n    \n      \n        1970s\n        \n        EMIS\n        \n          A GP in the village of Egton in Yorkshire, persuaded IBM to give him a computer and a suitable programme, built a room onto his surgery to house it and created Egton Medical Information Systems (EMIS)Further details...\n        \n      \n    \n\n    \n      \n        1980s\n        \n        Read codes\n        \n          Dr Read, a GP in Leicestershire, realised a dictionary of medical diagnoses was needed for his computer system and set out to create it, initially using the death certification lists described above and started with a few thousand codes.\n        \n      \n    \n\n    \n      \n        ...\n        \n        SNOMED-CT\n        \n          Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT)\n        \n      \n    \n\n    \n      \n        1991\n        \n        World Wide Web launched\n        \n          In 1989, British scientist Tim Berners-Lee created the World Wide Web (WWW) while working at CERN. His intention was to develop a system that would enable automated sharing of information among scientists across universities and research institutions globally.\n        \n      \n    \n\n    \n      \n        1992\n        \n        Drury - Getting Better with Information\n        \n          Information will be person-based. Information should focus on health. Systems should be integrated. Information will be derived from operational systems. Information will be secure and confidential. Information will be shared across the NHS\n        \n      \n    \n\n    \n      \n        1997\n        \n        Caldicott Principles of data sharing\n        \n          The first 6 (2 more came later)\nPrinciple 1: justify the purpose(s) for using confidential information.\nPrinciple 2: use confidential information only when it is necessary.\nPrinciple 3: use the minimum necessary confidential information.\nPrinciple 4: access to confidential information should be on a strict need-to-know basis.\nPrinciple 5: everyone with access to confidential information should be aware of their responsibilities.\nPrinciple 6: comply with the law.\n        \n      \n    \n\n    \n      \n        2001\n        \n        Wanless\n        \n          We have achieved less because we have spent very much less and not spent it well.\n        \n      \n    \n\n    \n      \n        2002\n        \n        Protti\n        \n          UK - 59% of primary care physicians\nNew Zealand - 52%\nUSA - 17%\nThe original concept of the EPR being a longitudinal health record about an individual is still very valid! However, it has become entangled in organisationally bound thinking.\nA true patient-centric model is needed.\n        \n      \n    \n\n    \n      \n        2002-2012\n        \n        National Program for IT (NPfIT)\n        \n          Delivering 21st Century IT Support for the NHS - paper\nNational Program for IT (NPfIT) starts 2002\nNPfIT closes down in 2012\n£12.5 billion spent (167.56 billion SEK)\nVery little in terms of deliveries - mainly PACS (picture archiving and communication system)\n        \n      \n    \n\n    \n      \n        2016\n        \n        Wachter Review, Making IT work\n        \n          10 findings, the most important:\nInteroperability should be built in from the start\nHealth IT systems must embrace user-centred design\nA successful digital strategy must be multifaceted, and requires workforce development (more to come in this afternoon’s session)\nHealth IT is about both technical and adaptive change\n        \n      \n    \n\n    \n      \n        2017\n        \n        WannaCry NHS attack\n        \n          A Microsoft Windows Operation System exploit.\nLargest hit service was England and Scotland. Wales and Northern Ireland were not affected.\nUp to 70,000 devices – including computers, MRI scanners, blood-storage refrigerators and theatre equipment affected.\nSome NHS services had to turn away non-critical emergencies, and some ambulances were diverted.[\nIn 2018 a report by Members of Parliament concluded that all 200 NHS hospitals or other organisations checked in the wake of the WannaCry attack still failed cybersecurity checks.\n        \n      \n    \n\n    \n      \n        2019\n        \n        Topol Review\n        \n          Talks about digital and genomics are the future.\nThe patient must be considered to be at the centre when assessing and implementing any new technologies. (I would argue staff as well)\nExtensive education and training of the clinician workforce and the public, with cultivation of a cross-disciplinary approach that includes data scientists, computer scientists, engineers, bioinformaticians, in addition to the traditional mix of pharmacists, nurses and doctors.\n        \n      \n    \n\n    \n      \n        2019\n        \n        Formation of the Faculty of Clinical Informatics\n        \n          The Idea of the FCI started in the 1990s inside the Royal College of GPs Health Informatics Group (RCGP HIG)\nRCGP HIG gave joint representation to the Computer Group within the British Medical Association (BMA)\nAcademy of Colleges Information Group (ACIG, from AoMRC) tried an initial attempt to create an FCI, but National Program for IT (NPfIT) waylay this.\nProf Maureen Baker as chair of RCGP HIG set up a steering group that gave final push to start positive steps to form the FCI – April 2017\nFCI formed by founding fellows November 2017 as a “spin off” faculty from the RCGP\nFCI is now an independent Charitable Incorporated Organisation - September 2019\n        \n      \n    \n\n    \n      \n        ...\n        \n        Care.data\n        \n          ...\n        \n      \n    \n\n    \n      \n        ...\n        \n        GP Data for Planning and Research (GPDPR)\n        \n          ...\n        \n      \n    \n\n    \n      \n        2020\n        \n        Caldicott Principles 7 & 8\n        \n          Principle 7: the duty to share information for individual care is as important as the duty to protect patient confidentiality.\nPrinciple 8: inform patients and services users about how their confidential information is used and what choice they have. There should be no surprises.)\n        \n      \n    \n\n    \n      \n        2022-23\n        \n        England's NHS bodies become a single organisation\n        \n          The mergence of NHS Health Education England, NHS Improvement, NHS X and the NHS Digital into NHS England.\n        \n      \n    \n\n    \n      \n        2023\n        \n        Federated Data Platform\n        \n          Controlled by the NHS “to unlock the power of NHS data to understand patterns, solve problems, plan services for local populations and ultimately transform the health and care of the people they serve.”\nMixture of use cases such as:\nDirect care\nPublic health\nHealthcare planning and research\nThis mixed use case has complications in English law.\n        \n      \n    \n\n    \n      \n        2024\n        \n        Faculty of Clinical Informatics absorbed into British Computer Society\n        \n          The Faculty of Clinical Informatics (FCI) has been absorbed into the British Computer Society (BCS). The FCI will continue to operate as a special interest group within the BCS.",
+    "crumbs": [
+      "Chapters",
+      "History of Digital Health Across the Globe",
+      "England NHS Timeline"
+    ]
+  },
+  {
+    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.html",
+    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/first-use-of-hit.html",
+    "title": "First use of Health Informatics Technology",
+    "section": "",
+    "text": "Dr Artrhur Rappoport. 1952 Porth A.J."
   },
   {
     "objectID": "chapters/28-authors-guide/1-technical-guide.html",
@@ -507,108 +621,15 @@
     ]
   },
   {
-    "objectID": "chapters/index.html",
-    "href": "chapters/index.html",
-    "title": "Chapters",
+    "objectID": "chapters/3-health-and-disease/index.html",
+    "href": "chapters/3-health-and-disease/index.html",
+    "title": "Health and Disease",
     "section": "",
-    "text": "Introduction to Health Informatics",
+    "text": "test",
     "crumbs": [
-      "Chapters"
+      "Chapters",
+      "Health and Disease"
     ]
-  },
-  {
-    "objectID": "chapters/index.html#introduction-to-health-informatics",
-    "href": "chapters/index.html#introduction-to-health-informatics",
-    "title": "Chapters",
-    "section": "",
-    "text": "Introduction to Health Informatics",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#what-is-digital",
-    "href": "chapters/index.html#what-is-digital",
-    "title": "Chapters",
-    "section": "What is digital?",
-    "text": "What is digital?\n\nWhat is digital?\nDigital\nHardware\nSoftware\nKey Digital Concepts in Health Informatics",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#health-and-disease",
-    "href": "chapters/index.html#health-and-disease",
-    "title": "Chapters",
-    "section": "Health and Disease",
-    "text": "Health and Disease\n\nHealth and Disease\nWhat is Health and Disease",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#history-of-digital-health-across-the-globe",
-    "href": "chapters/index.html#history-of-digital-health-across-the-globe",
-    "title": "Chapters",
-    "section": "History of Digital Health Across the Globe",
-    "text": "History of Digital Health Across the Globe\n\nHistory of Digital Health Across the Globe\n\n\nEngland NHS Timeline\n\nEngland NHS Timeline",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#decision-support",
-    "href": "chapters/index.html#decision-support",
-    "title": "Chapters",
-    "section": "Decision Support",
-    "text": "Decision Support\n\nDecision Support\nMedical Calculators\nAlert Systems\nRules Based Clinical Decision Support System\nModels Based Clinical Decision Support System",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#authors-guide",
-    "href": "chapters/index.html#authors-guide",
-    "title": "Chapters",
-    "section": "Author’s guide",
-    "text": "Author’s guide\n\nAuthor’s guide\nTechnical guide",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#todo-list-for-the-eohi-guide",
-    "href": "chapters/index.html#todo-list-for-the-eohi-guide",
-    "title": "Chapters",
-    "section": "Todo list for the EOHI guide",
-    "text": "Todo list for the EOHI guide\n\nTodo list for the EOHI guide",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/index.html#code-documentation",
-    "href": "chapters/index.html#code-documentation",
-    "title": "Chapters",
-    "section": "Code Documentation",
-    "text": "Code Documentation\n\nCode Documentation",
-    "crumbs": [
-      "Chapters"
-    ]
-  },
-  {
-    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.html",
-    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/colossus-computer.html",
-    "title": "Colossus computer",
-    "section": "",
-    "text": "Some material"
-  },
-  {
-    "objectID": "chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.html",
-    "href": "chapters/7-history-of-digital-health-across-the-globe/1-england/computers-first-used-for-administrative-purposes.html",
-    "title": "Computers first used for administrative purposes",
-    "section": "",
-    "text": "Some material"
   },
   {
     "objectID": "chapters/9-clinical-decision-support-systems/index.html#overview",

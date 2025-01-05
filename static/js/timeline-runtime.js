@@ -1,5 +1,5 @@
 /**
- * initialises and runs the timeline functionality when the DOM content is loaded.
+ * Initialises and runs the timeline functionality when the DOM content is loaded.
  *
  * @module TimelineRuntime
  */
