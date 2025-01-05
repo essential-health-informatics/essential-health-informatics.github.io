@@ -12,11 +12,12 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import * as glob from 'glob';
-import { JSDOM } from 'jsdom';
+// import { JSDOM } from 'jsdom';
+import matter from 'gray-matter';
 
 export class Crop {
-  directoryPath: string = path.join(process.cwd(), '..', '_site');
-  searchPattern: string = `${this.directoryPath}/**/*.html`;
+  directoryPath: string = path.join(process.cwd(), '..', 'chapters');
+  searchPattern: string = `${this.directoryPath}/**/*.qmd`;
 
   constructor() {}
 
@@ -47,7 +48,7 @@ export class Crop {
    * @throws Error - No content found in file.
    * @throws Error - Failed to create DOM from content.
    */
-  private cropAnalyse(filePath: string): void {
+  protected cropAnalyse(filePath: string): void {
     if (!fs.existsSync(filePath)) {
       throw new Error(`The file path ${filePath} does not exist`);
     }
@@ -57,41 +58,45 @@ export class Crop {
       throw new Error(`No content found in file: ${filePath}`);
     }
 
-    const dom = new JSDOM(content);
-    const document: Document = dom.window.document;
-    // Note: Quarto renames 'crop' attributes to 'data-crop'
-    const images: NodeListOf<HTMLImageElement> =
-      document.querySelectorAll('img[data-crop]');
+    const { data: attributes } = matter(content);
 
-    images.forEach((img: HTMLImageElement) => {
-      let dataCrop: string | null = img.getAttribute('data-crop');
+    console.log(attributes);
 
-      if (dataCrop) {
-        dataCrop = dataCrop.trim();
-        const dataCropValues: string[] = dataCrop.split(/\s+/);
+    // const dom = new JSDOM(content);
+    // const document: Document = dom.window.document;
+    // // Note: Quarto renames 'crop' attributes to 'data-crop'
+    // const images: NodeListOf<HTMLImageElement> =
+    //   document.querySelectorAll('img[data-crop]');
 
-        if (dataCropValues[0] === '3:1') {
-          const positionStr: number | string = dataCropValues[1].replace(
-            '%',
-            ''
-          );
+    // images.forEach((img: HTMLImageElement) => {
+    //   let dataCrop: string | null = img.getAttribute('data-crop');
 
-          if (!isNaN(Number(positionStr))) {
-            this.crop3to1(filePath, img, Number(positionStr));
-            fs.writeFileSync(filePath, dom.serialize());
-            console.log(`  * ${filePath.replace(this.directoryPath, '')}`);
-          } else {
-            throw new TypeError(
-              `${filePath}: The position value of ${positionStr} is not a number`
-            );
-          }
-        } else {
-          throw new RangeError(
-            `${filePath}: Unsupported crop method: ${dataCrop}`
-          );
-        }
-      }
-    });
+    //   if (dataCrop) {
+    //     dataCrop = dataCrop.trim();
+    //     const dataCropValues: string[] = dataCrop.split(/\s+/);
+
+    //     if (dataCropValues[0] === '3:1') {
+    //       const positionStr: number | string = dataCropValues[1].replace(
+    //         '%',
+    //         ''
+    //       );
+
+    //       if (!isNaN(Number(positionStr))) {
+    //         this.crop3to1(filePath, img, Number(positionStr));
+    //         fs.writeFileSync(filePath, dom.serialize());
+    //         console.log(`  * ${filePath.replace(this.directoryPath, '')}`);
+    //       } else {
+    //         throw new TypeError(
+    //           `${filePath}: The position value of ${positionStr} is not a number`
+    //         );
+    //       }
+    //     } else {
+    //       throw new RangeError(
+    //         `${filePath}: Unsupported crop method: ${dataCrop}`
+    //       );
+    //     }
+    //   }
+    // });
   }
 
   /**
@@ -106,7 +111,7 @@ export class Crop {
    * @throws RangeError - The position value is outside the range 0-100.
    * @throws RangeError - The image has no 'src' or 'alt' attribute(s).
    */
-  private crop3to1(
+  protected crop3to1(
     filePath: string,
     img: HTMLImageElement,
     position: number
