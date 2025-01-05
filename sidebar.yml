@@ -26,5 +26,6 @@ website:
         contents:
           - chapters/28-authors-guide/1-technical-guide.qmd
       - chapters/29-todo.qmd
+      - chapters/30-settings.qmd
       - text: Code Documentation
         href: chapters/code-documentation/index.html

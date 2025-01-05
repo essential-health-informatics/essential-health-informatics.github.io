@@ -1,0 +1,21 @@
+---
+title: "User settings"
+image: /media/multiple-knobs.jpg
+alt: "Post it notes on a white board"
+verticalPosition: 50%
+---
+
+![](/media/multiple-knobs.jpg){alt="Post it notes on a white board" crop="3:1 55%"}
+
+These settings are saved in the browser's local storage. Hence, if you change browser type or devices, you will need to reconfigure them.
+
+```{=html}
+<input type="checkbox" id="advancedMaterialSwitch" name="advancedMaterialSwitch">
+<label for="advancedMaterialSwitch"> Advanced material</label><br>
+
+<div class="advancedWrapper" style="display:none;">
+  <p>This content is toggled by the switch.</p>
+</div>
+
+<script type="module" src="/static/js/user-settings.js"></script>
+```

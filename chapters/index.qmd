@@ -45,6 +45,10 @@ sidebar: false
 
 - [Todo list for the EOHI guide](/chapters/29-todo.qmd)
 
+## User settings
+
+- [User settings](/chapters/30-settings.qmd)
+
 ## Code Documentation
 
 - [Code Documentation](/chapters/code-documentation/index.html)

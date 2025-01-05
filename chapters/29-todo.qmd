@@ -9,20 +9,16 @@ image: /media/post-its-on-white-board.jpg
 
 ### Technical
 
-- Document page link back to normal pages.
-- Jest in VS Code is not working.
-- Format / linter for markdown files.
+- Student and seasoned professional content access/switch.
+- Single image added to the front matter of each chapter with alt and verticalPosition. This then is used to create the banner in a 3:1 ratio.
 - Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
 - Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.
-- Automatically build side bar content from actual content in the guide.
-- Check that a banner picture is displayed on every page. This needs to be in a 3:1 ratio (width:height).
 - Finish banner testing (pre-render)
 - Finish non-200 link testing (post-render)
 - Test all pages have a banner at the top, before any text. Banners need to be of 3:1 ratio (width:height), except on index pages and timelines.
-- Check all titles are in `Title case`.
+- Check all titles are in `Title case`. How to handle acronyms and words that are capitalized in the middle of a sentence?
 - All chapter folders and subfolders must have an `index.qmd` file. Needs unit testing and checking in chapters.ts.
-- Bibliography for each chapter.
-- Each chapter/subchapter needs a page picture (in the front matter)
+- Bibliography for each chapter???
 
 ### Content
 
@@ -36,15 +32,19 @@ image: /media/post-its-on-white-board.jpg
 
 ## Done
 
-### Technical
+### Technical Done
 
 - Obtained a domain name.
 - Set up a GitHub repository.
 - GitHub pages.
 - Github actions.
+- Document page link back to normal pages.
+- Jest in VS Code is not working - fixed.
+- Format / linter for markdown files.
+- Automatically build side bar content from actual content in the guide.
 
-### Content
+### Content Done
 
-### Creators
+### Creators Done
 
 - First creators set for first 10 webinars and chapters.
