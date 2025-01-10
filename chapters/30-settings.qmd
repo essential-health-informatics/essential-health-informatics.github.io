@@ -1,11 +1,11 @@
 ---
 title: "User settings"
 image: /media/multiple-knobs.jpg
-alt: "Post it notes on a white board"
-verticalPosition: 50%
+alt: "Picture of mulitiple knobs"
+verticalPosition: 55%
 ---
 
-![](/media/multiple-knobs.jpg){alt="Post it notes on a white board" crop="3:1 55%"}
+![](/media/multiple-knobs.jpg){alt="Picture of mulitiple knobs" crop="3:1 55%"}
 
 These settings are saved in the browser's local storage. Hence, if you change browser type or devices, you will need to reconfigure them.
 

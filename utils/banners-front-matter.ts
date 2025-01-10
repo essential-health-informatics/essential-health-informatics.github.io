@@ -58,9 +58,17 @@ export class Crop {
       throw new Error(`No content found in file: ${filePath}`);
     }
 
-    const { data: attributes } = matter(content);
+    const { data: attributes, content: bodyContent } = matter(content);
 
     console.log(attributes);
+    const firstNonBlankLine = bodyContent
+      .split('\n')
+      .find((line) => line.trim() !== '');
+    console.log('A -', firstNonBlankLine);
+    const crop: string = '3:1';
+    console.log(
+      `C - ![](${attributes.image}){alt="${attributes.alt}" crop="${crop} ${attributes.verticalPosition}"}`
+    );
 
     // const dom = new JSDOM(content);
     // const document: Document = dom.window.document;
