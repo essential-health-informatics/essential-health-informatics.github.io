@@ -9,8 +9,9 @@ image: /media/post-its-on-white-board.jpg
 
 ### Technical
 
-- Student and seasoned professional content access/switch.
-- Single image added to the front matter of each chapter with alt and verticalPosition. This then is used to create the banner in a 3:1 ratio.
+- Single image added to the front matter of each chapter with alt and verticalPosition. This is then used to create the banner in a 3:1 ratio.
+- Selenium.
+- Student and seasoned professional content access/switch. Needs some more research into how this needs to work for the end-user.
 - Convert banner.ts privates to protected and change tests to mimic chapters.test.ts.
 - Add protected methods to the timeline-main.ts class. Update tests to reflect this, using class extension.
 - Finish banner testing (pre-render)

@@ -5,14 +5,6 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {
-    "timelines": "ts-node utils/timeline-main.ts",
-    "prettier-check": "prettier --config .prettierrc  --check './utils/**/*.ts'",
-    "prettier-format": "prettier --config .prettierrc 'utils/**/*.ts' --write",
-    "build": "tsc"
-  },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jsdom": "^21.1.7",

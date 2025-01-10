@@ -89,4 +89,6 @@ run_command "Post-render unit tests" "npm exec npx jest tests/post-render/*.ts" 
 
 run_command "Formatting of Quarto files" "npx prettier --check '**/*.qmd' --color"
 
+run_command "Integration tests" "npm exec ts-node src/chrome/main.ts" "integration-tests"
+
 print_message "All tasks completed successfully" "" "blue"
