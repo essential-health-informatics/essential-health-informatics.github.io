@@ -1,0 +1,8 @@
+---
+title: "Terminologies"
+image: /media/colourful-digits.jpg
+---
+
+![](/media/colourful-digits.jpg){alt="Zeros and ones in blue on a black background"}
+
+LOINC (Logical Observation Identifiers Names and Codes)

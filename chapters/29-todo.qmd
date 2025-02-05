@@ -26,6 +26,11 @@ image: /media/post-its-on-white-board.jpg
 - Most major content.
 - Case studies under each major chapter.
 - Larger case studies at the end of the guide.
+- Where do DM+D codes fit in? ? Interoperability?
+- NHS Spine.
+- Medicines in general.
+- Devices in general.
+- PILs.
 
 ### Creators
 
