@@ -1,0 +1,12 @@
+---
+title: "Privacy and Security"
+image: /media/combination-lock.jpg
+---
+
+![](/media/combination-lock.jpg){alt="Close up of a combination lock on a metal briefcase" crop="3:1 50%"}
+
+Topics to cover:
+
+- Data privacy
+- Data security
+- DPIA (Data Protection Impact Assessment)

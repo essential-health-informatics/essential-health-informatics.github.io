@@ -36,6 +36,14 @@ sidebar: false
 - [Rules Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/3-rules-based.qmd)
 - [Models Based Clinical Decision Support System](/chapters/9-clinical-decision-support-systems/4-models-based.qmd)
 
+## Terminologies
+
+- [Terminologies](/chapters/11-terminologies/index.qmd)
+
+## Privacy and Security
+
+- [Privacy and Security](/chapters/12-privacy-and-security/index.qmd)
+
 ## Author's guide
 
 - [Author's guide](/chapters/28-authors-guide/index.qmd)

@@ -69,6 +69,8 @@ run_command "Formatting of TypeScript" "npx prettier --config .prettierrc --chec
 
 run_command "Linting of TypeScript" "npx eslint '**/*.ts' --color"
 
+run_command "Formatting of Quarto files" "npx prettier --check '**/*.qmd' --color"
+
 run_command "Unit testing backend pre-render code" "npm exec npx jest tests/pre-render/*.ts" "utils"
 
 run_command "Unit testing frontend code" "npm exec npx jest tests/*.ts" "src"
@@ -87,9 +89,7 @@ run_command "Creating code documentation" "npx typedoc" "docs"
 
 run_command "Post-render unit tests" "npm exec npx jest tests/post-render/*.ts" "utils"
 
-run_command "Formatting of Quarto files" "npx prettier --check '**/*.qmd' --color"
-
-run_command "Starting local server" "npm exec http-server _site"
+run_command "Starting local server" "npm exec http-server _site &"
 
 run_command "Integration tests" "npm exec ts-node src/chrome/main.ts" "integration-tests"
 

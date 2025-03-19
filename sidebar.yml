@@ -22,6 +22,8 @@ website:
           - chapters/9-clinical-decision-support-systems/2-alert-systems.qmd
           - chapters/9-clinical-decision-support-systems/3-rules-based.qmd
           - chapters/9-clinical-decision-support-systems/4-models-based.qmd
+      - chapters/11-terminologies/index.qmd
+      - chapters/12-privacy-and-security/index.qmd
       - section: chapters/28-authors-guide/index.qmd
         contents:
           - chapters/28-authors-guide/1-technical-guide.qmd
